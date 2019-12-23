@@ -5,125 +5,95 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://kit.fontawesome.com/00644b551d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/00644b551d.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 	<title>The Emperors of old</title>
 
-	<style>
-
-    header nav {
-        background-color: gray;
-        margin:0;
-        padding:0;
-    }
-
-    nav ul li {
-        margin-right: 30px;
-    }
-
-    section {
-    background-color: rgb(255, 235, 153);
-    }
-
-	img {
-    margin-left: 10px;
-    width:55px;
-    height:70px;
-	border-radius:100%;
-    border: 2px solid purple;
-    transform: scale(1);
-    transition-duration: 0.4s;
-    transition-timing-function: ease-in-out;
-	}
-
-    img:hover {
-    transform: scale(1.2);
-    }
-
-    h4 {
-    margin-top: 10px;
-    margin-left: 10px;
-    font-family: Roboto, sans-serif;
-    font-weight: 600;
-    }
-
-	p {
-		color: navy blue;
-        margin-top: 15px;
-        margin-left: 10px;
-        font-family: Roboto, sans-serif;
-        font-weight: 400;
-	}
-
-    footer {
-        height: 80px;
-        background-color: rgb(153, 255, 153);
-    }
-
-    </style>
-
 </head>
 
 <body>
-    
+
 	<header>
-		<nav class="navbar navbar-light bg-light">
-		    <ul class="nav">
-				<li class="nav-item">
-					<span> <i class="fas fa-archway"></i> Septimius Severus </span>
+		<nav class="navbar">
+			<ul class="nav">
+				<li class="nav-item menu-item">
+					<a class="nav-link active hvr-bounce-out" href="index.html"><i class="fas fa-archway"></i> Home</a>
 				</li>
 				<li class="nav-item">
-					<span> <i class="fas fa-dove"></i> Valentinian </span>
+					<a class="nav-link hvr-bounce-out" href="about.html"><i class="fas fa-fist-raised"></i> About</a>
 				</li>
 				<li class="nav-item">
-					<span> <i class="fas fa-fist-raised"></i> Constantine the great </span>
+					<a class="nav-link hvr-bounce-out" href="contact.html"><i class="fas fa-dove"></i> Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hvr-bounce-out" href="portfolio.html"><i class="fas fa-toolbox"></i> Portfolio</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
 
-	<section class="container-fluid">
-		<div class="row">
-			<div class="col-4">
-				<h4>Trajan</h4>
-				<a href="#"><img src="assets/images/Trajan.jpg" alt="Trajanus"></a>
-					<p>Conquered Dacia, pacified Parthia</p>
-			</div>
-			<div class="col-4">
-				<h4>Marcus Aurelius</h4>
-				<a href="#"><img src="assets/images/Marcus Aurelius.jpg" alt="Marcus Aurelius"></a>
-					<p>Stoic philosopher, warred against germans mostly</p>
-			</div>
-			<div class="col-4">
-				<h4>Diocletian</h4>
-				<a href="#"><img src="assets/images/diocletian.jpg" alt="Diocletian"></a>
-					<p>Saved the empire after 50 years of civil war, separated administration of the realm into 4
-						units called the Tetrarchy</p>
-			</div>
-			<div class="col-4">
-				<h4>Hadrian</h4>
-				<a href="#"><img src="assets/images/Hadrian.jpg" alt="Hadrian"></a>
-					<p>Strengthened jurisprudence, strengthened border regions with walls and
-						towers</p>
-			</div>
-			<div class="col-4">
-				<h4>Claudius</h4>
-				<a href="#"><img src="assets/images/Claudius.jpg" alt="Claudius"></a>
-					<p>Between the inept emperors of Caligula and Nero, Claudius hesitantly took the reins after
-						persuasion from the Praetorian Guard who had just killed the former emperor Caligula.
-					</p>
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-4">
+					<h3>Trajan</h3>
+					<a href="#"><img src="assets/images/trajan.jpg" alt="Trajanus"></a>
+						<p>Conquered Dacia, pacified Parthia, ensured his military support by executing the old, in with
+							the new and loyal, the rest of his reign was marked by </p>
+				</div>
+				<div class="col-4">
+					<h3>Marcus Aurelius</h3>
+					<a href="#"><img src="assets/images/m-aurelius.jpg" alt="Marcus Aurelius"></a>
+						<p>Stoic philosopher famous for authoring a book on the subject, warred on germans most of the time</p>
+				</div>
+				<div class="col-4">
+					<h3>Diocletian</h3>
+					<a href="#"><img src="assets/images/diocletian.jpg" alt="Diocletian"></a>
+						<p>Saved the empire, made the tetrarchy, persecuted the early christians</p>
+				</div>
+				<div class="col-4">
+					<h3>Hadrian</h3>
+					<a href="#"><img src="assets/images/hadrian.jpg" alt="Hadrian"></a>
+						<p>Strengthened jurisprudence, strengthened borders with walls and towers, restructured postal
+							organization</p>
+				</div>
+				<div class="col-4">
+					<h3>Claudius</h3>
+					<a href="#"><img src="assets/images/claudius.jpg" alt="Claudius"></a>
+						<p>Between two mad emperors from the Julian dynasty, this humble man reigned by his moral
+							compass
+						</p>
+				</div>
+                <div class="col-4">
+					<h3>Johan</h3>
+					<a href="#"><img src="assets/images/johan.jpg" alt="Johan"></a>
+						<p>Not very well-known until early 21st century, but those that know him are struck by his wisdom</p>
+				</div>
 			</div>
 		</div>
 
 	</section>
 
 	<footer>
-
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-4">
+					Name Adress
+				</div>
+				<div class="col-4">
+					History, Coding, PC gaming, Roleplay
+				</div>
+				<div class="col-4">
+					Social Links here
+				</div>
+			</div>
+		</div>
 	</footer>
 
 </body>
 
 </html>
+
