@@ -1,7 +1,8 @@
-# Code Institute
 
-Welcome Voggastur,
 
-We have preinstalled all of the tools you need to get started.
+###  My Resume Website
 
-Happy coding!
+##  wireframes
+
+![alt](assets/wireframes/home.jpg)
+
