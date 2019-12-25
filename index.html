@@ -5,72 +5,123 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/00644b551d.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/00644b551d.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-	<title>The Emperors of old</title>
+	<title>My Resume Website</title>
 
 </head>
 
 <body>
 
 	<header>
-		<nav class="navbar">
-			<ul class="nav">
-				<li class="nav-item menu-item">
-					<a class="nav-link active hvr-bounce-out" href="index.html"><i class="fas fa-archway"></i> Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link hvr-bounce-out" href="about.html"><i class="fas fa-fist-raised"></i> About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link hvr-bounce-out" href="contact.html"><i class="fas fa-dove"></i> Contact</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link hvr-bounce-out" href="portfolio.html"><i class="fas fa-toolbox"></i> Portfolio</a>
-				</li>
-			</ul>
+
+		<nav class="navdefault">
+			<div class="slide">
+				<button class="hvr-bounce-in slide"><a class="nav-link" href="index.html"><i class="fas fa-archway"></i> Home </a></button>
+
+				<ul class="dropdownMenu navbar">
+					<li class="dropdownitem"> </li>
+					<li class="dropdownitem"> </li>
+					<li class="dropdownitem"><a class="nav-link hvr-bounce-in"
+							href="about.html"><i class="fas fa-fist-raised"></i> About</a></li>
+					<li class="dropdownitem"><a class="nav-link hvr-bounce-in"
+							href="contact.html"><i class="fas fa-dove"></i> Contact</a></li>
+					<li class="dropdownitem"><a class="nav-link hvr-bounce-in"
+							href="portfolio.html"><i class="fas fa-toolbox"></i> Portfolio</a></li>
+				</ul>
+			</div>
+
 		</nav>
+
 	</header>
 
 	<section>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-4">
-					<h3>Trajan</h3>
-					<a href="#"><img src="assets/images/trajan.jpg" alt="Trajanus"></a>
-						<p>Conquered Dacia, pacified Parthia, ensured his military support by executing the old, in with
-							the new and loyal </p>
+					<div class="headerbox">
+						<h3>Trajan</h3>
+					</div>
+					<div class="frame">
+						<a href="#"><img src="assets/images/trajan.jpg" alt="Trajanus"></a>
+							<p class="reign">
+								Reign 98-117
+							</p>
+					</div>
+					<p class="p">Conquered Dacia, pacified Parthia, ensured his military support by executing the old,
+						in with
+						the new and loyal </p>
 				</div>
 				<div class="col-4">
-					<h3>Marcus Aurelius</h3>
-					<a href="#"><img src="assets/images/m-aurelius.jpg" alt="Marcus Aurelius"></a>
-						<p>Stoic philosopher famous for authoring a book on the subject, warred on germans most of the time</p>
+					<div class="headerbox">
+						<h3>Marcus Aurelius</h3>
+					</div>
+					<div class="frame">
+						<a href="#"><img src="assets/images/m-aurelius.jpg" alt="Marcus Aurelius"></a>
+							<p class="reign">
+								Reign 161-180
+							</p>
+					</div>
+					<p class="p">Stoic philosopher famous for authoring a book on the subject, warred on germans most of
+						the
+						time</p>
 				</div>
 				<div class="col-4">
-					<h3>Diocletian</h3>
-					<a href="#"><img src="assets/images/diocletian.jpg" alt="Diocletian"></a>
-						<p>Saved the empire, made the tetrarchy, persecuted the early christians</p>
+					<div class="headerbox">
+						<h3>Diocletian</h3>
+					</div>
+					<div class="frame">
+						<a href="#"><img src="assets/images/diocletian.jpg" alt="Diocletian"></a>
+							<p class="reign">
+								Reign 284-305
+							</p>
+					</div>
+					<p class="p">Saved the empire, made the tetrarchy, persecuted the early christians</p>
 				</div>
 				<div class="col-4">
-					<h3>Hadrian</h3>
-					<a href="#"><img src="assets/images/hadrian.jpg" alt="Hadrian"></a>
-						<p>Strengthened jurisprudence, strengthened borders with walls and towers, restructured postal
-							organization</p>
+					<div class="headerbox">
+						<h3>Hadrian</h3>
+					</div>
+					<div class="frame">
+						<a href="#"><img src="assets/images/hadrian.jpg" alt="Hadrian"></a>
+							<p class="reign">
+								Reign 117-138
+							</p>
+					</div>
+					<p class="p">Strengthened jurisprudence, strengthened borders with walls and towers, restructured
+						postal
+						organization</p>
 				</div>
 				<div class="col-4">
-					<h3>Claudius</h3>
-					<a href="#"><img src="assets/images/claudius.jpg" alt="Claudius"></a>
-						<p>Between two mad emperors from the Julian dynasty, this humble man reigned by his moral
-							compass
-						</p>
+					<div class="headerbox">
+						<h3>Claudius</h3>
+					</div>
+					<div class="frame">
+						<a href="#"><img src="assets/images/claudius.jpg" alt="Claudius"></a>
+							<p class="reign">
+								Reign 41-54
+							</p>
+					</div>
+					<p class="p">Between two mad emperors from the Julian dynasty, this humble man reigned by his moral
+						compass
+					</p>
 				</div>
-                <div class="col-4">
-					<h3>Johan</h3>
-					<a href="#"><img src="assets/images/johan.jpg" alt="Johan"></a>
-						<p>Not very well-known until early 21st century, but he is probably a brave and wise man</p>
+				<div class="col-4">
+					<div class="headerbox">
+						<h3>Johan</h3>
+					</div>
+					<div class="frame">
+						<a href="#"><img src="assets/images/johan.jpg" alt="Johan"></a>
+							<p class="reign">
+								Reign Unknown
+							</p>
+					</div>
+					<p class="p">Not very well-known until early 21st century, but he is probably a brave and wise man
+					</p>
 				</div>
 			</div>
 		</div>
@@ -96,4 +147,3 @@
 </body>
 
 </html>
-
