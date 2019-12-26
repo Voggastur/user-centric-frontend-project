@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap;|Exo');
+
+/* ------------------------------------Heading */
+
 .navdefault {
+    z-index:1;
     position: fixed;
     top: 0;
     left: 0;
@@ -7,6 +12,7 @@
 }
 
 button {
+    color: #cbd191;
     z-index:1;
     border: none;
     background-color: #073e55;
@@ -17,13 +23,20 @@ button {
 }
 
 button a {
-    color: #cbd191;
+    color:inherit;
+    text-decoration: none;
+    border: none;
+}
+
+button a:hover {
+    color:inherit;
 }
 
 .dropdownMenu {
     list-style: none;
     position: absolute;
     text-transform: uppercase;
+    color: #cbd191;
     margin:0;
     padding:0;
     left: 0;
@@ -33,22 +46,20 @@ button a {
     width: 700px;
     text-align: left;
     box-shadow: 4px 8px 6px 0px rgba(25,4,25,1);
-    transform: translate(-800px);
+    transform: translate(-550px);
     transition: transform .5s ease-in-out;
 }
 
-.dropdownLink {
+ul li a {
+    outline: none;
+    border: 0;
     text-decoration: none;
     display: block;
-    padding: 10px 5px;
-    background-color: #cbd191;
-    color: #000000;
-    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    color: #cbd191; 
 }
 
-.dropdownLink:hover {
+ul li a:hover {
     color: #cbd191;
-    background-color: #000000;
 }
 
 .slide {
@@ -61,14 +72,54 @@ button a {
     transform:translate(0);
 }
 
+/* ------------------------------------Colours */
+
+
 section {
     padding-top: 50px;
 	background-color: rgb(255, 235, 145);
-    height:1000px;
+    height:100%;
 }
 
-img {
-    float:left;
+.lefthandtop {
+    display: flex;
+    flex-flow: wrap;
+    height: 600px;
+    border: 1px solid black;
+    background-color: rgb(255, 235, 145);
+}
+
+.lefthandbottom {
+    display: flex;
+    flex-flow: column wrap;
+    height:300px;
+    margin:0;
+    padding:0;
+    border: 1px solid black;
+    background-color: rgb(255, 235, 145);
+}
+
+.background-image {
+    width: 100%;
+    height: 600px;
+}
+
+.me {
+    margin: 10px 10px 30px 10px;
+    width: 80%;
+	height: 40%;
+	border-radius: 100%;
+	border: 1px solid purple;
+    transform: scale(1);
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.me:hover {
+    transform: scale(1.3);
+}
+
+.portrait {
     margin-top: 10px;
 	margin-left: 10px;
 	width: 55px;
@@ -80,7 +131,7 @@ img {
 	transition-timing-function: ease-in-out;
 }
 
-img:hover {
+.portrait:hover {
 	transform: scale(1.3);
 }
 

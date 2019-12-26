@@ -11,13 +11,13 @@ however on my portfolio page I will showcase more advanced projects which I will
 
 Wireframes are in the assets/wireframes folder.
 
-![alt](assets/wireframes/index.jpg)
+![index](assets/wireframes/index.jpg)
 
-![alt](assets/wireframes/about.jpg)
+![about](assets/wireframes/about.jpg)
 
-![alt]assets/wireframes/contact.jpg)
+![contact](assets/wireframes/contact.jpg)
 
-![alt](assets/wireframes/portfolio.jpgk)
+![portfolio](assets/wireframes/portfolio.jpgk)
 
 ## Features
 
