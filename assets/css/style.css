@@ -6,14 +6,12 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: #073e55;
+    opacity: 0.8;
 }
 
 button {
-    color: #cbd191;
     z-index:1;
     border: none;
-    background-color: #073e55;
     width: 100px;
     height: 50px;
     text-transform: uppercase;
@@ -21,21 +19,14 @@ button {
 }
 
 button a {
-    color:inherit;
     border: inherit;
     text-decoration: none;
-}
-
-button a:hover {
-    color:inherit;
 }
 
 .dropdownMenu {
     list-style: none;
     position: absolute;
     text-transform: uppercase;
-    background-color: #073e55;
-    color: #cbd191;
     margin:0;
     padding:0;
     left: 0;
@@ -54,11 +45,6 @@ ul li a {
     border: 0;
     text-decoration: none;
     display: block;
-    color: #cbd191; 
-}
-
-ul li a:hover {
-    color: #cbd191;
 }
 
 .slide {
@@ -76,7 +62,6 @@ ul li a:hover {
 .me {
     width: 100%;
 	height: 100%;
-	border: 1px solid purple;
 }
 
 /* ------------------------------------Left Column */
@@ -87,8 +72,53 @@ ul li a:hover {
 
 .lefthandtop {
     height: 700px;
-    border: 1px solid black;
-    background-color: rgb(255, 235, 145);
+}
+
+/* ------------------------------------Colours */
+
+ul li a {
+    color: #cbd191; 
+}
+
+ul li a:hover {
+    color: #cbd191;
+}
+
+button a {
+    color:inherit;
+}
+
+button a:hover {
+    color:inherit;
+}
+
+
+.navbar-expand {
+    background-color: #073e55;
+}
+
+button {
+    color: #cbd191;
+    background-color: #073e55;
+}
+
+.dropdownMenu {
+    background-color: #073e55;
+    color: #cbd191;
+}
+
+.me {
+	border: 2px solid purple;
+}
+
+lefthandtop {
+    border: 2px solid purple;
+    background-color: #ffeb91;
+}
+
+footer {
+    color: #ffeb91;
+	background-color: #073e55;
 }
 
 /* ------------------------------------Section */
@@ -97,15 +127,15 @@ section {
     width: 100%;
     background:url(../images/background.jpg) no-repeat; 
     padding-top: 50px;
-	background-color: rgb(255, 235, 145);
 }
 
 /* ------------------------------------Footer */
 
-
-
 footer {
-	height: 250px;
-	background-color: rgb(153, 255, 153);
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 16px;
+    text-align: left;
+	height: 100%;
+    bottom:0;
 }
 
