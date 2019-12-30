@@ -57,23 +57,6 @@ ul li a {
     transform:translate(0);
 }
 
-/* ------------------------------------Image attributes */
-
-.me {
-    width: 100%;
-	height: 100%;
-}
-
-/* ------------------------------------Left Column */
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.lefthandtop {
-    height: 700px;
-}
-
 /* ------------------------------------Colours */
 
 ul li a {
@@ -92,50 +75,115 @@ button a:hover {
     color:inherit;
 }
 
-
 .navbar-expand {
-    background-color: #073e55;
+    background-color: #3b2005;
 }
 
 button {
     color: #cbd191;
-    background-color: #073e55;
+    background-color: #3b2005;
 }
 
 .dropdownMenu {
-    background-color: #073e55;
+    background-color: #3b2005;
     color: #cbd191;
 }
 
-.me {
-	border: 2px solid purple;
-}
-
-lefthandtop {
-    border: 2px solid purple;
-    background-color: #ffeb91;
-}
-
 footer {
-    color: #ffeb91;
-	background-color: #073e55;
+    color: #cbd191;
+	background-color: #3b2005;
+}
+
+.me {
+	border: 1px solid #3f023f;
+}
+
+.card {
+    border: 1px groove #3f023f;
+    background: #3b2005;
+    color: #cbd191;
+}
+
+h6 i {
+    color: #34636e;
+}
+
+.social-links li a i {
+    color: #fafafa;
+    background: #131581;
+}
+
+.social-links li a i:hover {
+    background: #230855;
+}
+
+/* ------------------------------------Image attributes */
+
+.me-container {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.me {
+    width: 100%;
+	height: 100%;
+    border-radius: 100%;
 }
 
 /* ------------------------------------Section */
 
 section {
-    width: 100%;
-    background:url(../images/background.jpg) no-repeat; 
-    padding-top: 50px;
+    background:url(../images/background.jpg) no-repeat;
+    background-size: cover;
+    padding: 50px 0 10px 0;
+}
+
+.card {
+    opacity: 0.7;
+    text-align: center;
+    font-size: 14px;
+    font-family: tahoma, sans-serif;
+    margin-bottom: 40px;
+    height:90%;
+    border-radius: 100%
+}
+
+.card-title {
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 /* ------------------------------------Footer */
 
-footer {
-    font-family: 'Lucida Sans', sans-serif;
-    font-size: 16px;
-    text-align: left;
-	height: 100%;
-    bottom:0;
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 10px 0;
+    border-radius: 50%;
+    margin-right: 5px;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
 }
 
+.footer-h6 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    height: 100%;
+}
+
+.footer-p {
+    font-family: tahoma, sans-serif;
+    text-align: center;
+    font-size: 14px;
+}
+
+.social-links {
+    text-align: center;
+}

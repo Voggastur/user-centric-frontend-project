@@ -3,8 +3,8 @@
 #  My Resume Website
 
 The aim of this website is to present myself to potential employers in the best light and showcase my abilities as a front end developer.
-The website itself will be pretty basic to provide an easy-to-read interface and no-nonsense content for potential employers and assessors to read, 
-however on my portfolio page I will showcase more advanced projects which I will add later in the course.
+The website itself will be pretty basic at this stage but will provide an easy interface with contextual content for potential employers and assessors to see, 
+however on my portfolio page I will showcase more advanced projects later on in the course.
 
 
 ## wireframes
@@ -29,7 +29,7 @@ Wireframes are in the assets/wireframes folder.
 
 ## Testing
 
-I have tested all links and run all HTML and CSS through the W3C validation service with a good grade.
+I have double-checked that all links are working and run all HTML and CSS through the W3C validation service with a good grade.
 
 ## Deployment
 
