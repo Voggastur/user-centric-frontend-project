@@ -12,7 +12,7 @@
 button {
     z-index:1;
     border: none;
-    width: 100px;
+    width: 80px;
     height: 50px;
     text-transform: uppercase;
     cursor: pointer;
@@ -34,7 +34,7 @@ button a {
     top: 0;
     height: 50px;
     width: 700px;
-    text-align: left;
+    text-align: center;
     box-shadow: 4px 8px 6px 0px rgba(25,4,25,1);
     transform: translate(-550px);
     transition: transform .5s ease-in-out;
@@ -44,7 +44,6 @@ ul li a {
     outline: none;
     border: 0;
     text-decoration: none;
-    display: block;
 }
 
 .slide {
@@ -105,7 +104,7 @@ footer {
 }
 
 h6 i {
-    color: #34636e;
+    color: #237e46;
 }
 
 .social-links li a i {
