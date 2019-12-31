@@ -17,7 +17,7 @@ Wireframes are in the assets/wireframes folder.
 
 ![contact](assets/wireframes/contact.jpg)
 
-![portfolio](assets/wireframes/portfolio.jpgk)
+![portfolio](assets/wireframes/portfolio.jpg)
 
 ## Features
 
