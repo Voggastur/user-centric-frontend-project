@@ -193,7 +193,7 @@ button[type="submit"] {
 /* ------------------------------------Section */
 
 section {
-    background:url(../images/DSC_0146.JPG) no-repeat;
+    background:url(../images/DSC_0238.JPG) no-repeat;
     background-size: cover;
     padding: 50px 0 10px 0;
     min-height: 600px;
@@ -219,6 +219,10 @@ section {
     font-family: Georgia, sans-serif;
     margin: 30px 0 30px 0;
     height: 90%;
+}
+
+.card-title {
+    margin-top: 30px;
 }
 
 .card-p {
