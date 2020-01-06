@@ -1,15 +1,14 @@
-/* ------------------------------------General Body */
+/* ------------------------------------General */
 
 body {
     margin: 0;
     padding: 0;
-    color: #cbd191;
+    color: #fafafa;
 }
 
 /* ------------------------------------Heading */
 
 .navbar-expand {
-    z-index:1;
     position: fixed;
     top: 0;
     left: 0;
@@ -17,26 +16,35 @@ body {
     opacity: 0.8;
 }
 
-button {
+.home {
     z-index:1;
     border: none;
-    width: 80px;
+    width: 150px;
     height: 50px;
     text-transform: uppercase;
     cursor: pointer;
+    position: relative;
 }
 
-button a {
+.home a {
     border: inherit;
     text-decoration: none;
+}
+
+.slide {
+    width: 150px;
+    height: 50px;
+    position: relative;
+}
+
+.slide:hover .dropdownMenu {
+    transform:translate(0);
 }
 
 .dropdownMenu {
     list-style: none;
     position: absolute;
     text-transform: uppercase;
-    margin:0;
-    padding:0;
     left: 0;
     right: 0;
     top: 0;
@@ -50,18 +58,8 @@ button a {
 
 ul li a {
     outline: none;
-    border: 0;
+    border: none;
     text-decoration: none;
-}
-
-.slide {
-    width: 150px;
-    top: 0;
-    position: relative;
-}
-
-.slide:hover .dropdownMenu {
-    transform:translate(0);
 }
 
 /* ------------------------------------Colours */
@@ -107,6 +105,10 @@ footer {
     color: #cbd191;
 }
 
+.portfolio-btn-heading a {
+    color: #cdf100;
+}
+
 .card-body-about a {
     color: #cbd191;
 }
@@ -128,17 +130,19 @@ h6 i {
     color: #fafafa;
 }
 
-button[type="submit"] {
+.contact-request {
     color: #cbd191;
-    background-color: #131581;
+    background-color: #181bc4;
+}
+
+hr {
+    border-top: 1px solid #cbd191;
 }
 
 /* ------------------------------------Image attributes */
 
 .me-container {
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin: 50px 0 20px 0 auto;
 }
 
 .me {
@@ -152,45 +156,11 @@ button[type="submit"] {
 
 @keyframes load-zoom {
     from{
-        transform: scale(0.1)
+        transform: scale(0.9)
     }
     to{
         transform: scale(1)
     }
-}
-
-/* ------------------------------------Contact Form */
-
-.contact1 {
-    font-family:Georgia, sans-serif;
-    text-align: center;
-    margin-top: 150px;
-    margin-bottom: 30px;
-}
-
-.contact2 {
-    font-family:Georgia, sans-serif;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-button[type="submit"] {
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
-.contact-request {
-    border: none;
-    display: block;
-    margin: 0 auto;
-    height: 60px;
-    width: 150px;
-}
-
-.contact-request a {
-    outline: none;
-    border: 0;
-    text-decoration: none;
 }
 
 /* ------------------------------------Section */
@@ -199,15 +169,12 @@ section {
     background:url(../images/DSC_0238.JPG) no-repeat;
     background-size: cover;
     padding: 50px 0 10px 0;
-    min-height: 800px;
+    height: 800px;
 }
 
 .card {
     opacity: 0.7;
-    text-align: center;
-    font-size: 14px;
-    font-family: Georgia, sans-serif;
-    margin-bottom: 40px;
+    margin: 30px;
     height:90%;
     border-radius: 100%;
     animation-name: load-zoom;
@@ -217,21 +184,34 @@ section {
 
 .card-portfolio {
     opacity: 0.7;
-    text-align: center;
-    font-size: 14px;
-    font-family: Georgia, sans-serif;
-    margin: 30px 0 30px 0;
     height: 90%;
+    width: 100%;
+    margin: 30px;
 }
 
 .card-title {
-    margin-top: 30px;
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: center;
+    margin-top: 25px;
 }
 
-.card-p {
-    margin: 10px 0 10px 0;
+.card-text {
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Lucida Sans', sans-serif;
     font-size: 15px;
-    font-family: Georgia, sans-serif;
+}
+
+.card-p-portfolio {
+    margin: 10px 0 10px 0;
+    text-align: center;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 15px;
+}
+
+.portfolio-btn-heading {
+    text-align: center;
+    font-family: 'Lucida Sans', sans-serif;
 }
 
 .card-body a {
@@ -273,7 +253,12 @@ section {
     -o-transition: all 0.4s ease-in-out;
 }
 
-/* ------------------------------------About alignments */
+/* ------------------------------------About.html alignments */
+
+.section-about {
+    font-family: 'Lucida Sans', sans-serif;
+    font-weight: 600;
+}
 
 #left-about {
     padding-top: 30px;
@@ -294,7 +279,6 @@ section {
 
 hr {
     margin: 5px 0 0 0 auto;
-    border-top: 1px solid #cbd191;
     width: 100%;
 }
 
@@ -306,7 +290,11 @@ hr {
     clear: both;
 }
 
-.left-about-heading h2, p {
+.left-about-heading h2 {
+    text-align: left;
+}
+
+.left-about-heading p {
     text-align: left;
 }
 
@@ -318,7 +306,11 @@ hr {
     clear:both;
 }
 
-.right-about-heading h2, p {
+.right-about-heading h2 {
+    text-align: right;
+}
+
+.right-about-heading p {
     text-align: right;
 }
 
@@ -327,3 +319,33 @@ hr {
     text-align: center;
     font-size: 280%;
 }
+
+/* ------------------------------------Contact Form */
+
+.contact1 {
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+
+.contact2 {
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-request {
+    border: none;
+    display: block;
+    margin: 30px auto;
+    height: 50px;
+    width: 150px;
+}
+
+.contact-request a {
+    outline: none;
+    border: 0;
+    text-decoration: none;
+}
+
