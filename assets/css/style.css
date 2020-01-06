@@ -1,3 +1,11 @@
+/* ------------------------------------General Body */
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #cbd191;
+}
+
 /* ------------------------------------Heading */
 
 .navbar-expand {
@@ -76,17 +84,17 @@ button a:hover {
 
 button {
     color: #cbd191;
-    background-color: #534435;
+    background-color: #503f2f;
 }
 
 .dropdownMenu {
-    background-color: #534435;
+    background-color: #503f2f;
     color: #cbd191;
 }
 
 footer {
     color: #cbd191;
-	background-color: #534435;
+	background-color: #503f2f;
 }
 
 .me {
@@ -95,7 +103,7 @@ footer {
 
 .card, .card-about, .card-portfolio {
     border: 2px outset #201563;
-    background: #534435;
+    background: #503f2f;
     color: #cbd191;
 }
 
@@ -117,7 +125,7 @@ h6 i {
 }
 
 .contact1, .contact2 {
-    color: #cbd191;
+    color: #fafafa;
 }
 
 button[type="submit"] {
@@ -128,6 +136,7 @@ button[type="submit"] {
 /* ------------------------------------Image attributes */
 
 .me-container {
+    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 20px;
 }
@@ -137,13 +146,13 @@ button[type="submit"] {
 	height: 100%;
     border-radius: 50%;
     animation-name: load-zoom;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-fill-mode: forwards;
 }
 
 @keyframes load-zoom {
     from{
-        transform: scale(0.9)
+        transform: scale(0.1)
     }
     to{
         transform: scale(1)
@@ -163,12 +172,6 @@ button[type="submit"] {
     font-family:Georgia, sans-serif;
     text-align: center;
     margin-bottom: 30px;
-}
-
-.form {
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 60%;
 }
 
 button[type="submit"] {
@@ -196,7 +199,7 @@ section {
     background:url(../images/DSC_0238.JPG) no-repeat;
     background-size: cover;
     padding: 50px 0 10px 0;
-    min-height: 600px;
+    min-height: 800px;
 }
 
 .card {
@@ -239,13 +242,10 @@ section {
 
 /* ------------------------------------Footer */
 
-footer {
-    height: 100%;
-}
-
 .footer-h6 {
     text-align: center;
     margin-top: 20px;
+    overflow: none;
 }
 
 .footer-p {
@@ -271,4 +271,59 @@ footer {
     -moz-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
+}
+
+/* ------------------------------------About alignments */
+
+#left-about {
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+}
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+}
+
+#center-about {
+    width: 25%;
+    margin: 0 auto;
+}
+
+hr {
+    margin: 5px 0 0 0 auto;
+    border-top: 1px solid #cbd191;
+    width: 100%;
+}
+
+.left-about-heading {
+    width: 50%;
+    float: right;
+    line-height: 20px;
+    margin-bottom: 50px;
+    clear: both;
+}
+
+.left-about-heading h2, p {
+    text-align: left;
+}
+
+.right-about-heading {
+    width: 50%;
+    float: left;
+    line-height: 20px;
+    margin-bottom: 50px;
+    clear:both;
+}
+
+.right-about-heading h2, p {
+    text-align: right;
+}
+
+#welcome {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 280%;
 }
