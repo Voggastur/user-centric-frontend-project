@@ -17,13 +17,13 @@ body {
 }
 
 .home {
+    position: relative;
     z-index:1;
     border: none;
     width: 150px;
     height: 50px;
     text-transform: uppercase;
     cursor: pointer;
-    position: relative;
 }
 
 .home a {
@@ -96,7 +96,11 @@ footer {
 }
 
 .me {
-	border: 2px outset #201563;
+    border: 2px outset #201563;
+}
+
+.me-about {
+    border: 2px outset #201563;
 }
 
 .card, .card-about, .card-portfolio {
@@ -136,12 +140,12 @@ h6 i {
 }
 
 hr {
-    border-top: 1px solid #cbd191;
+    border-top: 2px solid #eeff00;
 }
 
 .section-about {
     color: #fafafa;
-    text-shadow: 1px 1px #190419;  
+    text-shadow: 1px 1px #190419;
     font-weight: 900;
 }
 
@@ -158,8 +162,12 @@ hr {
 }
 
 .me {
+    display: block;
+    margin: 0 auto;
     width: 100%;
+    max-width: 400px;
     height: 100%;
+    max-height: 500px;
     border-radius: 50%;
     animation-name: load-zoom;
     animation-duration: 4s;
@@ -280,14 +288,27 @@ footer {
 
 /* ------------------------------------About.html alignments */
 
+.me-about {
+    margin-top: 60px;
+    width: 80%;
+    min-width: 250px;
+    height: 80%;
+    min-height: 250px;
+    max-height: 400px;
+    border-radius: 50%;
+    animation-name: load-zoom;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
 .section-about {
     font-family: 'Lucida Sans', sans-serif;
     font-weight: 600;
-    height: 900px;
+    height: 800px;
 }
 
 .footer-about {
-    height: 300px;
+    height: 200px;
 }
 
 #left-about {
@@ -303,9 +324,8 @@ footer {
 }
 
 #center-about {
-    width: 20%;
-    height: 20%;
-    border-radius: 50%;
+    width: 19%;
+    height: 19%;
     margin: 0 auto;
 }
 
@@ -315,11 +335,12 @@ hr {
 }
 
 .left-about-heading {
-    width: 50%;
+    width: 80%;
     float: right;
     line-height: 20px;
     margin-bottom: 50px;
-    clear: right;
+    padding-left: 20px;
+    clear: both;
 }
 
 .left-about-heading h2 {
@@ -331,11 +352,12 @@ hr {
 }
 
 .right-about-heading {
-    width: 50%;
+    width: 80%;
     float: left;
     line-height: 20px;
     margin-bottom: 50px;
-    clear:left;
+    padding-right: 20px;
+    clear: both;
 }
 
 .right-about-heading h2 {
@@ -355,7 +377,7 @@ hr {
 /* ------------------------------------Contact Form */
 
 .contact-section {
-    height: 600px;
+    height: 800px;
 }
 
 .contact1 {
@@ -374,7 +396,7 @@ hr {
 .contact-request {
     border: none;
     display: block;
-    margin: 30px auto;
+    margin: 0 auto;
     height: 50px;
     width: 150px;
 }
