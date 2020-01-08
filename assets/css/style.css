@@ -156,18 +156,16 @@ hr {
 /* ------------------------------------Image attributes */
 
 .me-container {
-    margin: 30px auto;
+    margin: 50px auto;
     width: 80%;
     height: 80%;
 }
 
 .me {
-    display: block;
-    margin: 0 auto;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     height: 100%;
-    max-height: 500px;
+    max-height: 400px;
     border-radius: 50%;
     animation-name: load-zoom;
     animation-duration: 4s;
@@ -185,11 +183,23 @@ hr {
 
 /* ------------------------------------Section */
 
+a.underline {
+  border-bottom: 1px solid #6c8f3f;
+  transition: 0.5s all;
+}
+a.underline:hover {
+  border-bottom: 3px solid #aa2200
+}
+
 section {
-    background:url(../images/horizon.jpg) no-repeat;
+    background:url(../images/horizon-dark.png) no-repeat;
     background-size: cover;
     padding: 50px 0 10px;
     height: 100%;
+}
+
+.index-section {
+    height: 800px;
 }
 
 .card {
@@ -286,7 +296,7 @@ footer {
     -o-transition: all 0.4s ease-in-out;
 }
 
-/* ------------------------------------About.html alignments */
+/* ------------------------------------About alignments */
 
 .me-about {
     margin-top: 60px;
@@ -374,7 +384,7 @@ hr {
     font-size: 280%;
 }
 
-/* ------------------------------------Contact Form */
+/* ------------------------------------Contact */
 
 .contact-section {
     height: 800px;
@@ -407,3 +417,4 @@ hr {
     text-decoration: none;
 }
 
+/* ------------------------------------Portfolio */
