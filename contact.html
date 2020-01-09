@@ -17,31 +17,53 @@
 <body>
 
 	<header>
-
-		<nav class="navbar-expand">
-			<div class="slide">
-				<button class="hvr-bounce-out home"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home </a></button>
-				<ul class="dropdownMenu navbar">
-					<li class="dropdownitem"> </li>
-					<li class="dropdownitem"> </li>
-					<li class="dropdownitem"><a class="nav-link hvr-bounce-out"
-							href="about.html"><i class="far fa-address-card"></i> About</a></li>
-					<li class="dropdownitem"><a class="nav-link hvr-bounce-out"
-							href="contact.html"><i class="fas fa-comments"></i> Contact</a></li>
-					<li class="dropdownitem"><a class="nav-link hvr-bounce-out"
-							href="portfolio.html"><i class="fas fa-hammer"></i> Portfolio</a></li>
-				</ul>
-			</div>
+		<nav>
+			<div class="triangletop"></div>
+			<ul class="navbar slide justify-content-center">
+				<li class="nav-item slide-about">
+					<a class="nav-link hvr-bounce-in" href="about.html"><i class="far fa-address-card"></i> About
+					</a>
+				</li>
+				<button class="nav-item home-button"><a class="nav-link hvr-bounce-in"
+						href="index.html"><i class="fas fa-home"></i>
+						Home </a></button>
+				<li class="nav-item slide-portfolio">
+					<a class="nav-link hvr-bounce-in" href="portfolio.html"><i class="fas fa-hammer"></i> Portfolio</a>
+				</li>
+				<li class="nav-item slide-contact"><a class="nav-link hvr-bounce-in"
+						href="contact.html"><i class="fas fa-comments"></i> Contact</a></li>
+			</ul>
 		</nav>
 
 	</header>
 
+
+
 	<section class="container-fluid contact-section">
 		<div class="row">
-			<div class="col">
-				<h3 class="contact1">Ideas?</h3>
-				<h5 class="contact2">Contact Me!</h5>
-				<button type="submit" class="btn btn-info contact-request"><a href="mailto:v3x0r_x014@hotmail.com">Mail to Johan</a></button>
+			<div class="col-8 offset-2 contact-column">
+				<form class="contact-form">
+					<div class="form-group contact-form-group">
+						<H3>Get in touch</H3>
+						<label for="exampleFormControlInput1">Email address</label>
+						<input type="email" class="form-control contact-input" id="exampleFormControlInput1" placeholder="name@example.com"></input>
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlSelect1">Example select</label>
+						<select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlTextarea1">Example textarea</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						<button type="submit" class="btn btn-primary mb-2"> Send</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</section>
@@ -65,8 +87,10 @@
 				</div>
 				<div class="col-sm-4">
 					<h6 class="footer-h6"><i class="fas fa-hat-wizard"></i> Proficiency</h6>
-					<p class="footer-p">Full Stack Web Developer. I work swiftly with my tools at hand in gettings things done
-					and working across the stack. I am thriving in teams and also decisive and determined when working solo.</p>
+					<p class="footer-p">Full Stack Web Developer. I work swiftly with my tools at hand in gettings
+						things done
+						and working across the stack. I am thriving in teams and also decisive and determined when
+						working solo.</p>
 				</div>
 				<div class="col-sm-4">
 					<h6 class="footer-h6">Social</h6>
@@ -74,19 +98,16 @@
 						<li class="list-inline-item">
 							<a target="_blank" href="https://www.facebook.com/johan.kjellin.1">
 								<i class="fab fa-facebook"></i>
-								<span class="sr-only">Facebook</span>
 							</a>
 						</li>
 						<li class="list-inline-item">
 							<a target="_blank" href="#">
 								<i class="fab fa-twitter"></i>
-								<span class="sr-only">Twitter</span>
 							</a>
 						</li>
 						<li class="list-inline-item">
 							<a target="_blank" href="#">
 								<i class="fab fa-linkedin"></i>
-								<span class="sr-only">LinkedIn</span>
 							</a>
 						</li>
 
@@ -94,7 +115,6 @@
 						<li class="list-inline-item">
 							<a target="_blank" href="#">
 								<i class="fab fa-instagram"></i>
-								<span class="sr-only">Instagram</span>
 							</a>
 						</li>
 
