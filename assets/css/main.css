@@ -4,90 +4,86 @@ body {
     margin: 0;
     padding: 0;
     color: #fafafa;
-    font-family: Georgia, sans-serif;
+    font-family: 'lucida sans', sans-serif;
 }
 
 /* ------------------------------------Heading */
 
-.navbar-expand {
-    position: relative;
+nav ul li, button {
+    position: static;
     top: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.8;
-}
-
-.home {
-    position: relative;
-    z-index:1;
+    height: 55px;
+    width: 165px;
     border: none;
-    width: 150px;
-    height: 50px;
+    list-style: none;
+    text-align: center;
     text-transform: uppercase;
     cursor: pointer;
 }
 
+.home {
+    z-index: 2;
+    border: none;
+}
+
 .home a {
-    border: inherit;
-    text-decoration: none;
-}
-
-.slide {
-    width: 150px;
-    height: 50px;
-    position: absolute;
-}
-
-.slide:hover .dropdownMenu {
-    transform:translate(0);
-}
-
-.dropdownMenu {
-    list-style: none;
-    position: absolute;
-    text-transform: uppercase;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 50px;
-    width: 700px;
-    text-align: center;
-    box-shadow: 4px 8px 6px 0px #190419;
-    transform: translate(-550px);
-    transition: transform .35s ease-in-out;
-}
-
-ul li a {
-    outline: none;
     border: none;
     text-decoration: none;
 }
 
+.slide-about {
+    transition: transform .35s ease-in-out;
+    transform: translateX(180px);
+}
+
+.slide-portfolio {
+    box-shadow: 4px 8px 6px 0px #190419;
+    transition: transform .35s ease-in-out;
+    transform: translateX(-180px);
+}
+
+.navitem:hover ~ .slide-about {
+    transform: translateX(180px);
+}
+
+.navitem:hover ~ .slide-portfolio {
+    transform: translateX(-180px);
+}
+
 /* ------------------------------------Colours */
 
+.navbar {
+    background-color: #5E5906;
+}
+
+ul li {
+    background-color: #5E5906;
+    color: #aea842;
+}
+
 ul li a {
-    color: #cbd191; 
+    color: #aea842; 
 }
 
 ul li a:hover {
-    color: #cbd191;
+    color: #fffbb3;
 }
 
 button a {
-    color:inherit;
+    color: #aea842;
 }
 
 button a:hover {
-    color:inherit;
+    color: #fffbb3;
 }
 
-button {
+.home {
     color: #cbd191;
-    background-color: #503f2f;
+    background-color: #5E5906;
 }
 
 .dropdownMenu {
-    background-color: #503f2f;
+    background-color: #55906;
     color: #cbd191;
 }
 

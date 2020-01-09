@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
 	<title>My Resume Website</title>
 
 </head>
@@ -17,26 +17,27 @@
 <body>
 
 	<header>
-		<nav class="navbar-expand">
-			<div class="slide">
-				<button class="hvr-bounce-out home"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home </a></button>
-				<ul class="dropdownMenu navbar">
-					<li class="dropdownitem"> </li>
-					<li class="dropdownitem"> </li>
-					<li class="dropdownitem"><a class="nav-link hvr-bounce-out"
-							href="about.html"><i class="far fa-address-card"></i> About</a></li>
-					<li class="dropdownitem"><a class="nav-link hvr-bounce-out"
-							href="contact.html"><i class="fas fa-comments"></i> Contact</a></li>
-					<li class="dropdownitem"><a class="nav-link hvr-bounce-out"
-							href="portfolio.html"><i class="fas fa-hammer"></i> Portfolio</a></li>
-				</ul>
-			</div>
+		<nav>
+			<ul class="navbar justify-content-center">
+				<li class="nav-item slide-about">
+					<a class="nav-link hvr-bounce-out" href="about.html"><i class="far fa-address-card"></i> About </a>
+				</li>
+				<button class="nav-item home hvr-bounce-in"><a class="nav-link"
+						href="index.html"><i class="fas fa-home"></i>
+						Home </a></button>
+				<li class="nav-item slide-portfolio">
+					<a class="nav-link hvr-bounce-out" href="portfolio.html"><i class="fas fa-hammer"></i> Portfolio
+					</a>
+				</li>
+			</ul>
 		</nav>
 	</header>
 
 	<section class="container-fluid index-section">
 		<div class="row">
-			<div class="col-sm-3 col-md-4"></div>
+			<div class="col-sm-3 col-md-4">
+				<a href="#" class="underline">Pacman</a>
+			</div>
 			<div class="col-sm-6 col-md-4">
 				<div class="me-container">
 					<img class="me" src="assets/images/4.jpg" alt="portrait""></img>
