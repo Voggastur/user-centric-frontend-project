@@ -3,17 +3,26 @@
 body {
     margin: 0;
     padding: 0;
-    color: #fafafa;
     font-family: 'lucida sans', sans-serif;
 }
 
 /* ------------------------------------Heading */
 
-nav ul li, button {
-    position: static;
+nav {
+    height: 0;
+}
+
+nav ul {
+    height: 0;
+}
+
+nav ul li {
+    box-shadow: 4px 8px 6px 0px #190419;
     top: 0;
-    height: 55px;
-    width: 165px;
+    line-height: 25px;
+    font-size: 15px;
+    height: 50px;
+    width: 150px;
     border: none;
     list-style: none;
     text-align: center;
@@ -21,43 +30,59 @@ nav ul li, button {
     cursor: pointer;
 }
 
-.home {
-    z-index: 2;
-    border: none;
+nav ul li a {
+    margin-top: 5px;
 }
 
-.home a {
+.home-button {
+    position: relative;
+    z-index: 1;
+    box-shadow: 4px 8px 6px 0px #190419;
+    font-size: 15px;
+    top: 0;
+    height: 50px;
+    width: 150px;
     border: none;
-    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
 }
 
 .slide-about {
-    transition: transform .35s ease-in-out;
-    transform: translateX(180px);
+    position: relative;
+    transition: all .4s ease-in-out;
+    transform: translateX(150px);
 }
 
 .slide-portfolio {
-    box-shadow: 4px 8px 6px 0px #190419;
-    transition: transform .35s ease-in-out;
-    transform: translateX(-180px);
+    position: relative;
+    transition: all .4s ease-in-out;
+    transform: translateX(-150px);
 }
 
-.navitem:hover ~ .slide-about {
-    transform: translateX(180px);
+.slide {
+    position: relative;
 }
 
-.navitem:hover ~ .slide-portfolio {
-    transform: translateX(-180px);
+.slide:hover .slide-about {
+    transform: translateX(7px);
 }
+
+.slide:hover .slide-portfolio {
+    transform: translateX(-7px);
+}
+
+.slide:hover .home-button {
+    box-shadow: 0px 8px 0px 0px #190419;
+}
+
+
 
 /* ------------------------------------Colours */
 
-.navbar {
-    background-color: #5E5906;
-}
-
 ul li {
-    background-color: #5E5906;
+    background-color: #5e5906;
     color: #aea842;
 }
 
@@ -66,7 +91,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #fffbb3;
+    color: #d5d093;
 }
 
 button a {
@@ -77,41 +102,28 @@ button a:hover {
     color: #fffbb3;
 }
 
-.home {
-    color: #cbd191;
-    background-color: #5E5906;
-}
-
-.dropdownMenu {
-    background-color: #55906;
-    color: #cbd191;
+.home-button {
+    color: #aea842;
+    background-color: #5e5906;
 }
 
 footer {
-    color: #cbd191;
-	background-color: #503f2f;
-}
-
-.me {
-    border: 2px outset #201563;
-}
-
-.me-about {
-    border: 2px outset #201563;
+    color: #aea842;
+	background-color: #5e5906;
 }
 
 .card, .card-about, .card-portfolio {
-    border: 2px outset #201563;
-    background: #503f2f;
-    color: #cbd191;
+    border: 1px solid #201563;
+    background: #5e5906;
+    color: #aea842;
 }
 
 .portfolio-btn-heading a {
-    color: #cdf100;
+    color: #aea842;
 }
 
 .card-body-about a {
-    color: #cbd191;
+    color: #aea842;
 }
 
 h6 i {
@@ -119,7 +131,7 @@ h6 i {
 }
 
 .social-links li a i {
-    color: #cbd191;
+    color: #aea842;
     background: #131581;
 }
 
@@ -132,7 +144,7 @@ h6 i {
 }
 
 .contact-request {
-    color: #cbd191;
+    color: #aea842;
     background-color: #181bc4;
 }
 
@@ -141,7 +153,7 @@ hr {
 }
 
 .section-about {
-    color: #fafafa;
+    color: #aea842;
     text-shadow: 1px 1px #190419;
     font-weight: 900;
 }
@@ -179,14 +191,6 @@ hr {
 }
 
 /* ------------------------------------Section */
-
-a.underline {
-  border-bottom: 1px solid #6c8f3f;
-  transition: 0.5s all;
-}
-a.underline:hover {
-  border-bottom: 3px solid #aa2200
-}
 
 section {
     background:url(../images/horizon-dark.png) no-repeat;
