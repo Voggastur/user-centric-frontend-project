@@ -1,10 +1,8 @@
 /* ------------------------------------General */
 html, body {
-    width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'lucida sans', sans-serif;
+    font-family: verdana, sans-serif;
     background: #e5e5e5;
 }
 
@@ -94,32 +92,29 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-.toptrianglecenter {
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-top: 200px solid #c2b4d6;
-}
+/* ------------------------------------sidebars */
 
-.toptriangleleft {
+.leftbar {
     position: absolute;
-    display: inline-block;
     top: 0;
     left: 0;
-    border-right: 200px solid transparent;
-    border-top: 200px solid #c2b4d6;
+    border-top: 600px solid #57648c;
 }
 
-.toptriangleright {
+.toptrianglecenter {
+    visibility: hidden;
     position: absolute;
-    display: inline-block;
+    top: 0;
+    border-right: 250px solid transparent;
+    border-left: 250px solid transparent;
+    border-top: 250px solid #57648c;
+}
+
+.rightbar {
+    position: absolute;
     top: 0;
     right: 0;
-    border-left: 200px solid transparent;
-    border-top: 200px solid #c2b4d6;
-
+    border-top: 600px solid #57648c;
 }
 
 /* ------------------------------------Colours */
@@ -180,16 +175,11 @@ h6 i {
 }
 
 .social-links li a i:hover {
-    background: #ffbb00;
+    background: #7a3045;
 }
 
 hr {
     border-top: 2px solid #ffbb00;
-}
-
-.section-about {
-    color: #e5e5e5;
-    text-shadow: 1px 1px #190419;
 }
 
 #welcome {
@@ -197,34 +187,14 @@ hr {
 }
 
 .wrap-stacks {
-    background-color: #934a5f;
-}
-
-.stacks-header {
-    color:#57648c;
-}
-
-.stacks-text {
     color: #57648c;
 }
 
 /* ------------------------------------Image attributes */
 
-.me-container {
-    margin: 50px auto;
-    width: 80%;
-    height: 80%;
-}
-
-.me {
-    width: 100%;
-    max-width: 300px;
-    height: 100%;
-    max-height: 400px;
+.me-corner {
     border-radius: 50%;
-    animation-name: load-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
+    padding: 20px;
 }
 
 @keyframes load-zoom {
@@ -244,34 +214,19 @@ hr {
     100%{opacity:.75}
 }
 
-h2 {
+.wrap-stacks {
     position: relative;
-    text-transform: uppercase;
-    font-size: 1em;
-    letter-spacing: .2em;
-    font-weight: 900;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-top: 400px;
 }
 
-#wrap-stacks {
-    margin-top: 2600px;
-}
-
-.stacks-text { 
-    font-size: 1em;
-    font-weight: 500;
-    letter-spacing: .02em;
-    padding-top: 1px;
-}
 
 .stacks-header {
+    text-transform: uppercase;
     text-align: left;
     font-size: 1em;
     letter-spacing: .1em;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 15px;
+    font-weight: 900;
+    margin-bottom: 20px;
     padding-left: 20px;
 }
 
@@ -279,6 +234,12 @@ h2 {
     float: left;
     border-radius: 50%;
     margin: 10px 20px 15px 0;
+}
+
+.stacks-text { 
+    font-size: 1em;
+    font-weight: 500;
+    padding-top: 1px;
 }
 
 .card {
@@ -318,14 +279,29 @@ footer {
 }
 
 .footer-h6 {
+    text-align: left;
+    margin-top: 20px;
+    overflow: none;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+}
+
+.social-h6 {
     text-align: center;
     margin-top: 20px;
     overflow: none;
-    font-size: 20px;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+}
+
+h6 i {
+    text-align: left;
+    padding: 0 5px 5px 0;
 }
 
 .footer-p {
-    text-align: center;
+    letter-spacing: .01em;
+    text-align: left;
     font-size: 16px;
 }
 
@@ -364,7 +340,6 @@ footer {
 }
 
 .section-about {
-    font-weight: 900;
     height: 800px;
 }
 
@@ -430,7 +405,7 @@ hr {
 }
 
 #welcome {
-    margin: 20px 0;
+    margin: 200px 0;
     text-align: center;
     font-size: 280%;
 }
@@ -467,4 +442,33 @@ hr {
     margin-top: 100px;
 }
 
+/* ------------------------------------Media Queries */
 
+@media(min-width: 992px) {
+}
+
+@media(max-width: 768px) {
+    .footer-h6 {
+    text-align:center;
+    }
+    .footer-p {
+    text-align:center;
+    }
+    .footer-h6 i {
+    text-align:center;
+    }
+    .toptriangleleft {
+    display:none;
+    }
+    .toptriangleright {
+    display:none;
+    }
+    .toptrianglecenter {
+    visibility: visible;
+    }
+    .me-corner {
+        display: block;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+}
