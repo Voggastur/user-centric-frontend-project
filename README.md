@@ -2,22 +2,20 @@
 
 #  My Resume Website
 
-The aim of this website is to present myself to potential employers in the best light and showcase my abilities as a front end developer.
-The website itself will be pretty basic at this stage but will provide an easy interface with contextual content for potential employers and assessors to see, 
-however on my portfolio page I will showcase more advanced projects later on in the course.
+The aim of this website is to present myself to potential employers professionally and showcase my abilities as a front end developer.
+The website itself will be pretty basic at this stage but will include more over time as my abilities grow.
 
 
 ## wireframes
 
-Wireframes are in the assets/wireframes folder.
+The wireframes.pdf is in the assets/wireframes folder.
 
-![index](assets/wireframes/index.jpg)
+I changed a lot from my initial wireframes procedurally during the development, 
+it took a lot of time testing better layouts and I learned the importance of a well thought out initial wireframe.
 
-![about](assets/wireframes/about.jpg)
+Initially I changed the heading into a regular bootstrap nav, then I made a custom hovering slidebar, later on as my abilities increased I made the centralised unfolding Home nav.
 
-![contact](assets/wireframes/contact.jpg)
-
-![portfolio](assets/wireframes/portfolio.jpg)
+![wireframes](assets/wireframes/wireframes.pdf)
 
 ## Features
 

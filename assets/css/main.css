@@ -1,17 +1,17 @@
 /* ------------------------------------General */
-
-body {
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: 'lucida sans', sans-serif;
-    background: #201563;
+    background: #e5e5e5;
 }
+
 
 /* ------------------------------------Heading */
 
-nav {
-    height: 0;
-}
-
-nav ul {
+nav, nav ul {
     height: 0;
 }
 
@@ -52,7 +52,7 @@ nav ul li a:hover {
     cursor: pointer;
     box-shadow: 4px 8px 6px 0px #200720;
     transition: all .4s ease-in-out;
-    transform: translateY(0)
+    transform: translateY(0px)
 }
 
 .slide-about {
@@ -94,98 +94,121 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-.toptriangle {
+.toptrianglecenter {
     position: absolute;
-    height: 0;
-    width: 50%;
-    margin-left: 50%;
-    overflow-x: initial;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-top: 210px solid #ed7458;
+    display: inline-block;
+    top: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 200px solid #c2b4d6;
+}
+
+.toptriangleleft {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    border-right: 200px solid transparent;
+    border-top: 200px solid #c2b4d6;
+}
+
+.toptriangleright {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    border-left: 200px solid transparent;
+    border-top: 200px solid #c2b4d6;
+
 }
 
 /* ------------------------------------Colours */
 
 nav ul li {
-    background-color: #8e7c68;
-    color: #ffdc9f;
+    background-color: #57648c;
+    color: #e5e5e5;
 }
 
 nav ul li a {
-    color: #ffdc9f; 
+    color: #e5e5e5; 
 }
 
 nav ul li a:hover {
-    color: #ffdc9f;
+    color: #e5e5e5;
 }
 
 button a {
-    color: #ffdc9f;
+    color: #e5e5e5;
 }
 
 button a:hover {
-    color: #ffdc9f;
+    color: #e5e5e5;
 }
 
 .home-button {
-    color: #ffdc9f;
-    background-color: #8e7c68;
+    color: #e5e5e5;
+    background-color: #57648c;
 }
 
 footer {
-    color: #ffdc9f;
-	background-color: #8e7c68;
+    color: #e5e5e5;
+	background-color: #57648c;
 }
 
 .card, .card-about, .card-portfolio {
     margin-top: 150px;
     border: 1px solid #201563;
-    background: #8e7c68;
-    color: #ffdc9f;
+    background-color: #57648c;
+    color: #e5e5e5;
 }
 
 .portfolio-btn-heading a {
-    color: #ffdc9f;
+    color: #e5e5e5;
 }
 
 .card-body-about a {
-    color: #ffdc9f;
+    color: #e5e5e5;
 }
 
 h6 i {
-    color: #ed7458;
+    color: #c2b4d6;
 }
 
 .social-links li a i {
-    color: #ffdc9f;
-    background: #ed7458;
+    color: #e5e5e5;
+    background: #934a5f;
 }
 
 .social-links li a i:hover {
-    background: #bb5c46;
+    background: #ffbb00;
 }
 
 hr {
-    border-top: 2px solid #ed7458;
+    border-top: 2px solid #ffbb00;
 }
 
 .section-about {
-    color: #ffdc9f;
+    color: #e5e5e5;
     text-shadow: 1px 1px #190419;
-    font-weight: 900;
 }
 
 #welcome {
     text-shadow: 3px 3px #190419;    
 }
 
-/* ------------------------------------Image attributes */
-
-main {
-    background:url(../images/vektor.jpg) no-repeat;
-    background-size: cover;
+.wrap-stacks {
+    background-color: #934a5f;
 }
+
+.stacks-header {
+    color:#57648c;
+}
+
+.stacks-text {
+    color: #57648c;
+}
+
+/* ------------------------------------Image attributes */
 
 .me-container {
     margin: 50px auto;
@@ -215,9 +238,47 @@ main {
 
 /* ------------------------------------Section */
 
-main {
-    padding: 0;
-    height: 100%;
+@keyframes fade {
+    0%{opacity:.75}
+    50%{opacity:0}
+    100%{opacity:.75}
+}
+
+h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: .2em;
+    font-weight: 900;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#wrap-stacks {
+    margin-top: 2600px;
+}
+
+.stacks-text { 
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: .02em;
+    padding-top: 1px;
+}
+
+.stacks-header {
+    text-align: left;
+    font-size: 1em;
+    letter-spacing: .1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.stacks-logo {
+    float: left;
+    border-radius: 50%;
+    margin: 10px 20px 15px 0;
 }
 
 .card {
@@ -236,13 +297,6 @@ main {
     width: 90%;
 }
 
-.card-portfolio {
-    opacity: 0.7;
-    height: 90%;
-    width: 100%;
-    margin: 30px;
-}
-
 .card-title {
     text-align: center;
     margin-top: 20px;
@@ -255,26 +309,11 @@ main {
     margin-top: 15px;
 }
 
-.card-p-portfolio {
-    text-align: center;
-    font-size: 14px;
-    margin: 10px 0;
-}
-
-.portfolio-btn-heading {
-    text-align: center;
-}
-
-.card-body a {
-    height: 40px;
-    font-size: 15px;
-    margin-top: 20px;
-}
-
 /* ------------------------------------Footer */
 
 footer {
     position: relative;
+    bottom: 0;
     height: wrap;
 }
 
@@ -309,7 +348,7 @@ footer {
     -o-transition: all 0.4s ease-in-out;
 }
 
-/* ------------------------------------About alignments */
+/* ------------------------------------About */
 
 .me-about {
     margin-top: 60px;
@@ -325,7 +364,7 @@ footer {
 }
 
 .section-about {
-    font-weight: 600;
+    font-weight: 900;
     height: 800px;
 }
 
@@ -396,40 +435,36 @@ hr {
     font-size: 280%;
 }
 
-/* ------------------------------------Contact */
 
-.contact-section {
-    height: 800px;
+/* ------------------------------------Portfolio */
+
+.card-portfolio {
+    opacity: 0.7;
+    height: 90%;
+    width: 100%;
+    margin: 30px;
 }
+
+.card-p-portfolio {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.portfolio-btn-heading {
+    text-align: center;
+}
+
+.card-body a {
+    height: 40px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/* ------------------------------------Contact */
 
 .contact-column {
     margin-top: 100px;
 }
 
-.contact1 {
-    text-align: center;
-    margin-top: 200px;
-    margin-bottom: 30px;
-}
-
-.contact2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.contact-request {
-    border: none;
-    display: block;
-    margin: 0 auto;
-    height: 50px;
-    width: 150px;
-}
-
-.contact-request a {
-    outline: none;
-    border: 0;
-    text-decoration: none;
-}
-
-/* ------------------------------------Portfolio */
 

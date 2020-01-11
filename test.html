@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
 	<title>My Resume Website</title>
 
 </head>
@@ -35,7 +35,45 @@
 		</nav>
 	</header>
 
-	<main>
+	<div class="container">
+		<div class="row justify-content-around">
+			<div class="col-2 ml-auto toptriangleleft"></div>
+			<div class="col-4 m-auto toptrianglecenter"></div>
+			<div class="col-2 mr-auto toptriangleright"></div>
+		</div>
+	</div>
+
+	<main class="container-fluid">
+		<div id="row wrap-stacks">
+			<div class="col-md-5 stacks">
+				<img src="assets/images/DSC_0238.JPG" class="stacks-logo" width="50px" height="50px">
+				<h2 class="stacks-header">Web Development</h2>
+				<p class="stacks-text">
+					I am a creative frontend developer with a knack for technology.
+					The established methods of <strong>Progressive Enhancement</strong> and
+					<strong>Responsive Design</strong> are duly followed to craft websites with organized code
+					which is easy to modify or upgrade by another person at another time.
+				</p>
+			</div>
+
+			<div class="col-md-5 stacks">
+				<img src="assets/images/DSC_0238.JPG" class="stacks-logo" width="50px" height="50px">
+				<h2 class="stacks-header">UI design</h2>
+				<p class="stacks-text">
+					I am accomplished in UI design and make custom logotypes, illustrations, shapes and forms.
+					That gives an edge in frontend development as it synergizes well with UX design.
+				</p>
+			</div>
+
+			<div class="col-md-5 stacks">
+				<img src="assets/images/DSC_0238.JPG" class="stacks-logo" width="50px" height="50px">
+				<h2 class="stacks-header">Frameworks</h2>
+				<p class="stacks-text">
+					I command an extensive knowledge of Bootstrap.<br>
+                        While it may impede the degree of customization Bootstrap speeds up the development process considerably.
+					</p>
+			</div>
+		</div>
 
 		<section class="container-fluid index-section">
 			<div class="row">
@@ -44,8 +82,8 @@
 				<div class="col-sm-6 col-md-3">
 				</div>
 				<div class="col-sm-3 col-md-4"></div>
-                <div class="col-md-3"></div>
-                <div class="col-md-1"></div>
+				<div class="col-md-3"></div>
+				<div class="col-md-1"></div>
 			</div>
 			<div class="row">
 				<div class="col-sm-1 col-md-2 col-lg-3"></div>
@@ -85,7 +123,7 @@
     </select>
 						</div>
 						<div class="form-group">
-							<label for="exampleFormControlTextarea1">Project Parameters</label>
+							<label for="exampleFormControlTextarea1">Example textarea</label>
 							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 							<button type="submit" class="btn btn-primary mb-2"> Send</button>
 						</div>
