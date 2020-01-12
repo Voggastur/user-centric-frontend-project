@@ -92,16 +92,17 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-/* ------------------------------------sidebars */
+/* ------------------------------------Sidebars */
 
 .leftbar {
     position: absolute;
     top: 0;
     left: 0;
-    border-top: 600px solid #57648c;
+    height: 500px;
+    background-color: #57648c;
 }
 
-.toptrianglecenter {
+.topcenter {
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -114,47 +115,27 @@ nav ul li a:hover {
     position: absolute;
     top: 0;
     right: 0;
-    border-top: 600px solid #57648c;
+    border-top: 500px solid #57648c;
 }
 
 /* ------------------------------------Colours */
 
-nav ul li {
+nav ul li, .home-button, footer {
     background-color: #57648c;
     color: #e5e5e5;
 }
 
-nav ul li a {
+nav ul li a, button a, .form-group button[type=submit] {
     color: #e5e5e5; 
 }
 
-nav ul li a:hover {
+nav ul li a:hover, button a:hover {
     color: #e5e5e5;
 }
 
-button a {
-    color: #e5e5e5;
-}
-
-button a:hover {
-    color: #e5e5e5;
-}
-
-.home-button {
-    color: #e5e5e5;
-    background-color: #57648c;
-}
-
-footer {
-    color: #e5e5e5;
-	background-color: #57648c;
-}
-
-.card, .card-about, .card-portfolio {
-    margin-top: 150px;
-    border: 1px solid #201563;
-    background-color: #57648c;
-    color: #e5e5e5;
+#card, .card-about, .card-portfolio {
+	background-color: #e5e5e5;
+    color: #57648c;
 }
 
 .portfolio-btn-heading a {
@@ -186,15 +167,97 @@ hr {
     text-shadow: 3px 3px #190419;    
 }
 
-.wrap-stacks {
-    color: #57648c;
+.wrap-stack {
+    border: 1px solid #e5e5e5;
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+.leftbar, .left-title, .left-title2, .left-text2, .rightbar {
+    color: #e5e5e5;
 }
 
 /* ------------------------------------Image attributes */
 
-.me-corner {
-    border-radius: 50%;
+
+/* ------------------------------------Section Left Bar */
+
+.left-me {
+    margin: 0 auto;
     padding: 20px;
+    border-radius: 50%;
+}
+
+.left-title {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.3em;
+    word-spacing: .15em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.left-title2 {
+    text-align: center;
+    font-size: 15px;
+    word-spacing: .1em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.left-text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+/* ------------------------------------Section Skills Card */
+
+.wrap-stack {
+    position: relative;
+    animation-name: load-zoom;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.stacks-logo {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.stacks-header {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 1em;
+    letter-spacing: .1em;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.stacks-text { 
+    font-size: 14px;
+    font-weight: 100;
+}
+
+/* ------------------------------------Section Presentation Card */
+
+#card {
+    position: relative;
+    margin-top: 250px;
+    height: 250px;
+    animation-name: load-zoom;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.me-card {
+    float: left;
+    border-radius: 50%;
+    padding-right: 30px;
+    margin: 10px 0 0 15px;
 }
 
 @keyframes load-zoom {
@@ -206,66 +269,14 @@ hr {
     }
 }
 
-/* ------------------------------------Section */
-
-@keyframes fade {
-    0%{opacity:.75}
-    50%{opacity:0}
-    100%{opacity:.75}
-}
-
-.wrap-stacks {
-    position: relative;
-    margin-top: 400px;
-}
-
-
-.stacks-header {
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 1em;
-    letter-spacing: .1em;
-    font-weight: 900;
-    margin-bottom: 20px;
-    padding-left: 20px;
-}
-
-.stacks-logo {
-    float: left;
-    border-radius: 50%;
-    margin: 10px 20px 15px 0;
-}
-
-.stacks-text { 
-    font-size: 1em;
-    font-weight: 500;
-    padding-top: 1px;
-}
-
-.card {
-    margin-top: 200px;
-    opacity: 0.8;
-    display: block;
-    margin-bottom: 30px auto;
-    width: 100%;
-    animation-name: load-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-}
-
-.card-body {
-    margin: 0 auto;
-    width: 90%;
-}
-
 .card-title {
-    text-align: center;
-    margin-top: 20px;
+    text-align: left;
+    margin-top: 10px;
 }
 
 .card-text {
-    width: 90%;
-    text-align: center;
+    width: 80%;
+    text-align: left;
     font-size: 14px;
     margin-top: 15px;
 }
@@ -273,41 +284,43 @@ hr {
 /* ------------------------------------Footer */
 
 footer {
-    position: relative;
     bottom: 0;
-    height: wrap;
+    height: 100%;
 }
 
 .footer-h6 {
     text-align: left;
-    margin-top: 20px;
-    overflow: none;
+    margin: 20px;
     font-size: 1.1em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
 }
 
 .social-h6 {
     text-align: center;
     margin-top: 20px;
-    overflow: none;
     font-size: 1.1em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
+}
+
+.social-h6 i {
+    padding-right: 25px;
 }
 
 h6 i {
     text-align: left;
-    padding: 0 5px 5px 0;
+    padding-right: 5px;
 }
 
 .footer-p {
     letter-spacing: .01em;
     text-align: left;
-    font-size: 16px;
+    font-size: 1em;
+    padding-left: 15px;
 }
 
 .social-links {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .social-links li a i {
@@ -366,7 +379,6 @@ h6 i {
 }
 
 hr {
-    margin: 5px 0 0 0 auto;
     width: 100%;
 }
 
@@ -410,7 +422,6 @@ hr {
     font-size: 280%;
 }
 
-
 /* ------------------------------------Portfolio */
 
 .card-portfolio {
@@ -442,11 +453,30 @@ hr {
     margin-top: 100px;
 }
 
-/* ------------------------------------Media Queries */
-
-@media(min-width: 992px) {
+.form-group button[type=submit] {
+    width: 100%;
 }
 
+/* ------------------------------------Media Queries */
+
+@media(max-width: 1200px) {
+    .left-me, .left-title, .left-text1, .left-text2 {
+        visibility: hidden;
+    }
+    .leftbar, .rightbar {
+        display: none;
+    }
+    .me-card {
+        visibility: visible;
+    }
+}
+
+@media(max-width: 992px) {
+    .topcenter {
+    visibility: visible;
+    }
+}
+    
 @media(max-width: 768px) {
     .footer-h6 {
     text-align:center;
@@ -456,19 +486,5 @@ hr {
     }
     .footer-h6 i {
     text-align:center;
-    }
-    .toptriangleleft {
-    display:none;
-    }
-    .toptriangleright {
-    display:none;
-    }
-    .toptrianglecenter {
-    visibility: visible;
-    }
-    .me-corner {
-        display: block;
-        margin: 0 auto;
-        margin-top: 100px;
     }
 }
