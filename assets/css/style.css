@@ -5,12 +5,16 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: "roboto", sans-serif;
+    font-family: "Lato", sans-serif;
     background: #e5e5e5;
 }
 
 
 /* ------------------------------------Heading */
+
+nav i {
+    margin-right: 2px;
+}
 
 nav, nav ul {
     height: 0;
@@ -96,124 +100,42 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-/* ------------------------------------Colours */
-
-nav ul li, .home-button, .home-button a {
-    background-color: #57648c;
-    color: #e5e5e5;
-}
-
-nav ul li a:hover, .homebutton:hover {
-    color: #e5e5e5;
-}
-
-footer {
-    background-color: #57648c;
-    color: #e5e5e5;
-}
-
-nav ul li a, .form-group button[type=submit] {
-    color: #e5e5e5; 
-}
-
-.middlecard, .card-about, .card-portfolio {
-	background-color: #e5e5e5;
-    color: #57648c;
-}
-
-.portfolio-btn-heading a {
-    color: #e5e5e5;
-}
-
-.card-body-about a {
-    color: #e5e5e5;
-}
-
-footer i {
-    color: #e5e5e5;
-}
-
-.social-links li a i {
-    background: #934a5f;
-}
-
-.social-links li a i:hover {
-    background: #7a3045;
-}
-
-hr {
-    border-top: 2px solid #ffbb00;
-}
-
-#welcome {
-    text-shadow: 3px 3px #190419;    
-}
-
-.wrap-stack, .card-title i {
-    background-color: #57648c;
-    color: #e5e5e5;
-}
-
-.leftbar, .left-title, .left-title2, .left-text2, .rightbar {
-    color: #e5e5e5;
-}
-
-.form-group, .contact-heading {
-    color: #57648c;
-}
-
-.form-group button[type=submit] {
-    background-color: #57648c;
-    color: #e5e5e5;
-}
-
-.form-group button[type=submit]:hover {
-    background-color: #57648c;
-    color: #e5e5e5;
-}
-
-.progressbar-card {
-    background-color: #57648c;
-    color: #e5e5e5;
-}
-
-/* ------------------------------------Sidebars */
-
-.leftbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 450px;
-    background-color: #57648c;
-}
-
-.rightbar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 450px;
-    background-color: #57648c;
-}
+/* ------------------------------------Top aligned sidebars */
 
 .triangleleft {
-    transform: translateX(-30px);
     visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
-    border-right: 150px solid transparent;
-    border-top: 150px solid #57648c;
+    border-right: 50px solid transparent;
+    border-top: 80px solid #57648c;
 }
 
 .triangleright {
-    transform: translateX(30px);
     visibility: hidden;
     position: absolute;
     top: 0;
     right :0;
-    border-left: 150px solid transparent;
-    border-top: 150px solid #57648c;
+    border-left: 50px solid transparent;
+    border-top: 80px solid #57648c;
+}
 
+.topbar {
+    height: 0;
+}
+
+.rightbar {
+    position: static;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.leftbar {
+    position: static;
+    top: 0;
+    left: 0;
+    height: 100%;
 }
 
 /* ------------------------------------Section Left Bar */
@@ -221,17 +143,16 @@ hr {
 .left-me {
     display: block;
     margin: 0 auto;
-    padding: 10px;
     border-radius: 50%;
+    padding: 10px;
 }
 
 .left-title {
-    font-family: "Oswald", sans-serif;
     text-transform: capitalize;
     text-align: center;
     font-style: italic;
     font-size: 20px;
-    word-spacing: .2em;
+    word-spacing: .15em;
     letter-spacing: 0.1em;
     font-weight: 400;
     margin: 10px 0px;
@@ -252,65 +173,77 @@ hr {
     margin-top: 25px
 }
 
-/* ------------------------------------Section Right Bar */
-
-.progress {
-    height: 20px;
-    margin: 10px;
-}
-
-.progress-type {
-    position: absolute;
-    font-style: oblique;
-    left: 0px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-/* ------------------------------------Section progressbar-card */
-
-.progressbar-card {
-    animation-name: load-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    margin-top: 150px;
-}
-
 /* ------------------------------------Section Presentation Card */
 
 .middlecard {
+    position: relative;
+    font-family: "Roboto", sans-serif;
     visibility: hidden;
-    height: 200px;
     animation-name: load-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    margin-top: 150px;
+    height: 100%;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 .me-card {
     visibility: hidden;
+    display: block;
+    margin: 30px;
     border-radius: 50%;
-    margin: 20px 10px 10px 20px;
 }
 
 .card-title {
     visibility: hidden;
     text-align: left;
-    margin: 20px 0;
+    margin: 20px 0 10px;
     font-weight:600;
+}
+
+.card-hr {
+    width: 60%;
 }
 
 .card-title2 {
     visibility: hidden;
     text-align: left;
-    margin: 15px;
+    margin-bottom: 10px;
 }
 
 .card-text {
     visibility: hidden;
     text-align: left;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
+}
+
+.skills {
+    height: 100%;
+    overflow: wrap;
+}
+
+/* -----------------------------------Section Progress */
+
+.progress {
+    height: 15px;
+    margin-top: 10px;
+}
+
+.progress-text {
+    position: relative;
+    font-style: italic;
+    text-align: center;
+    color: #fafafa;
+    left: 0px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.progressbar-card {
+    animation-name: load-zoom;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 /* ------------------------------------Section Skills Card */
@@ -319,8 +252,7 @@ hr {
     animation-name: load-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    height: 200px;
-    margin-top: 150px;
+    padding: 10px;
 }
 
 @keyframes load-zoom {
@@ -444,7 +376,7 @@ footer i {
     margin: 0 auto;
 }
 
-hr {
+.right-about-heading hr, .left-about-heading hr {
     width: 100%;
 }
 
@@ -515,9 +447,8 @@ hr {
 
 /* ------------------------------------Contact */
 
-.contact-column {
-    margin-top: 50px;
-    padding-bottom: 50px;
+.contact-form {
+    margin: 50px 0;
 }
 
 .form-group button[type=submit] {
@@ -531,6 +462,99 @@ hr {
     margin: 20px 0 10px;
 }
 
+/* ------------------------------------Colours */
+
+nav ul li, .home-button, .home-button a {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+nav ul li a:hover, .homebutton:hover {
+    color: #e5e5e5;
+}
+
+footer {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+.footer-h6 i, .social-h6 i {
+    color: #ffbb00;
+}
+
+nav ul li a, .form-group button[type=submit] {
+    color: #e5e5e5; 
+}
+
+.card-about, .card-portfolio {
+	background-color: #e5e5e5;
+    color: #57648c;
+}
+
+.middlecard {
+    color: #57648c;
+}
+
+.portfolio-btn-heading a {
+    color: #e5e5e5;
+}
+
+.card-body-about a {
+    color: #e5e5e5;
+}
+
+.social-links li a i {
+    background: #2a47a0;
+    color: #e5e5e5;
+}
+
+.social-links li a i:hover {
+    background: #133394;
+}
+
+.right-about-heading hr, .left-about-heading hr {
+    border-top: 2px solid #ffbb00;
+}
+
+.card-hr, .leftbar hr {
+    border-top: 2px solid #c2b4d6;
+}
+
+#welcome {
+    text-shadow: 3px 3px #190419;    
+}
+
+.left-title, .left-title2, .left-text2 {
+    color: #e5e5e5;
+}
+
+.form-group, .contact-heading {
+    color: #57648c;
+}
+
+.form-group button[type=submit] {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+.form-group button[type=submit]:hover {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+.wrap-stack, .card-title i {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+.progress {
+    background-color: #C2B4D6;
+}
+
+.leftbar, .rightbar {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
 
 /* ------------------------------------Media Queries */
 
@@ -538,8 +562,8 @@ hr {
 }
 
 @media(max-width: 992px) {
-    .leftbar, .rightbar, .left-me, .left-title, .left-text1, .left-text2 {
-        visibility: hidden;
+    .leftbar, .rightbar, .left-me, .left-title, .left-title2, .left-text2 {
+        display: none;
     }
     .triangleleft {
         visibility: visible;
@@ -547,16 +571,23 @@ hr {
     .triangleright {
         visibility: visible;
     }
-    .middlecard, .me-card, .card-title, .card-title2, .card-text, .progress-card {
+    .me-card, .card-title, .card-title2, .card-text, .progress-card {
         visibility: visible;
     }
-    .wrap-stack {
-        margin: 0;
+    .middlecard {
+        visibility: visible;
+        margin-top: 120px;
+    }
+    .me-card {
+        margin: 0 auto;
+    }
+    .card-title, .card-title2, .card-text {
+        text-align: center;
     }
     .progressbar-card {
-        margin: 0;
-        color: #57648c;
-        background-color: #e5e5e5;
+        margin-top: 30px;
+    }
+    .wrap-stack {
     }
 }
     
@@ -573,4 +604,5 @@ hr {
 }
 
 @media(max-width: 576px) {
-    }
+}
+ 

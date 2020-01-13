@@ -5,12 +5,16 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: "roboto", sans-serif;
+    font-family: "Lato", sans-serif;
     background: #e5e5e5;
 }
 
 
 /* ------------------------------------Heading */
+
+nav i {
+    margin-right: 2px;
+}
 
 nav, nav ul {
     height: 0;
@@ -112,12 +116,20 @@ footer {
     color: #e5e5e5;
 }
 
+.footer-h6 i, .social-h6 i {
+    color: #ffbb00;
+}
+
 nav ul li a, .form-group button[type=submit] {
     color: #e5e5e5; 
 }
 
-.middlecard, .card-about, .card-portfolio {
+.card-about, .card-portfolio {
 	background-color: #e5e5e5;
+    color: #57648c;
+}
+
+.middlecard {
     color: #57648c;
 }
 
@@ -129,16 +141,13 @@ nav ul li a, .form-group button[type=submit] {
     color: #e5e5e5;
 }
 
-footer i {
+.social-links li a i {
+    background: #2a47a0;
     color: #e5e5e5;
 }
 
-.social-links li a i {
-    background: #934a5f;
-}
-
 .social-links li a i:hover {
-    background: #7a3045;
+    background: #133394;
 }
 
 hr {
@@ -147,11 +156,6 @@ hr {
 
 #welcome {
     text-shadow: 3px 3px #190419;    
-}
-
-.wrap-stack, .card-title i {
-    background-color: #57648c;
-    color: #e5e5e5;
 }
 
 .leftbar, .left-title, .left-title2, .left-text2, .rightbar {
@@ -172,28 +176,23 @@ hr {
     color: #e5e5e5;
 }
 
+.wrap-stack, .card-title i {
+    color: #57648c;
+}
+
 .progressbar-card {
-    background-color: #57648c;
-    color: #e5e5e5;
+    color: #57648c;
 }
 
-/* ------------------------------------Sidebars */
+.progress {
+    background-color: #C2B4D6;
+}
 
-.leftbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 450px;
+.leftbar, .rightbar {
     background-color: #57648c;
 }
 
-.rightbar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 450px;
-    background-color: #57648c;
-}
+/* ------------------------------------Top aligned sidebars */
 
 .triangleleft {
     transform: translateX(-30px);
@@ -213,7 +212,24 @@ hr {
     right :0;
     border-left: 150px solid transparent;
     border-top: 150px solid #57648c;
+}
 
+.topbar {
+    height: 0;
+}
+
+.rightbar {
+    position: relative;
+    top: 0;
+    right: 0;
+    height: var(.leftbar);
+}
+
+.leftbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
 }
 
 /* ------------------------------------Section Left Bar */
@@ -221,17 +237,16 @@ hr {
 .left-me {
     display: block;
     margin: 0 auto;
-    padding: 10px;
     border-radius: 50%;
+    padding: 10px;
 }
 
 .left-title {
-    font-family: "Oswald", sans-serif;
     text-transform: capitalize;
     text-align: center;
     font-style: italic;
     font-size: 20px;
-    word-spacing: .2em;
+    word-spacing: .15em;
     letter-spacing: 0.1em;
     font-weight: 400;
     margin: 10px 0px;
@@ -252,58 +267,36 @@ hr {
     margin-top: 25px
 }
 
-/* ------------------------------------Section Right Bar */
-
-.progress {
-    height: 20px;
-    margin: 10px;
-}
-
-.progress-type {
-    position: absolute;
-    font-style: oblique;
-    left: 0px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-/* ------------------------------------Section progressbar-card */
-
-.progressbar-card {
-    animation-name: load-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    margin-top: 150px;
-}
-
 /* ------------------------------------Section Presentation Card */
 
 .middlecard {
+    font-family: "Roboto", sans-serif;
     visibility: hidden;
-    height: 200px;
     animation-name: load-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    margin-top: 150px;
+    height: 100%;
+    margin-top: 10px;
 }
 
 .me-card {
     visibility: hidden;
+    display: block;
+    margin: 30px;
     border-radius: 50%;
-    margin: 20px 10px 10px 20px;
 }
 
 .card-title {
     visibility: hidden;
     text-align: left;
-    margin: 20px 0;
+    margin: 20px 0 10px;
     font-weight:600;
 }
 
 .card-title2 {
     visibility: hidden;
     text-align: left;
-    margin: 15px;
+    margin-bottom: 10px;
 }
 
 .card-text {
@@ -313,14 +306,36 @@ hr {
     font-weight: 300;
 }
 
+/* -----------------------------------Section Progress */
+
+.progress {
+    height: 15px;
+    margin-top: 10px;
+}
+
+.progress-text {
+    position: relative;
+    font-style: italic;
+    text-align: center;
+    color: #fafafa;
+    left: 0px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.progressbar-card {
+    animation-name: load-zoom;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
 /* ------------------------------------Section Skills Card */
 
 .wrap-stack {
     animation-name: load-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    height: 200px;
-    margin-top: 150px;
+    overflow: wrap;
 }
 
 @keyframes load-zoom {
@@ -538,7 +553,10 @@ hr {
 }
 
 @media(max-width: 992px) {
-    .leftbar, .rightbar, .left-me, .left-title, .left-text1, .left-text2 {
+    .leftbar, .rightbar {
+        visibility: hidden;
+    }
+    .left-me, .left-title, .left-title2, .left-text2 {
         visibility: hidden;
     }
     .triangleleft {
@@ -547,16 +565,17 @@ hr {
     .triangleright {
         visibility: visible;
     }
-    .middlecard, .me-card, .card-title, .card-title2, .card-text, .progress-card {
+    .me-card, .card-title, .card-title2, .card-text, .progress-card {
+        visibility: visible;
+    }
+    .middlecard {
         visibility: visible;
     }
     .wrap-stack {
-        margin: 0;
+        margin-top: 30px;
     }
     .progressbar-card {
-        margin: 0;
-        color: #57648c;
-        background-color: #e5e5e5;
+        margin-top: 30px;
     }
 }
     
@@ -570,7 +589,15 @@ hr {
     .footer-h6 i {
     text-align:center;
     }
+    .me-card {
+        margin: 0 auto;
+    }
+    .card-title, .card-title2, .card-text {
+        text-align: center;
+    }
+    
 }
 
 @media(max-width: 576px) {
-    }
+}
+ 
