@@ -1,8 +1,11 @@
-/* ------------------------------------General */
+/* ------------------------------------Fonts and General */
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald|Roboto&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
-    font-family: verdana, sans-serif;
+    font-family: "roboto", sans-serif;
     background: #e5e5e5;
 }
 
@@ -11,6 +14,7 @@ html, body {
 
 nav, nav ul {
     height: 0;
+    font-family: "lato", sans-serif;
 }
 
 nav ul li {
@@ -92,48 +96,27 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-/* ------------------------------------Sidebars */
-
-.leftbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 500px;
-    background-color: #57648c;
-}
-
-.topcenter {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    border-right: 250px solid transparent;
-    border-left: 250px solid transparent;
-    border-top: 250px solid #57648c;
-}
-
-.rightbar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-top: 500px solid #57648c;
-}
-
 /* ------------------------------------Colours */
 
-nav ul li, .home-button, footer {
+nav ul li, .home-button, .home-button a {
     background-color: #57648c;
     color: #e5e5e5;
 }
 
-nav ul li a, button a, .form-group button[type=submit] {
+nav ul li a:hover, .homebutton:hover {
+    color: #e5e5e5;
+}
+
+footer {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+nav ul li a, .form-group button[type=submit] {
     color: #e5e5e5; 
 }
 
-nav ul li a:hover, button a:hover {
-    color: #e5e5e5;
-}
-
-#card, .card-about, .card-portfolio {
+.middlecard, .card-about, .card-portfolio {
 	background-color: #e5e5e5;
     color: #57648c;
 }
@@ -146,12 +129,11 @@ nav ul li a:hover, button a:hover {
     color: #e5e5e5;
 }
 
-h6 i {
-    color: #c2b4d6;
+footer i {
+    color: #e5e5e5;
 }
 
 .social-links li a i {
-    color: #e5e5e5;
     background: #934a5f;
 }
 
@@ -167,8 +149,7 @@ hr {
     text-shadow: 3px 3px #190419;    
 }
 
-.wrap-stack {
-    border: 1px solid #e5e5e5;
+.wrap-stack, .card-title i {
     background-color: #57648c;
     color: #e5e5e5;
 }
@@ -177,87 +158,169 @@ hr {
     color: #e5e5e5;
 }
 
-/* ------------------------------------Image attributes */
+.form-group, .contact-heading {
+    color: #57648c;
+}
 
+.form-group button[type=submit] {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+.form-group button[type=submit]:hover {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+.progressbar-card {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+/* ------------------------------------Sidebars */
+
+.leftbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 450px;
+    background-color: #57648c;
+}
+
+.rightbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 450px;
+    background-color: #57648c;
+}
+
+.triangleleft {
+    transform: translateX(-30px);
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 150px solid transparent;
+    border-top: 150px solid #57648c;
+}
+
+.triangleright {
+    transform: translateX(30px);
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right :0;
+    border-left: 150px solid transparent;
+    border-top: 150px solid #57648c;
+
+}
 
 /* ------------------------------------Section Left Bar */
 
 .left-me {
+    display: block;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     border-radius: 50%;
 }
 
 .left-title {
+    font-family: "Oswald", sans-serif;
     text-transform: capitalize;
     text-align: center;
-    font-size: 1.3em;
-    word-spacing: .15em;
-    font-weight: 500;
-    margin-bottom: 10px;
     font-style: italic;
+    font-size: 20px;
+    word-spacing: .2em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    margin: 10px 0px;
 }
 
 .left-title2 {
     text-align: center;
-    font-size: 15px;
-    word-spacing: .1em;
-    font-weight: 500;
-    margin-bottom: 30px;
     font-style: italic;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .left-text {
     text-align: center;
     font-size: 14px;
     font-weight: 100;
+    margin-top: 25px
+}
+
+/* ------------------------------------Section Right Bar */
+
+.progress {
+    height: 20px;
+    margin: 10px;
+}
+
+.progress-type {
+    position: absolute;
+    font-style: oblique;
+    left: 0px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ------------------------------------Section progressbar-card */
+
+.progressbar-card {
+    animation-name: load-zoom;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    margin-top: 150px;
+}
+
+/* ------------------------------------Section Presentation Card */
+
+.middlecard {
+    visibility: hidden;
+    height: 200px;
+    animation-name: load-zoom;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    margin-top: 150px;
+}
+
+.me-card {
+    visibility: hidden;
+    border-radius: 50%;
+    margin: 20px 10px 10px 20px;
+}
+
+.card-title {
+    visibility: hidden;
+    text-align: left;
+    margin: 20px 0;
+    font-weight:600;
+}
+
+.card-title2 {
+    visibility: hidden;
+    text-align: left;
+    margin: 15px;
+}
+
+.card-text {
+    visibility: hidden;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 /* ------------------------------------Section Skills Card */
 
 .wrap-stack {
-    position: relative;
     animation-name: load-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-}
-
-.stacks-logo {
-    display: inline-block;
-    border-radius: 50%;
-}
-
-.stacks-header {
-    display: inline-block;
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 1em;
-    letter-spacing: .1em;
-    font-weight: 600;
-    margin: 10px;
-}
-
-.stacks-text { 
-    font-size: 14px;
-    font-weight: 100;
-}
-
-/* ------------------------------------Section Presentation Card */
-
-#card {
-    position: relative;
-    margin-top: 250px;
-    height: 250px;
-    animation-name: load-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-}
-
-.me-card {
-    float: left;
-    border-radius: 50%;
-    padding-right: 30px;
-    margin: 10px 0 0 15px;
+    height: 200px;
+    margin-top: 150px;
 }
 
 @keyframes load-zoom {
@@ -269,16 +332,23 @@ hr {
     }
 }
 
-.card-title {
+.stacks-header {
+    display: inline-block;
+    text-transform: capitalize;
     text-align: left;
-    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: .1em;
+    font-weight: 600;
+    margin-top: 5px;
 }
 
-.card-text {
-    width: 80%;
-    text-align: left;
+.stacks-header i {
+    padding-right: 5px;
+}
+
+.stacks-text { 
     font-size: 14px;
-    margin-top: 15px;
+    font-weight: 300;
 }
 
 /* ------------------------------------Footer */
@@ -302,13 +372,9 @@ footer {
     letter-spacing: 0.05em;
 }
 
-.social-h6 i {
-    padding-right: 25px;
-}
-
-h6 i {
+footer i {
     text-align: left;
-    padding-right: 5px;
+    padding-right: 2px;
 }
 
 .footer-p {
@@ -450,30 +516,47 @@ hr {
 /* ------------------------------------Contact */
 
 .contact-column {
-    margin-top: 100px;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 .form-group button[type=submit] {
     width: 100%;
 }
 
+.contact-heading {
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin: 20px 0 10px;
+}
+
+
 /* ------------------------------------Media Queries */
 
 @media(max-width: 1200px) {
-    .left-me, .left-title, .left-text1, .left-text2 {
-        visibility: hidden;
-    }
-    .leftbar, .rightbar {
-        display: none;
-    }
-    .me-card {
-        visibility: visible;
-    }
 }
 
 @media(max-width: 992px) {
-    .topcenter {
-    visibility: visible;
+    .leftbar, .rightbar, .left-me, .left-title, .left-text1, .left-text2 {
+        visibility: hidden;
+    }
+    .triangleleft {
+        visibility: visible;
+    }
+    .triangleright {
+        visibility: visible;
+    }
+    .middlecard, .me-card, .card-title, .card-title2, .card-text, .progress-card {
+        visibility: visible;
+    }
+    .wrap-stack {
+        margin: 0;
+    }
+    .progressbar-card {
+        margin: 0;
+        color: #57648c;
+        background-color: #e5e5e5;
     }
 }
     
@@ -488,3 +571,6 @@ hr {
     text-align:center;
     }
 }
+
+@media(max-width: 576px) {
+    }
