@@ -36,8 +36,6 @@ nav i {
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-    background-color: #57648c;
-    color: #e5e5e5;
 }
 
 .nav-link {
@@ -107,7 +105,7 @@ nav i {
     position: absolute;
     top: 0;
     left: 0;
-    border-right: 80px solid transparent;
+    border-right: 100px solid transparent;
     border-top: 50px solid #57648c;
 }
 
@@ -116,7 +114,7 @@ nav i {
     position: absolute;
     top: 0;
     right :0;
-    border-left: 80px solid transparent;
+    border-left: 100px solid transparent;
     border-top: 50px solid #57648c;
 }
 
@@ -170,7 +168,7 @@ nav i {
     text-align: center;
     font-size: 14px;
     font-weight: 100;
-    margin-top: 25px
+    margin-top: 20px
 }
 
 /* ------------------------------------Section Presentation Card */
@@ -292,7 +290,7 @@ footer {
 }
 
 .social-h6 {
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
     font-size: 1.1em;
     letter-spacing: 0.05em;
@@ -304,14 +302,14 @@ footer i {
 }
 
 .footer-p {
-    letter-spacing: .01em;
+    letter-spacing: .02em;
     text-align: left;
     font-size: 1em;
-    padding-left: 15px;
+    padding: 15px;
 }
 
 .social-links {
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
 }
 
@@ -342,14 +340,6 @@ footer i {
     animation-name: load-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-}
-
-.section-about {
-    height: 800px;
-}
-
-.footer-about {
-    height: 200px;
 }
 
 #left-about {
@@ -532,12 +522,13 @@ footer i {
 /* ------------------------------------Colours */
 
 
-nav ul li, .home-button, .home-button a {
+
+.nav-item, .nav-item a, .home-button, .home-button a {
     background-color: #57648c;
     color: #e5e5e5;
 }
 
-nav ul li a:hover, .homebutton:hover {
+.nav-link:hover, .homebutton:hover {
     color: #e5e5e5;
 }
 
@@ -550,7 +541,7 @@ footer {
     color: #ffbb00;
 }
 
-nav ul li a, .form-group button[type=submit] {
+.form-group button[type=submit] {
     color: #e5e5e5; 
 }
 
@@ -561,10 +552,6 @@ nav ul li a, .form-group button[type=submit] {
 
 .middlecard {
     color: #57648c;
-}
-
-.portfolio-btn-heading a {
-    color: #e5e5e5;
 }
 
 .card-body-about a {
@@ -611,8 +598,8 @@ nav ul li a, .form-group button[type=submit] {
 }
 
 .wrap-stack, .card-title i {
-    background-color: #C2B4D6;
-    color: #57648c;
+    background-color: #57648c;
+    color: #e5e5e5;
 }
 
 .progress {
@@ -683,6 +670,12 @@ nav ul li a, .form-group button[type=submit] {
     }
     .footer-h6 i {
     text-align:center;
+    }
+    .social-links {
+    text-align: center;
+    }
+    .social-h6 {
+    text-align: center;
     }
 }
 
