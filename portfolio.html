@@ -9,27 +9,28 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
 	<title>My Resume Website</title>
 
 </head>
 
 <body>
 
-    <header>
+	<header>
 		<nav>
-			<ul class="nav slide justify-content-center">
+			<ul class="nav slidehead justify-content-center">
+				<li class="nav-item home-button"><a class="nav-link hvr-bounce-out"
+						href="index.html"><i class="fas fa-home"></i>
+						Home </a></li>
 				<li class="nav-item slide-about">
-					<a class="nav-link hvr-bounce-in" href="about.html"><i class="far fa-address-card"></i> About
+					<a class="nav-link hvr-bounce-out" href="about.html"><i class="fas fa-user"></i> About
 					</a>
 				</li>
-				<button class="nav-item home-button"><a class="nav-link hvr-bounce-in"
-						href="index.html"><i class="fas fa-home"></i>
-						Home </a></button>
+
 				<li class="nav-item slide-portfolio">
-					<a class="nav-link hvr-bounce-in" href="portfolio.html"><i class="fas fa-hammer"></i> Portfolio</a>
+					<a class="nav-link hvr-bounce-out" href="portfolio.html"><i class="fas fa-hammer"></i> Portfolio</a>
 				</li>
-				<li class="nav-item slide-contact"><a class="nav-link hvr-bounce-in"
+				<li class="nav-item slide-contact"><a class="nav-link hvr-bounce-out"
 						href="#contact-section-id"><i class="fas fa-comments"></i> Contact</a></li>
 			</ul>
 		</nav>
@@ -37,67 +38,44 @@
 
 	<section class="container-fluid">
 		<div class="row">
+			<div class="col-md-9 col-sm-11 col-xs-11 m-auto">
 
-			<div class="col-md-1"></div>
+				<h4 class="portfolio-title">Take a look at some of my earlier work</h4>
+				<div class="slideshow">
 
-			<div class="col-md-4 col-sm-12">
-				<div class="card-portfolio">
-					<div class="card-body">
-						<p class="portfolio-btn-heading"><a href="https://voggastur.github.io/user-centric-frontend-project/" class="btn btn-info"> Johans Resume </a></p>
-						<p class="card-p-portfolio">Glorious</p>
-                        <iframe width="100%" height="65%" src="https://voggastur.github.io/user-centric-frontend-project/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="turner">
+
+						<input type="radio" name="turner" class="trigger" id="one" checked="checked" />
+						<div class="turn">
+							<figure class="turn-figure">
+								<img class="turn-img" src="assets/images/stellaris.jpg" width="300" height="300" />
+							</figure>
+						</div>
+
+						<input type="radio" name="turner" class="trigger" id="two" />
+						<div class="turn">
+							<figure class="turn-figure">
+								<img class="turn-img" src="assets/images/rimworld.png" width="300" height="300" />
+							</figure>
+						</div>
+
+						<input type="radio" name="turner" class="trigger" id="three" width="300" height="300" />
+						<div class="turn">
+							<figure class="turn-figure">
+								<img class="turn-img" src="assets/images/factorio.png" />
+							</figure>
+						</div>
 					</div>
+					<ul class="turn-nav">
+						<li class="turn-navitem"><label class="turn-navlabel btn btn-secondary" for="one">Stellaris</label></li>
+						<li class="turn-navitem"><label class="turn-navlabel btn btn-secondary" for="two">Rimworld</label></li>
+						<li class="turn-navitem"><label class="turn-navlabel btn btn-secondary" for="three">Factorio</label></li>
+					</ul>
 				</div>
+
 			</div>
-
-			<div class="col-md-2"></div>
-
-			<div class="col-md-4 col-sm-12">
-				<div class="card-portfolio">
-					<div class="card-body">
-						<p class="portfolio-btn-heading"><a href="https://factorio.com/" class="btn btn-info"> Factorio </a></p>
-						<p class="card-p-portfolio">Precipitous</p>
-						<iframe width="100%" height="65%" src="https://www.youtube.com/embed/DR01YdFtWFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-1"></div>
 		</div>
-
-		<div class="row">
-
-			<div class="col-md-1"></div>
-
-			<div class="col-md-4 col-sm-12">
-				<div class="card-portfolio">
-					<div class="card-body">
-						<p class="portfolio-btn-heading"><a href="https://www.minecraft.net/sv-se/" class="btn btn-info"> Minecraft </a></p>
-						<p class="card-p-portfolio">Splendid</p>
-						<iframe width="100%" height="65%" src="https://www.youtube.com/embed/MmB9b5njVbA" frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-2"></div>
-
-			<div class="col-md-4 col-sm-12">
-				<div class="card-portfolio">
-					<div class="card-body">
-						<p class="portfolio-btn-heading"><a href="https://rimworldgame.com/" class="btn btn-info"> Rimworld </a></p>
-						<p class="card-p-portfolio">Marvelous</p>
-						<iframe width="100%" height="65%" src="https://www.youtube.com/embed/3tDrxOASUog" frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-1"></div>
-		</div>
-
+		
 	</section>
 
 	<footer>
@@ -119,8 +97,10 @@
 				</div>
 				<div class="col-sm-4">
 					<h6 class="footer-h6 social-h6"><i class="fas fa-hat-wizard"></i> Proficiency</h6>
-					<p class="footer-p">Full Stack Web Developer. I work swiftly with my tools at hand in gettings things done
-					and working across the stack. I am enthusiastic and thriving in teams and also decisive and determined when working solo.</p>
+					<p class="footer-p">Full Stack Web Developer. I work swiftly with my tools at hand in gettings
+						things done
+						and working across the stack. I am enthusiastic and thriving in teams and also decisive and
+						determined when working solo.</p>
 				</div>
 				<div class="col-sm-4">
 					<h6 class="footer-h6">Social</h6>

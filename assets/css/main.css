@@ -10,47 +10,54 @@ html, body {
 }
 
 
+
 /* ------------------------------------Heading */
+
+.slidehead {
+    position: static;
+    list-style: none;
+    top: 0;
+}
 
 nav i {
     margin-right: 2px;
 }
 
-nav, nav ul {
-    height: 0;
+.nav-item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
     font-family: "lato", sans-serif;
-}
-
-nav ul li {
     z-index: 4;
     box-shadow: 4px 8px 6px 4px #200720;
-    top: 0;
-    line-height: 25px;
     font-size: 15px;
-    min-height: 50px;
-    min-width: 150px;
-    border: none;
-    list-style: none;
+    height: 50px;
+    width: 150px;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
+    background-color: #57648c;
+    color: #e5e5e5;
 }
 
-nav ul li a {
-    margin-top: 5px;
-}
-
-nav ul li a:hover {
+.nav-link {
     text-decoration: none;
+    border: none;
+    margin-top: 5px;
+    color: #e5e5e5;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: #e5e5e5;
 }
 
 .home-button {
-    position: relative;
+    display: block;
+    margin: 0 auto;
     z-index: 5;
     font-size: 15px;
     top: 0;
-    min-height: 50px;
-    min-width: 150px;
     border: none;
     text-align: center;
     text-transform: uppercase;
@@ -58,160 +65,59 @@ nav ul li a:hover {
     cursor: pointer;
     box-shadow: 4px 8px 6px 0px #200720;
     transition: all .4s ease-in-out;
-    transform: translateY(0px)
+    transform: translateY(0px);
 }
 
 .slide-about {
-    position: absolute;
     transition: all .3s ease-in-out;
     transform: translateX(0px);
 }
 
 .slide-portfolio {
-    position: absolute;
     transition: all .3s ease-in-out;
     transform: translateX(0);
 }
 
 .slide-contact {
-    position: absolute;
     transition: all .3s ease-in-out;
     transform: translateY(0);
 }
 
-.slide {
-    position: relative;
-}
-
-.slide:hover .slide-about {
+.slidehead:hover .slide-about {
     transform: translateX(-150px);
 }
 
-.slide:hover .slide-portfolio {
+.slidehead:hover .slide-portfolio {
     transform: translateX(150px);
 }
 
-.slide:hover .slide-contact {
+.slidehead:hover .slide-contact {
     transform: translateY(50px);
 }
 
-.slide:hover .home-button {
+.slidehead:hover .home-button {
     box-shadow: 0px 0px 0px 0px #200720;
     text-decoration: none;
-}
-
-/* ------------------------------------Colours */
-
-nav ul li, .home-button, .home-button a {
-    background-color: #57648c;
-    color: #e5e5e5;
-}
-
-nav ul li a:hover, .homebutton:hover {
-    color: #e5e5e5;
-}
-
-footer {
-    background-color: #57648c;
-    color: #e5e5e5;
-}
-
-.footer-h6 i, .social-h6 i {
-    color: #ffbb00;
-}
-
-nav ul li a, .form-group button[type=submit] {
-    color: #e5e5e5; 
-}
-
-.card-about, .card-portfolio {
-	background-color: #e5e5e5;
-    color: #57648c;
-}
-
-.middlecard {
-    color: #57648c;
-}
-
-.portfolio-btn-heading a {
-    color: #e5e5e5;
-}
-
-.card-body-about a {
-    color: #e5e5e5;
-}
-
-.social-links li a i {
-    background: #2a47a0;
-    color: #e5e5e5;
-}
-
-.social-links li a i:hover {
-    background: #133394;
-}
-
-hr {
-    border-top: 2px solid #ffbb00;
-}
-
-#welcome {
-    text-shadow: 3px 3px #190419;    
-}
-
-.leftbar, .left-title, .left-title2, .left-text2, .rightbar {
-    color: #e5e5e5;
-}
-
-.form-group, .contact-heading {
-    color: #57648c;
-}
-
-.form-group button[type=submit] {
-    background-color: #57648c;
-    color: #e5e5e5;
-}
-
-.form-group button[type=submit]:hover {
-    background-color: #57648c;
-    color: #e5e5e5;
-}
-
-.wrap-stack, .card-title i {
-    color: #57648c;
-}
-
-.progressbar-card {
-    color: #57648c;
-}
-
-.progress {
-    background-color: #C2B4D6;
-}
-
-.leftbar, .rightbar {
-    background-color: #57648c;
 }
 
 /* ------------------------------------Top aligned sidebars */
 
 .triangleleft {
-    transform: translateX(-30px);
     visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
-    border-right: 150px solid transparent;
-    border-top: 150px solid #57648c;
+    border-right: 80px solid transparent;
+    border-top: 50px solid #57648c;
 }
 
 .triangleright {
-    transform: translateX(30px);
     visibility: hidden;
     position: absolute;
     top: 0;
     right :0;
-    border-left: 150px solid transparent;
-    border-top: 150px solid #57648c;
+    border-left: 80px solid transparent;
+    border-top: 50px solid #57648c;
 }
 
 .topbar {
@@ -219,14 +125,14 @@ hr {
 }
 
 .rightbar {
-    position: relative;
+    position: static;
     top: 0;
     right: 0;
-    height: var(.leftbar);
+    height: inherit;
 }
 
 .leftbar {
-    position: relative;
+    position: static;
     top: 0;
     left: 0;
     height: 100%;
@@ -238,7 +144,7 @@ hr {
     display: block;
     margin: 0 auto;
     border-radius: 50%;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .left-title {
@@ -270,13 +176,15 @@ hr {
 /* ------------------------------------Section Presentation Card */
 
 .middlecard {
+    position: relative;
     font-family: "Roboto", sans-serif;
     visibility: hidden;
     animation-name: load-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
     height: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 .me-card {
@@ -293,6 +201,10 @@ hr {
     font-weight:600;
 }
 
+.card-hr {
+    width: 60%;
+}
+
 .card-title2 {
     visibility: hidden;
     text-align: left;
@@ -303,7 +215,12 @@ hr {
     visibility: hidden;
     text-align: left;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
+}
+
+.skills {
+    height: 100%;
+    overflow: wrap;
 }
 
 /* -----------------------------------Section Progress */
@@ -317,16 +234,9 @@ hr {
     position: relative;
     font-style: italic;
     text-align: center;
-    color: #fafafa;
     left: 0px;
     font-size: 14px;
     font-weight: 600;
-}
-
-.progressbar-card {
-    animation-name: load-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
 }
 
 /* ------------------------------------Section Skills Card */
@@ -335,7 +245,8 @@ hr {
     animation-name: load-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    overflow: wrap;
+    padding: 10px;
+    box-shadow: 4px 8px 6px 0px #200720;
 }
 
 @keyframes load-zoom {
@@ -363,7 +274,7 @@ hr {
 
 .stacks-text { 
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 /* ------------------------------------Footer */
@@ -459,7 +370,7 @@ footer i {
     margin: 0 auto;
 }
 
-hr {
+.right-about-heading hr, .left-about-heading hr {
     width: 100%;
 }
 
@@ -505,34 +416,105 @@ hr {
 
 /* ------------------------------------Portfolio */
 
-.card-portfolio {
-    opacity: 0.7;
-    height: 90%;
+.portfolio-title {
+    text-transform: capitalize;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    word-spacing: .15em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    margin: 150px 0 40px;
+}
+
+.portfolio-text {
+    font-size: 17px;
+    text-align: center;
+    font-style: italic;
+}
+
+    
+/* -----------Portfolio Slideshow------------- */
+
+.slideshow {
+    -webkit-box-shadow: 8px 8px 20px 10px #200720cc;
+    -moz-box-shadow: 8px 8px 20px 10px #200720cc;
+    box-shadow: 8px 8px 20px 10px #200720cc;
+    margin-bottom: 100px;
+    border-radius: 20px;
+}
+
+
+.trigger {
+    display: none;
+}
+
+.turner, .slideshow {
+    position: relative;
+    height: 280px;
+}
+
+.turn {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
     width: 100%;
-    margin: 30px;
+    height: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
 }
 
-.card-p-portfolio {
+.turn-img {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+
+.turn-figure {
+    height: 100%;
+    position: relative;
+    margin: 0;
+}
+
+.trigger:checked + .turn {
+    z-index: 6000;
+    opacity: 1;
+}
+
+.turn-nav {
+    width: 100%;
     text-align: center;
-    font-size: 14px;
-    margin: 10px 0;
+    font-family: "Roboto", sans-serif;
+    margin: 1rem 0;
 }
 
-.portfolio-btn-heading {
+.turn-navitem {
     text-align: center;
+    display: inline-block;
 }
 
-.card-body a {
-    height: 40px;
-    font-size: 15px;
-    margin-top: 20px;
+.turn-navlabel {
+    font-size: 18px;
+    font-weight: 300;
+    display: inline-block;
+    height: 2em;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .25s, color .25s ease-in-out;
 }
+
 
 /* ------------------------------------Contact */
 
-.contact-column {
-    margin-top: 50px;
-    padding-bottom: 50px;
+
+.contact-form {
+    margin: 50px 0;
 }
 
 .form-group button[type=submit] {
@@ -547,17 +529,126 @@ hr {
 }
 
 
+/* ------------------------------------Colours */
+
+
+nav ul li, .home-button, .home-button a {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+nav ul li a:hover, .homebutton:hover {
+    color: #e5e5e5;
+}
+
+footer {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+.footer-h6 i, .social-h6 i {
+    color: #ffbb00;
+}
+
+nav ul li a, .form-group button[type=submit] {
+    color: #e5e5e5; 
+}
+
+.card-about, .card-portfolio {
+	background-color: #e5e5e5;
+    color: #57648c;
+}
+
+.middlecard {
+    color: #57648c;
+}
+
+.portfolio-btn-heading a {
+    color: #e5e5e5;
+}
+
+.card-body-about a {
+    color: #e5e5e5;
+}
+
+.social-links li a i {
+    background: #2a47a0;
+    color: #e5e5e5;
+}
+
+.social-links li a i:hover {
+    background: #133394;
+}
+
+.right-about-heading hr, .left-about-heading hr {
+    border-top: 2px solid #ffbb00;
+}
+
+.card-hr, .leftbar hr {
+    border-top: 2px solid #c2b4d6;
+}
+
+#welcome {
+    text-shadow: 3px 3px #190419;    
+}
+
+.left-title, .left-title2, .left-text2 {
+    color: #e5e5e5;
+}
+
+.form-group, .contact-heading {
+    color: #57648c;
+}
+
+.form-group button[type=submit] {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+.form-group button[type=submit]:hover {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+.wrap-stack, .card-title i {
+    background-color: #C2B4D6;
+    color: #57648c;
+}
+
+.progress {
+    background-color: #C2B4D6;
+}
+
+.progress-text {
+    color: #e5e5e5;
+}
+
+.leftbar, .rightbar {
+    background-color: #57648c;
+    color: #e5e5e5;
+}
+
+.portfolio-title {
+    color: #57648c;
+}
+
+.portfolio-text {
+    color: #57648c;
+}
+
+.slideshow {
+    background-color: #57648c;
+}
+
 /* ------------------------------------Media Queries */
+
 
 @media(max-width: 1200px) {
 }
 
 @media(max-width: 992px) {
-    .leftbar, .rightbar {
-        visibility: hidden;
-    }
-    .left-me, .left-title, .left-title2, .left-text2 {
-        visibility: hidden;
+    .leftbar, .rightbar, .left-me, .left-title, .left-title2, .left-text2 {
+        display: none;
     }
     .triangleleft {
         visibility: visible;
@@ -570,15 +661,19 @@ hr {
     }
     .middlecard {
         visibility: visible;
+        margin-top: 120px;
     }
-    .wrap-stack {
-        margin-top: 30px;
+    .me-card {
+        margin: 0 auto;
+    }
+    .card-title, .card-title2, .card-text {
+        text-align: center;
     }
     .progressbar-card {
         margin-top: 30px;
     }
 }
-    
+
 @media(max-width: 768px) {
     .footer-h6 {
     text-align:center;
@@ -589,15 +684,8 @@ hr {
     .footer-h6 i {
     text-align:center;
     }
-    .me-card {
-        margin: 0 auto;
-    }
-    .card-title, .card-title2, .card-text {
-        text-align: center;
-    }
-    
 }
 
 @media(max-width: 576px) {
 }
- 
+
