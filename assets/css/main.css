@@ -1,4 +1,4 @@
-/* ------------------------------------Fonts and General */
+/* -------------Fonts and General Colors #934A5F / #57648C / #C2B4D6 / #E5E5E5 */
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Oswald|Roboto&display=swap');
 
@@ -10,8 +10,8 @@ html, body {
 }
 
 
-
 /* ------------------------------------Heading */
+
 
 .slidehead {
     position: static;
@@ -36,18 +36,19 @@ nav i {
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
+    background-color: #57648c;
 }
 
 .nav-link {
     text-decoration: none;
     border: none;
     margin-top: 5px;
-    color: #e5e5e5;
+    color: #C2B4D6;
 }
 
 .nav-link:hover {
     text-decoration: none;
-    color: #e5e5e5;
+    color: #C2B4D6;
 }
 
 .home-button {
@@ -98,49 +99,30 @@ nav i {
     text-decoration: none;
 }
 
-/* ------------------------------------Top aligned sidebars */
+/* ------------------------------------Section */
 
-.triangleleft {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-right: 100px solid transparent;
-    border-top: 50px solid #57648c;
-}
-
-.triangleright {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    right :0;
-    border-left: 100px solid transparent;
-    border-top: 50px solid #57648c;
-}
-
-.topbar {
-    height: 0;
-}
-
-.rightbar {
-    position: static;
-    top: 0;
-    right: 0;
-    height: inherit;
-}
-
-.leftbar {
-    position: static;
-    top: 0;
-    left: 0;
-    height: 100%;
+.section-landing {
+    max-height: 100%;
 }
 
 /* ------------------------------------Section Left Bar */
 
+.presentation {
+    max-height: 100%;
+    background: #934A5F;
+    color: #e5e5e5;
+    box-shadow: 4px 8px 6px 4px #200720;
+}
+
+hr {
+    border-top: 1px solid #ffbb00;
+    width: 80%;
+}
+
 .left-me {
     display: block;
     margin: 0 auto;
+    margin-top: 80px;
     border-radius: 50%;
     padding-top: 10px;
 }
@@ -168,7 +150,7 @@ nav i {
     text-align: center;
     font-size: 14px;
     font-weight: 100;
-    margin-top: 20px
+    margin-top: 60px
 }
 
 /* ------------------------------------Section Presentation Card */
@@ -177,9 +159,6 @@ nav i {
     position: relative;
     font-family: "Roboto", sans-serif;
     visibility: hidden;
-    animation-name: load-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
     height: 100%;
     margin-top: 20px;
     padding: 10px;
@@ -240,20 +219,8 @@ nav i {
 /* ------------------------------------Section Skills Card */
 
 .wrap-stack {
-    animation-name: load-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
     padding: 10px;
     box-shadow: 4px 8px 6px 0px #200720;
-}
-
-@keyframes load-zoom {
-    from{
-        transform: scale(0.9)
-    }
-    to{
-        transform: scale(1)
-    }
 }
 
 .stacks-header {
@@ -272,7 +239,6 @@ nav i {
 
 .stacks-text { 
     font-size: 14px;
-    font-weight: 600;
 }
 
 /* ------------------------------------Footer */
@@ -337,9 +303,6 @@ footer i {
     min-height: 250px;
     max-height: 400px;
     border-radius: 50%;
-    animation-name: load-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
 }
 
 #left-about {
@@ -432,6 +395,16 @@ footer i {
     box-shadow: 8px 8px 20px 10px #200720cc;
     margin-bottom: 100px;
     border-radius: 20px;
+    animation-name: float;
+    animation-duration: 8s;
+    animation-fill-mode: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes float {
+    0%{transform: translate(20px)}
+    50%{transform: translate(15px)}
+    100%{transform: translate(0)}
 }
 
 
@@ -498,7 +471,6 @@ footer i {
     cursor: pointer;
     transition: background-color .25s, color .25s ease-in-out;
 }
-
 
 /* ------------------------------------Contact */
 
@@ -634,51 +606,20 @@ footer {
 }
 
 @media(max-width: 992px) {
-    .leftbar, .rightbar, .left-me, .left-title, .left-title2, .left-text2 {
-        display: none;
-    }
-    .triangleleft {
-        visibility: visible;
-    }
-    .triangleright {
-        visibility: visible;
-    }
-    .me-card, .card-title, .card-title2, .card-text, .progress-card {
-        visibility: visible;
-    }
-    .middlecard {
-        visibility: visible;
-        margin-top: 120px;
-    }
-    .me-card {
-        margin: 0 auto;
-    }
-    .card-title, .card-title2, .card-text {
-        text-align: center;
-    }
-    .progressbar-card {
-        margin-top: 30px;
-    }
 }
 
 @media(max-width: 768px) {
-    .footer-h6 {
-    text-align:center;
-    }
-    .footer-p {
-    text-align:center;
-    }
-    .footer-h6 i {
-    text-align:center;
-    }
-    .social-links {
-    text-align: center;
-    }
-    .social-h6 {
-    text-align: center;
-    }
 }
 
 @media(max-width: 576px) {
 }
 
+@media only screen and (max-width: 600px) {
+    .slidehead {
+        animation-play-state: end;
+    }
+    .slidehead: .slide-about {
+    transform: translateX(-150px);
+    position: absolute;
+}
+}

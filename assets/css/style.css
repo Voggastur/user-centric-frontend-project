@@ -107,8 +107,8 @@ nav i {
     position: absolute;
     top: 0;
     left: 0;
-    border-right: 50px solid transparent;
-    border-top: 80px solid #57648c;
+    border-right: 100px solid transparent;
+    border-top: 50px solid #57648c;
 }
 
 .triangleright {
@@ -116,8 +116,8 @@ nav i {
     position: absolute;
     top: 0;
     right :0;
-    border-left: 50px solid transparent;
-    border-top: 80px solid #57648c;
+    border-left: 100px solid transparent;
+    border-top: 50px solid #57648c;
 }
 
 .topbar {
@@ -128,7 +128,7 @@ nav i {
     position: static;
     top: 0;
     right: 0;
-    height: 100%;
+    height: inherit;
 }
 
 .leftbar {
@@ -144,7 +144,7 @@ nav i {
     display: block;
     margin: 0 auto;
     border-radius: 50%;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .left-title {
@@ -170,7 +170,7 @@ nav i {
     text-align: center;
     font-size: 14px;
     font-weight: 100;
-    margin-top: 25px
+    margin-top: 20px
 }
 
 /* ------------------------------------Section Presentation Card */
@@ -179,9 +179,6 @@ nav i {
     position: relative;
     font-family: "Roboto", sans-serif;
     visibility: hidden;
-    animation-name: load-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
     height: 100%;
     margin-top: 20px;
     padding: 10px;
@@ -234,25 +231,16 @@ nav i {
     position: relative;
     font-style: italic;
     text-align: center;
-    color: #fafafa;
     left: 0px;
     font-size: 14px;
     font-weight: 600;
 }
 
-.progressbar-card {
-    animation-name: load-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-}
-
 /* ------------------------------------Section Skills Card */
 
 .wrap-stack {
-    animation-name: load-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
     padding: 10px;
+    box-shadow: 4px 8px 6px 0px #200720;
 }
 
 @keyframes load-zoom {
@@ -280,7 +268,6 @@ nav i {
 
 .stacks-text { 
     font-size: 14px;
-    font-weight: 300;
 }
 
 /* ------------------------------------Footer */
@@ -298,7 +285,7 @@ footer {
 }
 
 .social-h6 {
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
     font-size: 1.1em;
     letter-spacing: 0.05em;
@@ -310,14 +297,14 @@ footer i {
 }
 
 .footer-p {
-    letter-spacing: .01em;
+    letter-spacing: .02em;
     text-align: left;
     font-size: 1em;
-    padding-left: 15px;
+    padding: 15px;
 }
 
 .social-links {
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
 }
 
@@ -345,17 +332,6 @@ footer i {
     min-height: 250px;
     max-height: 400px;
     border-radius: 50%;
-    animation-name: load-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-}
-
-.section-about {
-    height: 800px;
-}
-
-.footer-about {
-    height: 200px;
 }
 
 #left-about {
@@ -422,30 +398,105 @@ footer i {
 
 /* ------------------------------------Portfolio */
 
-.card-portfolio {
-    opacity: 0.7;
-    height: 90%;
+.portfolio-title {
+    text-transform: capitalize;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    word-spacing: .15em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    margin: 150px 0 40px;
+}
+
+.portfolio-text {
+    font-size: 17px;
+    text-align: center;
+    font-style: italic;
+}
+
+    
+/* -----------Portfolio Slideshow------------- */
+
+.slideshow {
+    -webkit-box-shadow: 8px 8px 20px 10px #200720cc;
+    -moz-box-shadow: 8px 8px 20px 10px #200720cc;
+    box-shadow: 8px 8px 20px 10px #200720cc;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    animation-name: slidepic;
+    animation-duration: 3s;
+    animation-fill-mode: infinite;
+}
+
+
+.trigger {
+    display: none;
+}
+
+.turner, .slideshow {
+    position: relative;
+    height: 280px;
+}
+
+.turn {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
     width: 100%;
-    margin: 30px;
+    height: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
 }
 
-.card-p-portfolio {
+.turn-img {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+
+.turn-figure {
+    height: 100%;
+    position: relative;
+    margin: 0;
+}
+
+.trigger:checked + .turn {
+    z-index: 6000;
+    opacity: 1;
+}
+
+.turn-nav {
+    width: 100%;
     text-align: center;
-    font-size: 14px;
-    margin: 10px 0;
+    font-family: "Roboto", sans-serif;
+    margin: 1rem 0;
 }
 
-.portfolio-btn-heading {
+.turn-navitem {
     text-align: center;
+    display: inline-block;
 }
 
-.card-body a {
-    height: 40px;
-    font-size: 15px;
-    margin-top: 20px;
+.turn-navlabel {
+    font-size: 18px;
+    font-weight: 300;
+    display: inline-block;
+    height: 2em;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .25s, color .25s ease-in-out;
 }
+
 
 /* ------------------------------------Contact */
+
 
 .contact-form {
     margin: 50px 0;
@@ -462,14 +513,17 @@ footer i {
     margin: 20px 0 10px;
 }
 
+
 /* ------------------------------------Colours */
 
-nav ul li, .home-button, .home-button a {
+
+
+.nav-item, .nav-item a, .home-button, .home-button a {
     background-color: #57648c;
     color: #e5e5e5;
 }
 
-nav ul li a:hover, .homebutton:hover {
+.nav-link:hover, .homebutton:hover {
     color: #e5e5e5;
 }
 
@@ -482,7 +536,7 @@ footer {
     color: #ffbb00;
 }
 
-nav ul li a, .form-group button[type=submit] {
+.form-group button[type=submit] {
     color: #e5e5e5; 
 }
 
@@ -493,10 +547,6 @@ nav ul li a, .form-group button[type=submit] {
 
 .middlecard {
     color: #57648c;
-}
-
-.portfolio-btn-heading a {
-    color: #e5e5e5;
 }
 
 .card-body-about a {
@@ -551,12 +601,29 @@ nav ul li a, .form-group button[type=submit] {
     background-color: #C2B4D6;
 }
 
+.progress-text {
+    color: #e5e5e5;
+}
+
 .leftbar, .rightbar {
     background-color: #57648c;
     color: #e5e5e5;
 }
 
+.portfolio-title {
+    color: #57648c;
+}
+
+.portfolio-text {
+    color: #57648c;
+}
+
+.slideshow {
+    background-color: #57648c;
+}
+
 /* ------------------------------------Media Queries */
+
 
 @media(max-width: 1200px) {
 }
@@ -587,10 +654,8 @@ nav ul li a, .form-group button[type=submit] {
     .progressbar-card {
         margin-top: 30px;
     }
-    .wrap-stack {
-    }
 }
-    
+
 @media(max-width: 768px) {
     .footer-h6 {
     text-align:center;
@@ -600,6 +665,12 @@ nav ul li a, .form-group button[type=submit] {
     }
     .footer-h6 i {
     text-align:center;
+    }
+    .social-links {
+    text-align: center;
+    }
+    .social-h6 {
+    text-align: center;
     }
 }
 

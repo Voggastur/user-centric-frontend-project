@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
 	<title>My Resume Website</title>
 
 </head>
@@ -18,18 +18,19 @@
 
 	<header>
 		<nav>
-			<ul class="nav slide justify-content-center">
+			<ul class="nav slidehead justify-content-center">
+				<li class="nav-item home-button"><a class="nav-link hvr-bounce-out"
+						href="index.html"><i class="fas fa-home"></i>
+						Home </a></li>
 				<li class="nav-item slide-about">
-					<a class="nav-link hvr-bounce-in" href="about.html"><i class="far fa-address-card"></i> About
+					<a class="nav-link hvr-bounce-out" href="about.html"><i class="fas fa-user"></i> About
 					</a>
 				</li>
-				<button class="nav-item home-button"><a class="nav-link hvr-bounce-in"
-						href="index.html"><i class="fas fa-home"></i>
-						Home </a></button>
+
 				<li class="nav-item slide-portfolio">
-					<a class="nav-link hvr-bounce-in" href="portfolio.html"><i class="fas fa-hammer"></i> Portfolio</a>
+					<a class="nav-link hvr-bounce-out" href="portfolio.html"><i class="fas fa-hammer"></i> Portfolio</a>
 				</li>
-				<li class="nav-item slide-contact"><a class="nav-link hvr-bounce-in"
+				<li class="nav-item slide-contact"><a class="nav-link hvr-bounce-out"
 						href="#contact-section-id"><i class="fas fa-comments"></i> Contact</a></li>
 			</ul>
 		</nav>
@@ -79,57 +80,58 @@
 
 	</section>
 
-	<footer class="container-fluid footer-about">
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="footer-container">
+						<h6 class="footer-h6">
+							<i class="fas fa-address-card hvr-wobble-top"></i><strong> Personal Info</strong></h6>
+						<div>
+							<p class="footer-p">Johan Kjellin <br>
+                        Stockholm, Sweden <br>
+						v3x0r_x014@hotmail.com</p>
+						</div>
 
-		<div class="row">
-			<div class="col-sm-4">
-				<h6 class="footer-h6"><i class="fas fa-address-card"></i> Personal Info</h6>
-				<div>
-
-					<p class="footer-p">Fyrspannsgatan 43, Stockholm, Sweden</p>
+					</div>
 				</div>
-				<div>
-					<p class="footer-p">X 0704829260</p>
+				<div class="col-md-4">
+					<div class="footer-container">
+						<h6 class="footer-h6">
+							<i class="fas fa-code-branch hvr-wobble-top"></i><strong> Proficiency</strong>
+						</h6>
+						<p class="footer-p"> Full Stack Web Developer. I work swiftly with my tools at hand in gettings things done and working across the stack. I am enthusiastic and thriving in teams and also decisive and determined when working solo.</p>
+					</div>
 				</div>
-				<div>
-					<p class="footer-p">v3x0r_x014@hotmail.com</p>
+				<div class="col-md-4">
+					<div class="footer-container">
+						<h6 class="social-h6">
+							<i class="far fa-handshake hvr-wobble-top"></i><strong> Get in touch</strong>
+						</h6>
+						<ul class="list-inline social-links">
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.facebook.com/johan.kjellin.1">
+									<i class="fab fa-facebook-square hvr-pop"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://twitter.com/Nchuleftingth?s=03">
+									<i class="fab fa-twitter-square hvr-pop"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.linkedin.com/in/johan-kjellin-874489194/">
+									<i class="fab fa-linkedin hvr-pop"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.instagram.com/nchuleftingth/">
+									<i class="fab fa-instagram hvr-pop"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-
-			</div>
-			<div class="col-sm-4">
-				<h6 class="footer-h6"><i class="fas fa-hat-wizard"></i> Proficiency</h6>
-				<p class="footer-p">Full Stack Web Developer. I work swiftly with my tools at hand in accomplishing
-					things and working across the stack. I am thriving and playful in teams but also decisive and
-					determined when working solo.</p>
-			</div>
-			<div class="col-sm-4">
-				<h6 class="footer-h6">Get in touch</h6>
-				<ul class="list-inline social-links">
-					<li class="list-inline-item">
-						<a target="_blank" href="https://www.facebook.com/johan.kjellin.1">
-							<i class="fab fa-facebook-square hvr-pop"></i>
-							<span class="sr-only">Facebook</span>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a target="_blank" href="https://twitter.com/Nchuleftingth?s=03">
-							<i class="fab fa-twitter-square hvr-pop"></i>
-							<span class="sr-only">Twitter</span>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a target="_blank" href="https://www.linkedin.com/in/johan-kjellin-874489194/">
-							<i class="fab fa-linkedin hvr-pop"></i>
-							<span class="sr-only">LinkedIn</span>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a target="_blank" href="https://www.instagram.com/nchuleftingth/">
-							<i class="fab fa-instagram hvr-pop"></i>
-							<span class="sr-only">Instagram</span>
-						</a>
-					</li>
-				</ul>
 			</div>
 		</div>
 
