@@ -302,31 +302,6 @@ footer i {
 }
 
 @media(max-width: 992px) {
-    .leftbar, .rightbar, .left-me, .left-title, .left-title2, .left-text2 {
-        display: none;
-    }
-    .triangleleft {
-        visibility: visible;
-    }
-    .triangleright {
-        visibility: visible;
-    }
-    .me-card, .card-title, .card-title2, .card-text, .progress-card {
-        visibility: visible;
-    }
-    .middlecard {
-        visibility: visible;
-        margin-top: 120px;
-    }
-    .me-card {
-        margin: 0 auto;
-    }
-    .card-title, .card-title2, .card-text {
-        text-align: center;
-    }
-    .progressbar-card {
-        margin-top: 30px;
-    }
 }
 
 @media(max-width: 768px) {

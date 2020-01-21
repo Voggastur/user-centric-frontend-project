@@ -5,63 +5,173 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script src="https://kit.fontawesome.com/00644b551d.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.ico" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
+	<script src="https://kit.fontawesome.com/00644b551d.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 	<title>My Resume Website</title>
 </head>
 
 <body>
-
 	<header>
-		<nav>
-			<ul class="nav slidehead justify-content-center">
-				<li class="nav-item home-button"><a class="nav-link hvr-bounce-out" href="#"><i class="fas fa-home"></i>
-						Home </a></li>
-				<li class="nav-item slide-about">
-					<a class="nav-link hvr-bounce-out" href="about.html"><i class="fas fa-user"></i> About
-					</a>
-				</li>
-
-				<li class="nav-item slide-portfolio">
-					<a class="nav-link hvr-bounce-out" href="portfolio.html"><i class="fas fa-hammer"></i> Portfolio</a>
-				</li>
-				<li class="nav-item slide-contact"><a class="nav-link hvr-bounce-out"
-						href="#contact-section-id"><i class="fas fa-comments"></i> Contact</a></li>
-			</ul>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="#"><img src="assets/images/favicon.png" alt="icon" width="50" height="50"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-7">
+						<li class="nav-item ml-3">
+							<a class="nav-link hvr-underline-from-center"
+								href="#"><i class="fas fa-home pr-1"></i>Home</a>
+						</li>
+						<li class="nav-item ml-3">
+							<a class="nav-link hvr-underline-from-center"
+								href="#skill-section"><i class="fas fa-magic pr-1"></i>Skills</a></li>
+						<li class="nav-item ml-3">
+							<a class="nav-link hvr-underline-from-center"
+								href="#portfolio-section"><i class="fas fa-hammer pr-1"></i>Portfolio</a></li>
+						<li class="nav-item ml-3">
+							<a class="nav-link hvr-underline-from-center"
+								href="#workflow-section"><i class="fas fa-user pr-1"></i>About</a>
+						</li>
+						<li class="nav-item ml-3">
+							<a class="nav-link hvr-underline-from-center"
+								href="#contact-section"><i class="fas fa-comments pr-1"></i>Contact</a>
+						</li>
+					</ul>
+				</div>
 		</nav>
 	</header>
 
 	<main>
+		<section class="landing linear-gradient">
+			<div class="hero-unit p-2 row justify-content-center no-gutters">
+				<div class="col-12 justify-content-center p-4">
+					<h1 class="welcome-heading font-italic text-capitalize text-center">Welcome, I am
+						<span class="hvr-wobble-top">Johan Kjellin</span></h1>
+					<h3 class="welcome-text font-weight-normal text-capitalize text-center py-3">Front End developer and
+						Web Designer</h3>
+					<p class="welcome-text2 font-weight-normal text-center"><a class="hvr-icon-hang"
+							href="#skill-section"> I create fully responsive websites from
+							scratch, check out my skillset and
+							portfolio<i class="fas fa-arrow-down hvr-icon px-2"></i></a></p>
+				</div>
+			</div>
+			<div class="col-md-12 justify-content-center d-flex">
+				<img src="assets/images/workman.png" alt="workman in chair" class="img-fluid workman" width="200" height="200">
+              </div>
+		</section>
 
-		<section class="section-landing container-fluid mb-5">  
-			<div class="row">
-				<div class="col-md-3 presentation pb-4 mb-5">
-					<img src="assets/images/4.jpg" class="left-me" width="120" height="140" alt="me">
-					<h3 class="left-title">Johan Kjellin</h3>
-					<h1 class="left-title2">Frontend Developer and Web Designer</h1>
-					<h2></h2>
-                    <hr>
+		<section class="container-fluid pink" id="skill-section">
+			<div class="row justify-content-around">
+				<div class="col-12">
+					<hr class="shorthr">
+					<h2 class="text-center font-weight-bold">Skillset & Tools</h2>
+					<hr class="shorthr">
+				</div>
+				<div class="col-lg-3 col-sm-5 py-5 card">
+					<img src="assets/images/layout.png" class="img-responsive logos" alt="icon" width="100" height="100">
+					<h2>UX/UI Design</h2>
+					<p>I create custom user interfaces for websites and apps alike, which when done correctly equals to
+						great UX</p>
+					<a class="btn btn-success hvr-sweep-to-right"
+						href="https://en.wikipedia.org/wiki/User_experience_design" role="button">View details</a>
+				</div>
+				<div class="col-lg-3 col-sm-5 py-5 card text-align-center">
+					<img src="assets/images/responsive.png" class="img-responsive logos" alt="icon" width="100" height="100">
+					<h2>Responsive</h2>
+					<p>I work on the mobile-first approach primarily, then layer the components outwards towards tablets
+						and desktops</p>
+					<a class="btn btn-success hvr-sweep-to-right"
+						href="https://en.wikipedia.org/wiki/Responsive_web_design" role="button">View details</a>
+				</div>
+				<div class="col-lg-3 col-sm-5 py-5 card text-align-center">
+					<img src="assets/images/speed.png" class="img-responsive logos" alt="icon" width="100" height="100">
+					<h2>Speed</h2>
+					<p>I work swiftly with my tools at hand to craft progressive, secure and good looking websites,
+						because I know time is of the essence</p>
+					<a class="btn btn-success hvr-sweep-to-right" href="https://en.wikipedia.org/wiki/Web_performance"
+						role="button">View details</a>
+				</div>
+				<div class="col-lg-3 col-sm-5 py-5 card text-align-center">
+					<img src="assets/images/secure.png" class="img-responsive logos" alt="icon" width="100" height="100">
+					<h2>Data Protection</h2>
+					<p class="px">I craft secure websites with strong layers of security
+						to prevent data-theft and system violation</p>
+					<a class="btn btn-success hvr-sweep-to-right" href="https://en.wikipedia.org/wiki/Data_security"
+						role="button">View details</a>
+				</div>
+				<div class="col-lg-3 col-sm-5 py-5 card text-align-center">
+					<img src="assets/images/gears.png" class="img-responsive logos" alt="icon" width="100" height="100">
+					<h2>Backend utility</h2>
+					<p>I can also create crucial backend coding for various utilities, related to data-storage and
+						data-protection</p>
+					<a class="btn btn-success hvr-sweep-to-right" href="https://en.wikipedia.org/wiki/Back-end_database"
+						role="button">View details</a>
+				</div>
+				<div class="col-lg-3 col-sm-5 py-5 card text-align-center">
+					<img src="assets/images/github.png" class="img-responsive logos" alt="icon" width="100" height="100">
+					<h2>GitHub IDE</h2>
+					<p>Github, my choice of IDE is a strong source-code editor based on the MS Visual Studio, it
+						integrates many functions essential to every programmer</p>
+					<a class="btn btn-success hvr-sweep-to-right" href="https://en.wikipedia.org/wiki/GitHub"
+						role="button">View details</a>
+				</div>
+				<div class="col-lg-3 col-sm-5 py-5 card text-align-center">
+					<img src="assets/images/dev3.png" class="img-responsive logos" alt="icon" width="100" height="100">
+					<h2>Semantic Coding</h2>
+					<p>Writing semantic code is another routine of mine, it eases the stress of later bugfixing
+					</p>
+					<a class="btn btn-success hvr-sweep-to-right"
+						href="https://en.wikipedia.org/wiki/Semantics_encoding" role="button">View details</a>
+				</div>
+				<div class="col-lg-3 col-sm-5 py-5 card text-align-center">
+					<img src="assets/images/design.png" class="img-responsive logos" alt="icon" width="100" height="100">
+					<h2>Web Design</h2>
+					<p>Web Design, the most visually appealing part of Front End development is one of my specialties
+					</p>
+					<a class="btn btn-success hvr-sweep-to-right" href="https://en.wikipedia.org/wiki/Web_design"
+						role="button">View details</a>
+				</div>
+			</div><!-- End Row -->
+		</section>
+		<hr class="linear-gradient3">
+
+
+		<section class="container-fluid linear-gradient4">
+			<div class="container">
+				<hr class="shorthr">
+				<h2 class="text-center font-weight-bold">Workflow</h2>
+				<hr class="shorthr">
+			</div>
+			<div class="row p-5">
+				<div class="col-md-4 presentation pb-5">
+					<img src="assets/images/meimport.png" class="me img-fluid rounded-circle" width="140" height="140" alt="me">
+					<h2 class="left-title">Johan Kjellin</h2>
+					<h4 class="left-title2">Frontend Developer and Web Designer</h4>
+					<hr class="shorthr">
 					<p class="left-text">I am a capable developer that always strive to learn more. I work swiftly in
 						gettings things done and working across
 						the stack. I am enthusiastic and thriving in teams and also decisive and determined when working
 						solo.</p>
-					<hr>
-					<h5 class="left-title">General Skills</h5>
-					<div class="progress skills">
-						<div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-valuenow="80"
-							aria-valuemin="0" aria-valuemax="100" style="width:80%;">
-							<span class="progress-text">HTML / HTML5</span>
-						</div>
+					<hr class="shorthr">
+				</div>
+
+				<div class="col-md-4">
+					<h5 class="card-title">General Skills</h5>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-valuenow="85"
+							aria-valuemin="0" aria-valuemax="100" style="width:85%;">
+							<span class="progress-text">HTML / HTML5</span></div>
 					</div>
 					<div class="progress">
-						<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="85"
-							aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+						<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="80"
+							aria-valuemin="0" aria-valuemax="100" style="width: 80%">
 							<span class="progress-text">CSS / CSS3</span></div>
 					</div>
-
 					<div class="progress">
 						<div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="75"
 							aria-valuemin="0" aria-valuemax="100" style="width: 75%">
@@ -72,7 +182,6 @@
 							aria-valuemin="0" aria-valuemax="100" style="width: 90%">
 							<span class="progress-text">Gitpod</span></div>
 					</div>
-
 					<div class="progress">
 						<div class="progress-bar progress-bar-striped bg-secondary" role="progressbar"
 							aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
@@ -80,54 +189,151 @@
 					</div>
 				</div>
 
-
-				<div class="col-md-9 rightbar">
+				<div class="col-md-4 p-5">
+					<h6 class="sub-heading">Workflow</h6>
+					<ul class="fa-ul m-0">
+						<li>Bootstrap Wireframes
+							<i class="fa-li fa fa-check"></i>
+						</li>
+						<li>Responsive Design
+							<i class="fa-li fa fa-check"></i>
+						</li>
+						<li>Progressive Enhancement
+							<i class="fa-li fa fa-check"></i>
+						</li>
+						<li>Debugging / Testing
+							<i class="fa-li fa fa-check"></i>
+						</li>
+						<li>Profiling
+							<i class="fa-li fa fa-check"></i>
+						</li>
+						<li>GUI Designer
+							<i class="fa-li fa fa-check"></i>
+						</li>
+					</ul>
 				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-11 col-sm-11 col-xs-11 m-auto wrap-stack justify-content-center">
-						<div class="row">
-							<div class="col-md-4 stacks">
-								<h6 class="stacks-header"><i class="fas fa-code"></i>Frontend Developer</h6>
-								<p class="stacks-text">
-									I am a creative frontend developer with a knack for technology.
-									I follow the estabished procedures of <strong>Progressive Enhancement</strong> and
-									<strong>Responsive Design</strong> to craft websites with
-									well-written code which is easy to modify or upgrade.
-								</p>
-							</div>
+			</div><!-- End Row -->
 
-							<div class="col-md-4 stacks">
-								<h6 class="stacks-header"><i class="fas fa-laptop-code"></i></i>Web Designer
-								</h6>
-								<p class="stacks-text">
-									I am accomplished in UI design and strive for natural immersion, in the aim
-									of a
-									positive end-user experience.
-									This synergizes well with frontend development.
-								</p>
-							</div>
 
-							<div class="col-md-4 stacks">
-								<h6 class="stacks-header"><i class="fab fa-connectdevelop"></i>Frameworks</h6>
-								<p class="stacks-text">
-									I command an extensive knowledge of the Bootstrap framework.
-									Bootstrap is integral for boosting up projects at early stages with an array
-									of
-									classes and items.
-								</p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-
-		<section class="container contact-section" id="contact-section-id">
 			<div class="row">
-				<div class="col-lg-8 col-md-11 col-sm-11 col-xs-11 m-auto">
+				<div class="col-lg-8 col-md-12 ml-auto wrap-stack justify-content-center">
+					<div class="row">
+						<div class="col-md-4 stacks">
+							<h6 class="stacks-header"><i class="fas fa-code"></i>Frontend Developer</h6>
+							<p class="stacks-text">
+								I am a creative frontend developer with a knack for technology.
+								I follow the estabished procedures of <strong>Progressive Enhancement</strong> and
+								<strong>Responsive Design</strong> to craft websites with
+								well-written code which is easy to modify or upgrade.
+							</p>
+						</div>
+						<div class="col-md-4 stacks">
+							<h6 class="stacks-header"><i class="fas fa-laptop-code"></i>Web Designer
+							</h6>
+							<p class="stacks-text">
+								I am accomplished in UI design and strive for natural immersion, in the aim
+								of a
+								positive end-user experience.
+								This synergizes well with frontend development.
+							</p>
+						</div>
+						<div class="col-md-4 stacks">
+							<h6 class="stacks-header"><i class="fab fa-connectdevelop"></i>Frameworks</h6>
+							<p class="stacks-text">
+								I command an extensive knowledge of the Bootstrap framework.
+								Bootstrap is integral for boosting up projects at early stages with an array
+								of
+								classes and setting up layouts.
+							</p>
+						</div>
+					</div><!-- End Row -->
+				</div>
+			</div><!-- End Row -->
+		</section><!-- End Workflow Container -->
+
+
+
+		<section id="portfolio-section" class="container-fluid my-0 p-5 linear-gradient5">
+			<hr class="shorthr">
+			<h2 class="text-center font-weight-bold">Portfolio</h2>
+			<hr class="shorthr">
+			<div class="row">
+				<div class="col-md-7">
+					<h2 class="feature-heading p-10">Ginza Website
+						<span class="text-muted p-10 font-italic h-span">Responsive overhaul with HTML and CSS</span>
+					</h2>
+					<p class="lead p-10">I helped Ginza do some improvements for their website. Ginza is an old
+						swedish e-commerce company that used to sell movies and books through paper catalogs in the past
+						and has survived
+						the transition to become an e-commerce company in the internet era for all kinds of merchandise.
+						We decided to stick with the old-school styling to allow the loyal fanbase of customers to
+						recognize it for a comfort-zone,
+						nonetheless a lot of improvements could be made in relation to responsiveness, a changed header
+						with more functions and some graphic
+						re-design with the latest CSS3.</p>
+				</div>
+				<div class="col-md-5">
+					<iframe width=400 height=400 class="img-fluid featureframe" src="https://www.ginza.se/"
+						allow="picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div><!-- End Row -->
+
+			<div class="row feature">
+				<div class="col-md-7 order-md-2">
+					<h2 class="feature-heading p-10">Rimworld
+						<span class="text-muted p-10 font-italic h-span">Computer Programming, Java</span></h2>
+					<p class="lead p-10">The PC game Rimworld is a colony simulator set in the distant future on an
+						alien planet. I entered the development team to help develop some scripting for npc
+						behaviour and autonomous pathing. I also had a hand in the look of the finished
+						HUD for the alpha version. I worked with a great team and I learned a lot from this time.</p>
+				</div>
+				<div class="col-md-5 order-md-1">
+					<img src="assets/images/rimworld.png" width="400" height="400" alt="Alien planet" class="img-fluid featureframe" />
+                                        </div>
+				</div><!-- End Row -->
+
+				<div class="row feature">
+					<div class="col-md-7">
+						<h2 class="feature-heading p-10">Crusader Kings 2
+							<span class="text-muted p-10 font-italic h-span">Event Triggers, Twine, HTML, C++</span>
+						</h2>
+						<p class="lead p-10">I was a part of a team scripting events for Crusader Kings 2, the material
+							was already composed by other writers
+							someone just had to place it in there through scripts. It was fun going through the
+							material, and I got used to a new tool in the box, Twine.
+							I learned a lot of things that made my work easier</p>
+					</div>
+					<div class="col-md-5">
+						<img src="assets/images/ck.jpg" width="400" height="400" alt="King and knights in hall" class="img-fluid featureframe"/>
+					</div>
+					</div><!-- End Row -->
+					<hr class="longhr">
+
+					<div class="row">
+						<div class="col-md-4">
+							<div class="frame">
+
+								<div class="profile">
+									<div class="imagecontainer">
+										<div class="rund-1"></div>
+										<div class="rund-2"></div>
+										<img src="assets/images/meimport.png" class="profileimg rounded-circle" width="120" height="120" alt="Johan Kjellin">
+                                </div>
+										<div class="name">Johan Kjellin</div>
+										<div class="job">Front end developer</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- End Row -->
+
+
+
+						
+		</section><!-- End Portfolio Container-->
+
+		<section class="container-fluid" id="contact-section">
+			<div class="row">
+				<div class="col-lg-6 ml-auto">
 					<form class="contact-form">
 						<div class="form-group contact-form-group">
 							<h3 class="contact-heading">Get in touch</h3>
@@ -135,16 +341,16 @@
 							<input type="text" class="form-control contact-input" id="name" placeholder="Name">
 							<label for="email">Email address:</label>
 							<input type="email" class="form-control contact-input" id="email" placeholder="JohnDoe@email.com">
-						</div>
+                                              </div>
 							<div class="form-group">
 								<label for="questions">Select the Nature of the Question</label>
 								<select class="form-control" id="questions">
-      <option>Front End Development</option>
-      <option>Wireframes</option>
-      <option>Cooperation</option>
-      <option>Technical</option>
-      <option>General</option>
-    </select>
+                                                  <option>Front End Development</option>
+                                                  <option>Wireframes</option>
+                                                  <option>Cooperation</option>
+                                                  <option>Technical</option>
+                                                  <option>General</option>
+                                                </select>
 							</div>
 							<div class="form-group">
 								<label for="description">Write a brief on the subject</label>
@@ -153,9 +359,8 @@
 							</div>
 					</form>
 				</div>
-			</div>
+			</div><!-- End Row -->
 		</section>
-
 	</main>
 
 	<footer>
@@ -167,10 +372,9 @@
 							<i class="fas fa-address-card hvr-wobble-top"></i><strong> Personal Info</strong></h6>
 						<div>
 							<p class="footer-p">Johan Kjellin <br>
-                        Stockholm, Sweden <br>
-						v3x0r_x014@hotmail.com</p>
+                                                    Stockholm, Sweden <br>
+                                                  v3x0r_x014@hotmail.com</p>
 						</div>
-
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -178,8 +382,8 @@
 						<h6 class="footer-h6">
 							<i class="fas fa-code-branch hvr-wobble-top"></i><strong> Proficiency</strong>
 						</h6>
-						<p class="footer-p"> HTML, CSS, Frontend Development, UI design, semantic coding with a good
-							structural cohesion</p>
+						<p class="footer-p"> I use HTML5, CSS3 and Javascript to craft good looking websites with a
+							strong structural cohesion</p>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -190,12 +394,12 @@
 						<ul class="list-inline social-links">
 							<li class="list-inline-item">
 								<a target="_blank" href="https://www.facebook.com/johan.kjellin.1">
-									<i class="fab fa-facebook-square hvr-pop"></i>
+									<i class="fab fa-facebook hvr-pop"></i>
 								</a>
 							</li>
 							<li class="list-inline-item">
 								<a target="_blank" href="https://twitter.com/Nchuleftingth?s=03">
-									<i class="fab fa-twitter-square hvr-pop"></i>
+									<i class="fab fa-twitter hvr-pop"></i>
 								</a>
 							</li>
 							<li class="list-inline-item">
@@ -213,9 +417,16 @@
 				</div>
 			</div>
 		</div>
-
 	</footer>
-
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
 </body>
 
 </html>
