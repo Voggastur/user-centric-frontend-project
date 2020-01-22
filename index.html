@@ -50,13 +50,14 @@
 		<section class="landing linear-gradient">
 			<div class="hero-unit p-2 row justify-content-center no-gutters">
 				<div class="col-12 justify-content-center p-4">
-					<h1 class="welcome-heading font-italic text-capitalize text-center">Welcome, I am
+					<h1 class="welcome-heading font-italic text-capitalize text-center">Welcome!</h1>
+                    <h1 class="welcome-heading2 font-italic text-capitalize text-center"> I am
 						<span class="hvr-wobble-top">Johan Kjellin</span></h1>
 					<h3 class="welcome-text font-italic font-weight-normal text-capitalize text-center py-3">Front End
 						developer and
 						Web Designer</h3>
 					<p class="welcome-text2 font-weight-bold text-center"><a class="hvr-icon-hang"
-							href="#skill-section"> I create fully responsive websites from
+							href="#skill-section"> I craft fully responsive websites from
 							scratch, check out my skillset and
 							portfolio<i class="fas fa-arrow-down hvr-icon px-2"></i></a></p>
 				</div>
@@ -272,12 +273,12 @@
 		</section><!-- End Workflow Container -->
 
 
-
-		<section id="portfolio-section" class="container-fluid my-0 p-5 linear-gradient5">
+		<!-- Container Portfolio Three Slideshows -->
+		<section id="portfolio-section" class="container-fluid my-0 p-3 linear-gradient5">
 			<hr class="shorthr">
 			<h2 class="text-center font-weight-bold">Portfolio</h2>
 			<hr class="shorthr">
-			<div class="row p-3">
+			<div class="row">
 				<div class="col-md-7">
 					<h2 class="feature-heading pt-5">Ginza Website
 						<span class="text-muted p-10 font-italic h-span">Responsive overhaul with HTML and CSS</span>
@@ -294,9 +295,37 @@
 					<a class="btn btn-success" href="https://www.ginza.se/">Check it out</a>
 				</div>
 				<div class="col-md-5">
-					<a href="https://www.ginza.se/"><img src="assets/images/ginza2.jpg" width="300" height="300" alt="Corp logotype" class="img-fluid featureframe" /></a>
+					<div class="slideshow">
+						<div class="turner">
+							<input type="radio" name="turner" class="trigger" id="one" checked="checked" />
+							<div class="turn">
+								<figure class="turn-figure">
+									<img class="turn-img" src="assets/images/ginza.jpg" width="300" height="300" />
+							</figure>
+							</div>
+							<input type="radio" name="turner" class="trigger" id="two" />
+							<div class="turn">
+								<figure class="turn-figure">
+									<img class="turn-img" src="assets/images/ginza2.png" width="300" height="300" />
+							</figure>
+							</div>
+							<input type="radio" name="turner" class="trigger" id="three" />
+							<div class="turn">
+								<figure class="turn-figure">
+									<img class="turn-img" src="assets/images/ginza3.png" width="300" height="300" />
+							</figure>
+							</div>
+						</div>
+						<ul class="turn-nav">
+							<li class="turn-navitem">
+								<label class="turn-navlabel btn btn-secondary" for="one" type="radio"></label></li>
+							<li class="turn-navitem">
+								<label class="turn-navlabel btn btn-secondary" for="two" type="radio"></label></li>
+							<li class="turn-navitem">
+								<label class="turn-navlabel btn btn-secondary" for="three" type="radio"></label></li>
+						</ul>
+					</div>
 				</div>
-
 			</div><!-- End Row -->
 
 			<div class="row feature">
@@ -310,7 +339,36 @@
 					<a class="btn btn-success" href="https://rimworldgame.com/">Check it out</a>
 				</div>
 				<div class="col-md-5 order-md-1">
-					<a href="https://rimworldgame.com/"><img src="assets/images/rimworld.png" width="300" height="300" alt="Alien planet" class="img-fluid featureframe" /></a>
+					<div class="slideshow2">
+						<div class="turner2">
+							<input type="radio" name="turner2" class="trigger2" id="four" checked="checked" />
+							<div class="turn2">
+								<figure class="turn-figure">
+									<img class="turn-img" src="assets/images/rimworld.png" width="300" height="300" />
+							</figure>
+							</div>
+							<input type="radio" name="turner2" class="trigger2" id="five" />
+							<div class="turn2">
+								<figure class="turn-figure">
+									<img class="turn-img" src="assets/images/rimworld2.jpg" width="300" height="300" />
+							</figure>
+							</div>
+							<input type="radio" name="turner2" class="trigger2" id="six" />
+							<div class="turn2">
+								<figure class="turn-figure">
+									<img class="turn-img" src="assets/images/rimworld3.jpg" width="300" height="300" />
+							</figure>
+							</div>
+						</div>
+						<ul class="turn-nav">
+							<li class="turn-navitem">
+								<label class="turn-navlabel btn btn-secondary" for="four" type="radio"></label></li>
+							<li class="turn-navitem">
+								<label class="turn-navlabel btn btn-secondary" for="five" type="radio"></label></li>
+							<li class="turn-navitem">
+								<label class="turn-navlabel btn btn-secondary" for="six" type="radio"></label></li>
+						</ul>
+					</div>
 				</div>
 			</div><!-- End Row -->
 
@@ -327,7 +385,36 @@
 					<a class="btn btn-success" href="https://www.crusaderkings.com/">Check it out</a>
 				</div>
 				<div class="col-md-5">
-					<a href="https://www.crusaderkings.com/"><img src="assets/images/ck.jpg" width="300" height="300" alt="King and knights in hall" class="img-fluid featureframe"/></a>
+					<div class="slideshow3">
+						<div class="turner3">
+							<input type="radio" name="turner3" class="trigger3" id="seven" checked="checked" />
+							<div class="turn3">
+								<figure class="turn-figure">
+									<img class="turn-img" src="assets/images/ck.jpeg" width="300" height="300" />
+							</figure>
+							</div>
+							<input type="radio" name="turner3" class="trigger3" id="eight" />
+							<div class="turn3">
+								<figure class="turn-figure">
+									<img class="turn-img" src="assets/images/ck2.png" width="300" height="300" />
+							</figure>
+							</div>
+							<input type="radio" name="turner3" class="trigger3" id="nine" />
+							<div class="turn3">
+								<figure class="turn-figure">
+									<img class="turn-img" src="assets/images/ck3.png" width="300" height="300" />
+							</figure>
+							</div>
+						</div>
+						<ul class="turn-nav">
+							<li class="turn-navitem">
+								<label class="turn-navlabel btn btn-secondary" for="seven" type="radio"></label></li>
+							<li class="turn-navitem">
+								<label class="turn-navlabel btn btn-secondary" for="eight" type="radio"></label></li>
+							<li class="turn-navitem">
+								<label class="turn-navlabel btn btn-secondary" for="nine" type="radio"></label></li>
+						</ul>
+					</div>
 				</div>
 			</div><!-- End Row -->
 			<hr class="longhr">

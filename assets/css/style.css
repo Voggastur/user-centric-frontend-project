@@ -54,21 +54,29 @@ vertical-align: middle;
 animation: 2.5s ease-in popin;
 }
 
-.welcome-heading span {
+.welcome-heading2 {
+color: #57648C;
+font-family: "Roboto", sans-serif;
+position: relative;
+vertical-align: middle;
+animation: 3s ease-in popin;
+}
+
+.welcome-heading2 span {
 cursor: pointer;
 }
 
 .welcome-text {
 font-family: "Roboto", sans-serif;
 color: #57648C;
-animation: 3.2s ease-in popin;
+animation: 3.5s popin;
 }
 
 .welcome-text2 {
 font-family: "Roboto", sans-serif;
 font-size: 18px;
 color: #57648C;
-animation: 3.4s ease-in popin;
+animation: 3.6s popin;
 }
 
 .welcome-text2 a {
@@ -227,8 +235,8 @@ align-items: center;
 position: relative;
 margin: 0 auto;
 top: -80px;
-max-width: 80%;
-max-height: 80%;
+width: 140px;
+height: 140px;
 border-radius: 50%;
 box-shadow: 1px 1px 10px 6px rgba(189,173,172,0.5);
 transition: rotate 2s ease-in-out alternate-reverse;
@@ -291,35 +299,6 @@ padding: 0;
 
 /* ------------------------------------Animation Profile Section */
 
-
-.rund1 {
-position: absolute;
-max-width: 140px;
-max-height: 140px;
-top: -80px;
-margin: 0 auto;
-border-width: 2px;
-border-style: solid;
-border-color: #000 transparent #000 transparent;
-border-radius: 50%;
-transition: rotate 2s ease-in-out alternate-reverse;
-transform: rotate(360deg);
-}
-
-.rund2 {
-position: absolute;
-max-width: 130px;
-max-height: 130px;
-top: -80px;
-margin: 0 auto;
-border-width: 2px;
-border-style: solid;
-border-color: transparent #000 transparent #000;
-border-radius: 50%;
-transition: rotate 2s ease-in-out alternate-reverse;
-transform: rotate(-360deg);
-}
-
 .profilepic:hover {
     color:pointer;
 }
@@ -355,6 +334,101 @@ height: 100%;
 
 .lead {
     margin-left: 15px;
+}
+
+/* -----------Portfolio CSS Slideshow------------- */
+
+.slideshow, .slideshow2, .slideshow3 {
+    -webkit-box-shadow: 8px 8px 20px 10px #200720cc;
+    -moz-box-shadow: 8px 8px 20px 10px #200720cc;
+    box-shadow: 8px 8px 20px 10px #200720cc;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    border-radius: 20px;
+    animation-name: slidepic;
+    animation-duration: 15s;
+    animation-fill-mode: infinite;
+}
+
+.trigger, .trigger2, .trigger3 {
+    display: none;
+}
+
+.turner, .turner2, .turner3, .slideshow, .slideshow2, .slideshow3 {
+    position: relative;
+    height: 280px;
+}
+.slide {
+  position: absolute;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.turn, .turn2, .turn3 {
+    position: absolute;
+    z-index: 5000;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.turn-img {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+
+.turn-figure {
+    height: 100%;
+    position: relative;
+    margin: 0;
+}
+
+.turn-nav {
+    width: 100%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin: 1rem 0;
+}
+
+.turn-navitem {
+    text-align: center;
+    display: inline-block;
+}
+
+.turn-navlabel {
+    font-size: 18px;
+    font-weight: 300;
+    height: 1.2em;
+    width: 1.2em;
+    margin: 5px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .25s, color .25s ease-in-out;
+}
+
+.trigger:checked + .turn {
+    z-index: 6000;
+    opacity: 1;
+}
+
+.trigger2:checked + .turn2 {
+    z-index: 6000;
+    opacity: 1;
+}
+
+.trigger3:checked + .turn3 {
+    z-index: 6000;
+    opacity: 1;
 }
 
 /* ------------------------------------Contact Form */
@@ -519,7 +593,7 @@ background-image: radial-gradient(#C2B4D6 15%, #e5e5e5 50%);
 
 @keyframes popin { 
 0% {transform: scale(0) skew(10deg);} 
-75% {transform: scale(0) skew(10deg);} 
+80% {transform: scale(0) skew(10deg);} 
 90% {transform: scale(1,1) skew(5deg);}
 95% {transform: scale(0.95) skew(-2deg);}
 100% {transform: scale(1) skew(0);} 
