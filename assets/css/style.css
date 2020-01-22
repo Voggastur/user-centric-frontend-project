@@ -59,14 +59,14 @@ cursor: pointer;
 }
 
 .welcome-text {
-font-family: "Bangers", sans-serif;
+font-family: "Roboto", sans-serif;
 color: #57648C;
 animation: 3.2s ease-in popin;
 }
 
 .welcome-text2 {
 font-family: "Roboto", sans-serif;
-font-size: 16px;
+font-size: 18px;
 color: #57648C;
 animation: 3.4s ease-in popin;
 }
@@ -116,15 +116,16 @@ font-size: 3em;
 .card {
 background: #57648C;
 color: #e5e5e5;
-box-shadow: 8px 6px 6px 0px #200720cc;
+box-shadow: 4px 6px 7px 9px rgba(32, 7, 32, 0.5);
 border-radius: 15px;
 margin: 25px;
- height: 80%;
+height: 80%;
 }
 
-.card h2 {
+.card h3 {
 text-transform: underline;
 text-align:center;
+font-size: 2em;
 width: 100%;
 color: #e5e5e5;
 }
@@ -142,13 +143,19 @@ opacity: 1;
 }
 
 .btn, .btn:hover {
-    border: none;
+border: none;
+text-transform: none;
+transition-duration: 0.5s;
 }
 
-/* ------------------------------------Workflow Progress */
+/* ------------------------------------Workflow Progress Section */
 
 #workflow-section {
 height: wrap;
+}
+
+#workflow-section .presentation div > h2 {
+color: #57648C;
 }
 
 .progress {
@@ -170,7 +177,7 @@ font-size: 14px;
 font-weight: 600;
 }
 
-.wrapstack {
+.wrap-stack {
 background-color: #57648C;
 color: #E5E5E5;
 box-shadow: 8px 6px 6px 0px #200720cc;
@@ -181,7 +188,152 @@ font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-size: 1.1em;
 letter-spacing: 1.5px;
+text-transform: underline overline;
 }
+
+
+/* ------------------------------------Profile Section */
+
+
+div.presentation {
+padding: 50px 0;
+justify-content: center;
+color: #30354d;
+}
+
+div#main-card {
+font-family: "Comic Sans MS", sans-serif;
+font-size: 20px;
+box-shadow: -5px 2px 18px 4px #000;
+}
+
+.cover-photo {
+background: #C2B4D6;
+width: 100%;
+height: 150px;
+}
+
+.photo {
+position:relative;
+background: #f7dede;
+width: 100%;
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.profilepic {
+position: relative;
+margin: 0 auto;
+top: -80px;
+max-width: 80%;
+max-height: 80%;
+border-radius: 50%;
+box-shadow: 1px 1px 10px 6px rgba(189,173,172,0.5);
+transition: rotate 2s ease-in-out alternate-reverse;
+}
+
+.content {
+position: relative;
+background: #f9f9f9;
+width: 100%;
+height: 150px;
+top: -35px;
+}
+
+.contact {
+background: #30354d;
+color: #f9f9f9;
+width: 100%;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.content .name, .content .frontend, .profilea {
+margin: 0;
+font-size: 20px;
+text-align: center;
+}
+
+.name {
+padding-bottom: 20px;
+}
+
+.frontend {
+padding-bottom: 10px;
+}
+
+.profilea {
+color: #30354d;
+text-decoration: none;
+font-size: 12px;
+}
+
+.profilea:hover {
+color: #000;
+transition-duration: .5;
+}
+
+.profilea i {
+font-size: 20px;
+padding: 10px;
+text-decoration: none;
+color: #fff;
+}
+
+.profileul {
+padding: 0;
+}
+
+
+/* ------------------------------------Animation Profile Section */
+
+
+.rund1 {
+position: absolute;
+max-width: 140px;
+max-height: 140px;
+top: -80px;
+margin: 0 auto;
+border-width: 2px;
+border-style: solid;
+border-color: #000 transparent #000 transparent;
+border-radius: 50%;
+transition: rotate 2s ease-in-out alternate-reverse;
+transform: rotate(360deg);
+}
+
+.rund2 {
+position: absolute;
+max-width: 130px;
+max-height: 130px;
+top: -80px;
+margin: 0 auto;
+border-width: 2px;
+border-style: solid;
+border-color: transparent #000 transparent #000;
+border-radius: 50%;
+transition: rotate 2s ease-in-out alternate-reverse;
+transform: rotate(-360deg);
+}
+
+.profilepic:hover {
+    color:pointer;
+}
+
+.profilepic:hover .rund-1 {
+transition: rotate 2s ease-in-out alternate-reverse;
+transform: rotate(0deg);
+}
+
+.profilepic:hover .rund-2 {
+transition: rotate 2s ease-in-out alternate-reverse;
+transform: rotate(0deg);
+}
+
 
 /* ------------------------------------Portfolio */
 
@@ -194,7 +346,7 @@ height: 100%;
     height: 300px;
     border: 1px solid #934A5F;
     border-radius: 25px;
-    margin: 10px;
+    margin: 10px 10px;
 }
 
 .h-span {
@@ -204,126 +356,6 @@ height: 100%;
 .lead {
     margin-left: 15px;
 }
-
-
-/* ------------------------------------Profile Section */
-
-.me {
-position: relative;
-}
-
-.profileimg {
-position: relative;
-width: 120px;
-height: 120px;
-margin: 0 auto;
-overflow: visible;
-}
-
-.frame {
-font-family: Helvetica, sans-serif;
-position: relative;
-width: 400px;
-height: 400px;
-border-radius: 2px;
-background: #934A5F;
-color: #E5E5E5;
-}
-
-.left {
-position: relative;
-top: 50px;
-left: 40px;
-height: 240px;
-width: 260px;
-background: #C2B4D6;
-border-radius: 3px;
-overflow: hidden;
-box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
-}
-
-.profile {
-float: left;
-width: 200px;
-height: 320px;
-text-align: center;
-}
-
-.rund-1 {
-position: absolute;
-box-sizing: border-box;
-width: 123px;
-height: 123px;
-top: -3px;
-left: -3px;
-border-width: 1px;
-border-style: solid;
-border-color: #786450 #786450 #786450 transparent;
-border-radius: 50%;
-transition: all 1.5s ease-in-out;
-transform: rotate(360deg);
-}
-		
-.rund-2 {
-position: absolute;
-box-sizing: border-box;
-width: 126x;
-height: 126px;
-top: -6px;
-left: -6px;
-border-width: 1px;
-border-style: solid;
-border-color: #786450 transparent #786450 #786450;
-border-radius: 50%;
-transition: all 1.5s ease-in-out;
-transform: rotate(-360deg);
-}
-		
-.profileimg {
-display: block;
-margin: 0 auto;
-border-radius: 50%;
-}
-		
-.profileimg:hover {
-cursor: pointer;
-}
-
-.name {
-font-size: 15px;
-font-weight: 600;
-margin-top: 20px;
-}
-	
-.job {
-font-size: 11px;
-line-height: 15px;
-}
-	
-.actions {
-margin-top: 33px;
-}
-		
-.profilebtn {
-display: block;
-width: 120px;
-height: 30px;
-margin: 0 auto 10px auto;
-background: none;
-border: 1px solid brown;
-border-radius: 15px;
-font-size: 12px;
-font-weight: 600;
-box-sizing: border-box;
-transition: all .3s ease-in-out;
-color: #786450;
-}
-			
-.profilebtn:hover  {
-background: #786450;
-color: #fff;
-}
-
 
 /* ------------------------------------Contact Form */
 
@@ -415,7 +447,7 @@ footer i {
 /* ------------------------------------linear-gradients and hr */
 
 .longhr {
-width: 80%;
+width: 90%;
 border-top: 2px solid #934A5F;
 border-right: none;
 border-bottom: none;
@@ -494,14 +526,16 @@ background-image: radial-gradient(#C2B4D6 15%, #e5e5e5 50%);
 }
 
 @keyframes growbar { 
-    from {
-        width: 10%;
-    } 
-    to {
-        width: 100%;
-    }
+    from {width: 20%;}
+    to {width: 100%;}
 }
 
+@keyframes rotate {
+0% {transform: rotate(0deg);}
+50% {transform: rotate(-180deg);}
+75% {transform: rotate(90deg);}
+100% {transform: rotate(0deg);}
+}
 
 /* ------------------------------------Media Queries */
 
@@ -514,8 +548,7 @@ background-image: radial-gradient(#C2B4D6 15%, #e5e5e5 50%);
 @media(max-width: 768px) {
 .workman {
 width: 160px;
-height: 160px;
-display:none;}
+height: 160px;}
 }
 
 @media(max-width: 576px) {
