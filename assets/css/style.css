@@ -93,7 +93,7 @@ margin-left: 10px;
 .workman {
 position: relative;
 margin: 100px;
-overflow:none;
+overflow:visible;
 }
 
 .landing {
@@ -117,8 +117,10 @@ width: 100%;
 color: #57648C;
 }
 
-#skill-section div div h2 {
-font-size: 3em;
+.sectionheader {
+color: #57648C;
+font-size: 2.4em;
+margin: 15px;
 }
 
 .card {
@@ -150,9 +152,13 @@ padding-bottom: 10px;
 opacity: 1;
 }
 
-.btn, .btn:hover {
+.btn {
+margin: 0 auto;
 border: none;
 text-transform: none;
+}
+
+.btn, .btn:hover {
 transition-duration: 0.5s;
 }
 
@@ -160,10 +166,6 @@ transition-duration: 0.5s;
 
 #workflow-section {
 height: wrap;
-}
-
-#workflow-section .presentation div > h2 {
-color: #57648C;
 }
 
 .progress {
@@ -181,14 +183,17 @@ position: relative;
 font-style: italic;
 text-align: center;
 left: 0px;
-font-size: 14px;
+line-height: 18px;
+font-size: 15px;
 font-weight: 600;
 }
 
 .wrap-stack {
 background-color: #57648C;
 color: #E5E5E5;
-box-shadow: 8px 6px 6px 0px #200720cc;
+box-shadow: 4px 6px 7px 9px rgba(32, 7, 32, 0.5);
+margin-bottom: 50px;
+padding: 5px;
 }
 
 .stacks-header {
@@ -199,33 +204,29 @@ letter-spacing: 1.5px;
 text-transform: underline overline;
 }
 
+.stacks-header i {
+margin-right: 2px;
+}
+
 
 /* ------------------------------------Profile Section */
 
-
-div.presentation {
-padding: 50px 0;
-justify-content: center;
-color: #30354d;
-}
-
-div#main-card {
+.profilecard {
 font-family: "Comic Sans MS", sans-serif;
-font-size: 20px;
 box-shadow: -5px 2px 18px 4px #000;
+background: #511257;
 }
 
 .cover-photo {
-background: #C2B4D6;
-width: 100%;
+background: #424b2d;
+width: 50vh;
 height: 150px;
 }
 
 .photo {
-position:relative;
-background: #f7dede;
-width: 100%;
-height: 150px;
+background: #71c3e4;
+width: 180%;
+height: 180px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -234,12 +235,12 @@ align-items: center;
 .profilepic {
 position: relative;
 margin: 0 auto;
-top: -80px;
+top: 40px;
+vertical-align: baseline;
+border-radius: 50%;
 width: 140px;
 height: 140px;
-border-radius: 50%;
 box-shadow: 1px 1px 10px 6px rgba(189,173,172,0.5);
-transition: rotate 2s ease-in-out alternate-reverse;
 }
 
 .content {
@@ -247,11 +248,10 @@ position: relative;
 background: #f9f9f9;
 width: 100%;
 height: 150px;
-top: -35px;
 }
 
 .contact {
-background: #30354d;
+background: #57648C;
 color: #f9f9f9;
 width: 100%;
 height: 100px;
@@ -277,7 +277,7 @@ padding-bottom: 10px;
 .profilea {
 color: #30354d;
 text-decoration: none;
-font-size: 12px;
+font-size: 14px;
 }
 
 .profilea:hover {
@@ -287,34 +287,69 @@ transition-duration: .5;
 
 .profilea i {
 font-size: 20px;
-padding: 10px;
 text-decoration: none;
 color: #fff;
 }
 
-.profileul {
-padding: 0;
+/* ------------------------------------Profile Card */
+
+.workflow-ul {
+  list-style-type: armenian;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.workflow-ul li {
+  float: left;
+}
+
+.leftbar {
+    background:#424b2d;
+}
+
+.topright {
+    background: #aaeebb;
+    font-size: 16px;
+}
+
+.bottomright {
+    background: #ffb25b;
+}
+
+.topright ul {
+    display: inline;
 }
 
 
-/* ------------------------------------Animation Profile Section */
+/* ------------------------------------About */
 
-.profilepic:hover {
-    color:pointer;
+#section-about {
+height: wrap;
 }
 
-.profilepic:hover .rund-1 {
-transition: rotate 2s ease-in-out alternate-reverse;
-transform: rotate(0deg);
+.meabout {
+position: relative;
+align-self: center;
+width: 140px;
+height: 140px;
+box-shadow: 1px 1px 10px 6px rgba(189,173,172,0.5);
 }
 
-.profilepic:hover .rund-2 {
-transition: rotate 2s ease-in-out alternate-reverse;
-transform: rotate(0deg);
+.left-head {
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+.right-head {
+    line-height: 20px;
+    margin-bottom: 50px;
 }
 
 
 /* ------------------------------------Portfolio */
+
 
 .feature {
 height: 100%;
@@ -345,9 +380,6 @@ height: 100%;
     margin-bottom: 100px;
     margin-top: 30px;
     border-radius: 20px;
-    animation-name: slidepic;
-    animation-duration: 15s;
-    animation-fill-mode: infinite;
 }
 
 .trigger, .trigger2, .trigger3 {
@@ -522,6 +554,7 @@ footer i {
 
 .longhr {
 width: 90%;
+margin: 0 auto;
 border-top: 2px solid #934A5F;
 border-right: none;
 border-bottom: none;
@@ -530,6 +563,7 @@ border-left: none;
 
 .shorthr {
 width:30%;
+margin: 0 auto;
 border-top: 2px solid #934A5F;
 border-right: none;
 border-bottom: none;
@@ -537,7 +571,6 @@ border-left: none;
 }
 
 .linear-gradient {
-position:static;
 border: none;
 width: 100%;
 background-image: -webkit-linear-gradient(271deg, #C2B4D6 5%, #e5e5e5 70%, #C2B4D6 95%);
@@ -547,15 +580,13 @@ background-image: linear-gradient(1deg, #C2B4D6 5%, #e5e5e5 70%, #C2B4D6 95%);
 
 .linear-gradient2 {
 border: none;
-position: absolute;
+width:100%;
 margin: 0;
 padding: 0;
 bottom: 0;
-width:100%;
-height: 200px;
-background-image: -webkit-linear-gradient(271deg, #C2B4D6 35%, #e5e5e5 90%);
-background-image: -o-linear-gradient(271deg, #C2B4D6 35%, #e5e5e5 90%);
-background-image: linear-gradient(1deg, #C2B4D6 35%, #e5e5e5 90%);
+background-image: -webkit-linear-gradient(275,#C2B4D6 15%, #e5e5e5 25%, #C2B4D6 80%);
+background-image: -o- linear-gradient(275deg, #C2B4D6 15%, #e5e5e5 25%, #C2B4D6 80%);
+background-image:  linear-gradient(-5deg, #C2B4D6 15%, #e5e5e5 25%, #C2B4D6 80%);
 }
 
 .linear-gradient3 {
@@ -564,9 +595,9 @@ width: 100%;
 height: 100px;
 margin: 0;
 padding: 0;
-background-image: -webkit-linear-gradient(271deg, #e5e5e5 25%, #C2B4D6 65%);
-background-image: -o-linear-gradient(271deg, #e5e5e5 25%, #C2B4D6 65%);
-background-image: linear-gradient(1deg, #e5e5e5 25%, #C2B4D6 65%);
+background-image: -webkit-linear-gradient(268deg, #C2B4D6 5%, #e5e5e5 35%, #C2B4D6 100%,  #e5e5e5 25%);
+background-image: -o-linear-gradient(268deg, #C2B4D6 5%, #e5e5e5 35%, #C2B4D6 100%,  #e5e5e5 25%);
+background-image: linear-gradient(-12deg, #C2B4D6 5%, #e5e5e5 35%, #C2B4D6 100%,  #e5e5e5 25%);
 }
 
 .linear-gradient4 {
@@ -579,7 +610,6 @@ background-image: linear-gradient(4deg, #C2B4D6 10%, #e5e5e5 85%);
 }
 
 .linear-gradient5 {
-position: static;
 background-image: -webkit-linear-gradient(280deg, #e5e5e5 10%, #C2B4D6 85%);
 background-image: -o-linear-gradient(280deg, #e5e5e5 10%, #C2B4D6 85%);
 background-image: linear-gradient(10deg, #e5e5e5 10%, #C2B4D6 85%);
@@ -630,8 +660,17 @@ height: 160px;}
 width:120px;
 height:120px;
 display: none;}
+.footer-h6, .footer-p {
+    text-align: center;
+}
+.social-links .list-inline-item {
+text-align: center;
+}
+.social-links li a i {
+margin-bottom: 5px
+}
 }
 
-@media only screen {}
+@media only screen {
 }
 

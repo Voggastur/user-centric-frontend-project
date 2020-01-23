@@ -100,21 +100,6 @@ nav i {
     text-decoration: none;
 }
 
-/* ------------------------------------Top aligned sidebars */
-
-.rightbar {
-    position: static;
-    top: 0;
-    right: 0;
-    height: inherit;
-}
-
-.leftbar {
-    position: static;
-    top: 0;
-    left: 0;
-    height: 100%;
-}
 
 /* ------------------------------------Section Left Bar */
 
