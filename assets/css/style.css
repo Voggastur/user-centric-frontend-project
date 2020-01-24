@@ -97,7 +97,7 @@ overflow:visible;
 }
 
 .landing {
-    height: wrap;
+    height: auto;
 }
 
 .pink {
@@ -130,7 +130,6 @@ height: 80%;
 }
 
 .card h3 {
-text-transform: underline;
 text-align:center;
 font-size: 2em;
 width: 100%;
@@ -159,57 +158,16 @@ text-transform: none;
 transition-duration: 0.5s;
 }
 
-/* ------------------------------------Workflow Progress Section */
+/* ------------------------------------Profile Card */
 
 #workflow-section {
-height: wrap;
+height: auto;
 }
-
-.progress {
-height: 15px;
-margin-top: 10px;
-margin-bottom: 5px;
-background-color: #ff9;
-}
-
-.progress-bar {
-display: block;
-}
-
-.progress-text {
-position: relative;
-font-style: italic;
-text-align: center;
-line-height: 20px;
-font-size: 15px;
-font-weight: 600;
-}
-
-.wrap-stack {
-background-color: #57648C;
-color: #E5E5E5;
-box-shadow: 4px 6px 7px 9px rgba(32, 7, 32, 0.5);
-margin-bottom: 50px;
-padding: 5px;
-}
-
-.stacks-header {
-font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 1.1em;
-letter-spacing: 1.5px;
-text-transform: underline overline;
-}
-
-.stacks-header i {
-margin-right: 2px;
-}
-
-/* ------------------------------------Profile Card */
 
 .presentation {
 font-family: "Comic Sans MS", sans-serif;
 box-shadow: 4px 6px 7px 9px rgba(32, 7, 32, 0.5);
+border-radius: 10px;
 }
 
 .profilepic {
@@ -218,30 +176,43 @@ display: flex;
 margin: 0 auto;
 top: 40px;
 border-radius: 50%;
-width: 140px;
-height: 140px;
+width: 120px;
+height: 120px;
 box-shadow: 1px 1px 10px 6px rgba(189,173,172,0.5);
 }
 
-.leftbar {
-    background:#57648C;
-}
-
 .topright {
-    background: #e5e5e5;
+background: #C2B4D6;
     font-size: 16px;
-    height:wrap;
+    height:auto;
 }
 
 .bottomright {
-    background: #e5e5e5;
+background: #C2B4D6;
     border-top: 1px solid #000;
     font-size: 16px;
-    height:wrap;
+    height:auto;
 }
 
 .topright ul {
     display: inline;
+}
+
+.wrap-stack {
+background: #C2B4D6;
+color: #57648C;
+padding: 5px;
+}
+
+.stacks-header {
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 1.2em;
+letter-spacing: 1.5px;
+}
+
+.stacks-header i {
+margin: 2px;
 }
 
 .subheading {
@@ -263,33 +234,32 @@ padding-left: 10px;
 font-size: 1.2em;
 }
 
+/* ------------------------------------Workflow Progress Section */
 
-/* ------------------------------------About */
-
-#section-about {
-height: wrap;
+.progress {
+height: 15px;
+margin-top: 10px;
+margin-bottom: 5px;
+background-color: #ffffb5;
 }
 
-.meabout {
+.progress-bar {
+display: block;
+}
+
+.progress-text {
 position: relative;
-align-self: center;
-width: 140px;
-height: 140px;
-box-shadow: 1px 1px 10px 6px rgba(189,173,172,0.5);
+text-align: center;
+line-height: 10px;
+font-size: 14px;
+font-weight: 600;
 }
-
-.left-head {
-    line-height: 20px;
-    margin-bottom: 50px;
-}
-
-.right-head {
-    line-height: 20px;
-    margin-bottom: 50px;
-}
-
 
 /* ------------------------------------Portfolio */
+
+#portfolio-section {
+    height: auto;
+}
 
 .feature {
 height: 100%;
@@ -409,6 +379,31 @@ height: 100%;
     opacity: 1;
 }
 
+/* ------------------------------------About Section */
+
+#section-about {
+height: auto;
+}
+
+.meabout {
+position: relative;
+align-self: center;
+width: 140px;
+height: 140px;
+box-shadow: 1px 1px 10px 6px rgba(189,173,172,0.5);
+}
+
+.left-head {
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+.right-head {
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+
 /* ------------------------------------Contact Form */
 
 #contact-section-id {
@@ -436,7 +431,7 @@ height: 100%;
 
 footer {
     bottom: 0;
-    height: wrap;
+    height: auto;
     background: #57648C;
     color: #E5E5E5;
 }
@@ -518,6 +513,8 @@ border-left: none;
 .linear-gradient {
 border: none;
 width: 100%;
+top: 0;
+bottom: 0;
 background-image: -webkit-linear-gradient(271deg, #C2B4D6 5%, #e5e5e5 70%, #C2B4D6 95%);
 background-image: -o-linear-gradient(271deg, #C2B4D6 5%, #e5e5e5 70%, #C2B4D6 95%);
 background-image: linear-gradient(1deg, #C2B4D6 5%, #e5e5e5 70%, #C2B4D6 95%);
@@ -528,6 +525,7 @@ border: none;
 width:100%;
 margin: 0;
 padding: 0;
+top: 0;
 bottom: 0;
 background-image: -webkit-linear-gradient(275,#C2B4D6 15%, #e5e5e5 25%, #C2B4D6 80%);
 background-image: -o- linear-gradient(275deg, #C2B4D6 15%, #e5e5e5 25%, #C2B4D6 80%);
@@ -540,6 +538,8 @@ width: 100%;
 height: 100px;
 margin: 0;
 padding: 0;
+top: 0;
+bottom: 0;
 background-image: -webkit-linear-gradient(268deg, #C2B4D6 5%, #e5e5e5 35%, #C2B4D6 100%,  #e5e5e5 25%);
 background-image: -o-linear-gradient(268deg, #C2B4D6 5%, #e5e5e5 35%, #C2B4D6 100%,  #e5e5e5 25%);
 background-image: linear-gradient(-12deg, #C2B4D6 5%, #e5e5e5 35%, #C2B4D6 100%,  #e5e5e5 25%);
@@ -555,13 +555,16 @@ background-image: linear-gradient(4deg, #C2B4D6 10%, #e5e5e5 85%);
 }
 
 .linear-gradient5 {
+border: none;
+margin: 0;
+padding: 0;
 background-image: -webkit-linear-gradient(280deg, #e5e5e5 10%, #C2B4D6 85%);
 background-image: -o-linear-gradient(280deg, #e5e5e5 10%, #C2B4D6 85%);
 background-image: linear-gradient(10deg, #e5e5e5 10%, #C2B4D6 85%);
 }
 
 .radial-gradient {
-background-image: radial-gradient(#C2B4D6 15%, #e5e5e5 50%);
+background-image: radial-gradient(#e5e5e5 10%, #C2B4D6 95%);
 }
 
 /* ------------------------------------Keyframes */
