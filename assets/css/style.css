@@ -59,7 +59,7 @@ color: #57648C;
 font-family: "Roboto", sans-serif;
 position: relative;
 vertical-align: middle;
-animation: 3s ease-in popin;
+animation: 2.8s ease-in popin;
 }
 
 .welcome-heading2 span {
@@ -69,14 +69,14 @@ cursor: pointer;
 .welcome-text {
 font-family: "Roboto", sans-serif;
 color: #57648C;
-animation: 3.5s popin;
+animation: 2.9s popin;
 }
 
 .welcome-text2 {
 font-family: "Roboto", sans-serif;
 font-size: 18px;
 color: #57648C;
-animation: 3.6s popin;
+animation: 3.5s popin;
 }
 
 .welcome-text2 a {
@@ -97,7 +97,7 @@ overflow:visible;
 }
 
 .landing {
-    height: 700px;
+    height: wrap;
 }
 
 .pink {
@@ -106,9 +106,6 @@ overflow:visible;
 
 /* ------------------------------------Main Sections */
 
-.header {
-color: #57648C;
-}
 
 /* ------------------------------------Skillcards */
 
@@ -171,6 +168,7 @@ height: wrap;
 .progress {
 height: 15px;
 margin-top: 10px;
+margin-bottom: 5px;
 background-color: #ff9;
 }
 
@@ -182,8 +180,7 @@ display: block;
 position: relative;
 font-style: italic;
 text-align: center;
-left: 0px;
-line-height: 18px;
+line-height: 20px;
 font-size: 15px;
 font-weight: 600;
 }
@@ -208,118 +205,62 @@ text-transform: underline overline;
 margin-right: 2px;
 }
 
+/* ------------------------------------Profile Card */
 
-/* ------------------------------------Profile Section */
-
-.profilecard {
+.presentation {
 font-family: "Comic Sans MS", sans-serif;
-box-shadow: -5px 2px 18px 4px #000;
-background: #511257;
-}
-
-.cover-photo {
-background: #424b2d;
-width: 50vh;
-height: 150px;
-}
-
-.photo {
-background: #71c3e4;
-width: 180%;
-height: 180px;
-display: flex;
-justify-content: center;
-align-items: center;
+box-shadow: 4px 6px 7px 9px rgba(32, 7, 32, 0.5);
 }
 
 .profilepic {
 position: relative;
+display: flex;
 margin: 0 auto;
 top: 40px;
-vertical-align: baseline;
 border-radius: 50%;
 width: 140px;
 height: 140px;
 box-shadow: 1px 1px 10px 6px rgba(189,173,172,0.5);
 }
 
-.content {
-position: relative;
-background: #f9f9f9;
-width: 100%;
-height: 150px;
+.leftbar {
+    background:#57648C;
 }
 
-.contact {
-background: #57648C;
-color: #f9f9f9;
-width: 100%;
-height: 100px;
-display: flex;
-justify-content: center;
-align-items: center;
+.topright {
+    background: #e5e5e5;
+    font-size: 16px;
+    height:wrap;
 }
 
-.content .name, .content .frontend, .profilea {
-margin: 0;
-font-size: 20px;
-text-align: center;
+.bottomright {
+    background: #e5e5e5;
+    border-top: 1px solid #000;
+    font-size: 16px;
+    height:wrap;
 }
 
-.name {
-padding-bottom: 20px;
+.topright ul {
+    display: inline;
 }
 
-.frontend {
-padding-bottom: 10px;
+.subheading {
+    font-size: 2em;
 }
-
-.profilea {
-color: #30354d;
-text-decoration: none;
-font-size: 14px;
-}
-
-.profilea:hover {
-color: #000;
-transition-duration: .5;
-}
-
-.profilea i {
-font-size: 20px;
-text-decoration: none;
-color: #fff;
-}
-
-/* ------------------------------------Profile Card */
 
 .workflow-ul {
   list-style-type: armenian;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
 }
 
 .workflow-ul li {
-  float: left;
+padding-left: 10px;
 }
 
-.leftbar {
-    background:#424b2d;
-}
-
-.topright {
-    background: #aaeebb;
-    font-size: 16px;
-}
-
-.bottomright {
-    background: #ffb25b;
-}
-
-.topright ul {
-    display: inline;
+.workflow-ul li i {
+font-size: 1.2em;
 }
 
 
@@ -350,7 +291,6 @@ box-shadow: 1px 1px 10px 6px rgba(189,173,172,0.5);
 
 /* ------------------------------------Portfolio */
 
-
 .feature {
 height: 100%;
 }
@@ -365,6 +305,15 @@ height: 100%;
 
 .h-span {
     font-size: 18px;
+}
+
+.checkitout {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.2em;
+    width: 8em;
+    display: block;
+    margin: 0 auto;
+    
 }
 
 .lead {
@@ -390,11 +339,6 @@ height: 100%;
     position: relative;
     height: 280px;
 }
-.slide {
-  position: absolute;
-  opacity: 0;
-  transition: opacity .5s ease-in-out;
-}
 
 .turn, .turn2, .turn3 {
     position: absolute;
@@ -411,7 +355,7 @@ height: 100%;
 }
 
 .turn-img {
-    object-fit: fill;
+    object-fit: cover;
     height: 100%;
     width: 100%;
     vertical-align: middle;
@@ -440,9 +384,11 @@ height: 100%;
     font-size: 18px;
     font-weight: 300;
     height: 1.2em;
-    width: 1.2em;
-    margin: 5px;
-    border-radius: 20px;
+    width: 4em;
+    margin-top: 2px;
+    border: 1px solid maroon;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     text-align: center;
     cursor: pointer;
     transition: background-color .25s, color .25s ease-in-out;
@@ -497,14 +443,14 @@ footer {
 
 .footer-h6 {
     text-align: left;
-    margin: 20px;
+    margin: 15px;
     font-size: 1.1em;
     letter-spacing: 0.05em;
 }
 
 .social-h6 {
-    text-align: left;
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 15px;
     font-size: 1.1em;
     letter-spacing: 0.1em;
     color: #E5E5E5;
@@ -525,7 +471,7 @@ footer i {
 }
 
 .social-links {
-    text-align: left;
+    text-align: center;
     margin-top: 30px;
 }
 
@@ -536,7 +482,7 @@ footer i {
     border-radius: 50%;
     margin-right: 5px;
     font-size: 14px;
-    text-align: center;
+    text-align:center;
     transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
@@ -546,8 +492,7 @@ footer i {
 }
 
 .social-links li a i:hover {
-    background-color: #e5e5e5;
-    color: #06f;
+    background-color: #06f;
 }
 
 /* ------------------------------------linear-gradients and hr */
@@ -653,13 +598,6 @@ background-image: radial-gradient(#C2B4D6 15%, #e5e5e5 50%);
 .workman {
 width: 160px;
 height: 160px;}
-}
-
-@media(max-width: 576px) {
-.workman {
-width:120px;
-height:120px;
-display: none;}
 .footer-h6, .footer-p {
     text-align: center;
 }
@@ -669,6 +607,14 @@ text-align: center;
 .social-links li a i {
 margin-bottom: 5px
 }
+}
+
+@media(max-width: 576px) {
+.workman {
+width:120px;
+height:120px;
+display: none;}
+
 }
 
 @media only screen {
