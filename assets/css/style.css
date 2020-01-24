@@ -6,7 +6,6 @@ html, body {
 margin: 0;
 padding: 0;
 display: block;
-background: #e5e5e5;
 color: #57648C;
 font-family: "Lato", sans-serif;
 }
@@ -18,20 +17,20 @@ font-family: "Lato", sans-serif;
 }
 
 nav, nav ul, nav ul li, nav ul li a {
-background: #C2B4D6;
 color: #57648C;
+background: #C2B4D6;
 }
 
 nav a, .nav-link {
-background: #C2B4D6;
 color: #57648C;
+background: #C2B4D6;
 border: none;
 text-decoration: none;
 }
 
 nav a:hover, .nav-link:hover {
-background: #C2B4D6;
 color: #57648C;
+background: #C2B4D6;
 border: none;
 text-decoration: none;
 }
@@ -41,25 +40,22 @@ pointer-events: none;
 }
 
 .navbar-brand {
-background: #C2B4D6;
 margin:5px;
-transform: scale(1.1);
+background: #C2B4D6;
 }
 
 .welcome-heading {
-color: #57648C;
 font-family: "Roboto", sans-serif;
 position: relative;
 vertical-align: middle;
-animation: 2.5s ease-in popin;
+animation: 2.7s ease-in popin;
 }
 
 .welcome-heading2 {
-color: #57648C;
 font-family: "Roboto", sans-serif;
 position: relative;
 vertical-align: middle;
-animation: 2.8s ease-in popin;
+animation: 3.1s ease-in popin;
 }
 
 .welcome-heading2 span {
@@ -68,15 +64,13 @@ cursor: pointer;
 
 .welcome-text {
 font-family: "Roboto", sans-serif;
-color: #57648C;
-animation: 2.9s popin;
+animation: 4s popin;
 }
 
 .welcome-text2 {
 font-family: "Roboto", sans-serif;
 font-size: 18px;
-color: #57648C;
-animation: 3.5s popin;
+animation: 4.3s popin;
 }
 
 .welcome-text2 a {
@@ -90,14 +84,18 @@ cursor: pointer;
 margin-left: 10px;
 }
 
+h1 span {
+    text-decoration: underline;
+}
+
 .workman {
 position: relative;
-margin: 100px;
-overflow:visible;
+margin: 50px;
 }
 
 .landing {
     height: auto;
+    color: #57648C;
 }
 
 .pink {
@@ -158,109 +156,11 @@ text-transform: none;
 transition-duration: 0.5s;
 }
 
-/* ------------------------------------Profile Card */
-
-#workflow-section {
-height: auto;
-}
-
-.presentation {
-font-family: "Roboto", sans-serif;
-box-shadow: 4px 6px 7px 9px rgba(32, 7, 32, 0.5);
-border-radius: 10px;
-color: #e5e5e5;
-}
-
-.profilepic {
-position: relative;
-display: flex;
-margin: 0 auto;
-top: 40px;
-border-radius: 50%;
-width: 120px;
-height: 120px;
-box-shadow: 1px 1px 10px 6px rgba(189,173,172,0.5);
-}
-
-.topright {
-background: #57648C;
-    font-size: 16px;
-    height:auto;
-}
-
-.bottomright {
-background: #57648C;
-border-top: 1px solid #000;
-font-size: 16px;
-height:auto;
-}
-
-.topright ul {
-display: inline;
-}
-
-.wrap-stack {
-background: #57648C;
-color: #e5e5e5;
-padding: 5px;
-}
-
-.stacks-header {
-font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 1.2em;
-letter-spacing: 1.5px;
-}
-
-.stacks-header i {
-margin: 2px;
-}
-
-.subheading {
-font-family: "Comic Sans MS", sans-serif;
-font-size: 2em;
-}
-
-.workflow-ul {
-list-style-type: armenian;
-margin: 0;
-padding: 0;
-overflow: hidden;
-}
-
-.workflow-ul li {
-padding-left: 10px;
-}
-
-.workflow-ul li i {
-font-size: 1.2em;
-}
-
-/* ------------------------------------Workflow Progress Section */
-
-.progress {
-height: 15px;
-margin-top: 10px;
-margin-bottom: 5px;
-background-color: #ffffb5;
-}
-
-.progress-bar {
-display: block;
-}
-
-.progress-text {
-position: relative;
-text-align: center;
-line-height: 10px;
-font-size: 14px;
-font-weight: 600;
-}
-
 /* ------------------------------------Portfolio */
 
 #portfolio-section {
     height: auto;
+    color: #57648C;
 }
 
 .feature {
@@ -327,7 +227,6 @@ height: 100%;
 }
 
 .turn-img {
-    object-fit: cover;
     height: 100%;
     width: 100%;
     vertical-align: middle;
@@ -381,9 +280,121 @@ height: 100%;
     opacity: 1;
 }
 
+/* ------------------------------------Profile Card */
+
+#profile-section {
+height: auto;
+color: #57648C;
+background: #C2B4D6;
+}
+
+.presentation {
+font-family: "Roboto", sans-serif;
+background: #ccc;
+color: #57648C;
+box-shadow: 4px 6px 7px 9px rgba(32, 7, 32, 0.5);
+border-radius: 10px;
+}
+
+.profilepic {
+position: relative;
+display: flex;
+align-self: center;
+margin: 20px auto;
+border-radius: 50%;
+width: 6em;
+height: 6em;
+box-shadow: 1px 1px 10px 6px rgba(189,173,172,0.5);
+}
+
+.workflow-ul .devicon i {
+    font-size: 24px;
+}
+
+.topleft {
+height: auto;
+}
+
+.topright {
+font-size: 16px;
+height:auto;
+}
+
+.bottomprogress {
+height: wrap;
+font-size: 16px;
+}
+
+.topright ul {
+display: inline;
+}
+
+.stacks-header {
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 1.2em;
+letter-spacing: 1.5px;
+}
+
+.stacks-text {
+font-family: "Roboto", sans-serif;
+}
+
+.stacks-header i {
+margin: 3px;
+}
+
+.subheading {
+font-family: "Comic Sans MS", sans-serif;
+font-size: 2em;
+padding-left: 30px;
+}
+
+h3.sub-heading2 {
+font-size: 2em;
+font-family: "Comic Sans MS", sans-serif;
+text-decoration: underline;
+}
+
+.workflow-ul {
+list-style-type: armenian;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+.workflow-ul li {
+padding-left: 10px;
+margin-bottom: 5px;
+}
+
+.workflow-ul li i {
+font-size: 1.2em;
+}
+
+/* ------------------------------------Profile Progress Section */
+
+.progress {
+height: 15px;
+background-color: #ffffb5;
+margin: 10px;
+}
+
+.progress-bar {
+display: block;
+}
+
+.progress-text {
+position: relative;
+text-align: center;
+line-height: 10px;
+font-size: 14px;
+font-weight: 600;
+}
+
 /* ------------------------------------About Section */
 
-#section-about {
+#about-section {
 height: auto;
 }
 
@@ -396,17 +407,33 @@ box-shadow: 1px 1px 10px 6px rgba(189,173,172,0.5);
 }
 
 .left-head {
-    line-height: 20px;
     margin-bottom: 50px;
 }
 
 .right-head {
-    line-height: 20px;
     margin-bottom: 50px;
 }
 
+.left-head p, .right-head p {
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    line-height: 20px;
+}
+
+.left-head .heading, .right-head .heading {
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
+}
 
 /* ------------------------------------Contact Form */
+
+.penpaper {
+    position:absolute;
+    background: transparent;
+    margin: 0 auto;
+    bottom: 150px;
+    opacity: 0.7
+}
 
 #contact-section-id {
     background-color: #e5e5e5;
@@ -519,7 +546,7 @@ top: 0;
 bottom: 0;
 background-image: -webkit-linear-gradient(271deg, #C2B4D6 5%, #e5e5e5 70%, #C2B4D6 95%);
 background-image: -o-linear-gradient(271deg, #C2B4D6 5%, #e5e5e5 70%, #C2B4D6 95%);
-background-image: linear-gradient(1deg, #C2B4D6 5%, #e5e5e5 70%, #C2B4D6 95%);
+background-image: linear-gradient(1deg, #C2B4D6 5%, #e5e5e5 45%, #C2B4D6 100%);
 }
 
 .linear-gradient2 {
@@ -533,11 +560,8 @@ background-image:  linear-gradient(-5deg, #C2B4D6 15%, #e5e5e5 25%, #C2B4D6 80%)
 .linear-gradient3 {
 border:none;
 width: 100%;
-height: 100px;
 margin: 0;
 padding: 0;
-top: 0;
-bottom: 0;
 background-image: -webkit-linear-gradient(268deg, #C2B4D6 5%, #e5e5e5 35%, #C2B4D6 100%,  #e5e5e5 25%);
 background-image: -o-linear-gradient(268deg, #C2B4D6 5%, #e5e5e5 35%, #C2B4D6 100%,  #e5e5e5 25%);
 background-image: linear-gradient(-12deg, #C2B4D6 5%, #e5e5e5 35%, #C2B4D6 100%,  #e5e5e5 25%);
@@ -558,7 +582,7 @@ margin: 0;
 padding: 0;
 background-image: -webkit-linear-gradient(280deg, #e5e5e5 10%, #C2B4D6 85%);
 background-image: -o-linear-gradient(280deg, #e5e5e5 10%, #C2B4D6 85%);
-background-image: linear-gradient(10deg, #e5e5e5 10%, #C2B4D6 85%);
+background-image: linear-gradient(10deg, #e5e5e5 10%, gray 85%);
 }
 
 .radial-gradient {
@@ -584,6 +608,7 @@ background-image: radial-gradient(#e5e5e5 35%, #57648C 80%);
 0% {transform: rotate(0deg);}
 50% {transform: rotate(-180deg);}
 75% {transform: rotate(90deg);}
+85% {transform: rotate(-45deg);}
 100% {transform: rotate(0deg);}
 }
 
@@ -597,8 +622,8 @@ background-image: radial-gradient(#e5e5e5 35%, #57648C 80%);
 
 @media(max-width: 768px) {
 .workman {
-width: 160px;
-height: 160px;}
+width: 80px;
+height: 80px;}
 .footer-h6, .footer-p {
     text-align: center;
 }
@@ -608,12 +633,19 @@ text-align: center;
 .social-links li a i {
 margin-bottom: 5px
 }
+.penpaper {
+    display:none;
+}
+.subheading, .subheading2 {
+    text-align: center;
+}
+
 }
 
 @media(max-width: 576px) {
 .workman {
-width:120px;
-height:120px;
+width:60px;
+height:60px;
 display: none;}
 
 }
