@@ -179,3 +179,5 @@ The following process was used to deploy the project:
 
 * My Skills Items link to corresponding wikipedia articles
 
+* Wikipedia article links were added for each of the 8 different skill items in my skillset section
+
