@@ -9,14 +9,20 @@ The aim of this website is to present myself to potential employers professional
 ## Table of Contents
 
 1. [UX](#UX)
+
     I. [User stories](#UX2)
+    
     II. [Wireframes](#UX3)
+    
 2. [Features](#Features)
 3. [Features for the future](#Features2)
 4. [Technologies used](#Technologies)
 5. [Testing](#Testing)
+
     I. [Testing links functioning properly, and responsiveness for different screen sizes.](#Testing2)
+    
     II. [Testing user stories](#Testing3)
+    
 6. [Deployment](#Deployment)
 7. [Credits](#Credits)
 
