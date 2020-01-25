@@ -109,6 +109,10 @@ I learned so much during the development of this project, I had to put everythin
 
 * W3C Validator
 
+* Autoprefixer
+
+* Free Formatter
+
 
 ## 5. Testing <a name="Testing"></a>
 
@@ -118,8 +122,8 @@ I learned so much during the development of this project, I had to put everythin
 2. I have tested the webpage in Chrome Dev Tools to see responsive scaling for different screen sizes.
 3. I have run the HTML through [W3C HTML Validator](https://validator.w3.org) to check for errors in the code, none such observed.
 4. I have run the CSS code through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to check for errors in the code, none such observed.
-5. 
-Free Formatter (www.freeformatter.com/html-formatter.html) was used to make sure my HTML was formatted in the proper way.
+5. I formatted the HTML through the use of [Free Formatter](www.freeformatter.com/html-formatter.html)
+6. I added vendor prefixes to my css through the help of https://autoprefixer.github.io/
 
 #### II. User stories testing <a name="Testing3"></a>
 
@@ -145,6 +149,13 @@ This project was developed in Gitpod.
 The project has been deployed to Github Pages - [Deployed Website](https://voggastur.github.io/user-centric-frontend-project/)
 The repository for this website can be found at this GitHub link: [User Centric Frontend Repository](https://github.com/Voggastur/user-centric-frontend-project)
 
+The following process was used to deploy the project:
+1. Log into GitHub.
+2. Select Voggastur/user-centric-frontend-project
+3. Select settings
+4. Scroll down to Github Pages
+5. Select Source: master branch
+6. Retrieve the link to the deployed website
 
 
 ## 7. Credits <a name="Credits"></a>
