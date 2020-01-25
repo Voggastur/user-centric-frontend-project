@@ -3,28 +3,20 @@
 [Direct link to deployed website](https://voggastur.github.io/user-centric-frontend-project/)
 
 
-
 The aim of this website is to present myself to potential employers professionally and showcase my abilities as a front end developer.
-
 
 
 ## Table of Contents
 
 1. [UX](#UX)
-    
     I. [User stories](#UX2)
-    
     II. [Wireframes](#UX3)
-
 2. [Features](#Features)
 3. [Features for the future](#Features2)
 4. [Technologies used](#Technologies)
 5. [Testing](#Testing)
-
     I. [Testing links functioning properly, and responsiveness for different screen sizes.](#Testing2)
-
     II. [Testing user stories](#Testing3)
-
 6. [Deployment](#Deployment)
 7. [Credits](#Credits)
 
@@ -46,7 +38,7 @@ The primary target audience are collaborators who wish to see my portfolio, it i
 
 #### II. Wireframes: <a name="UX3"></a>
 
-1. [Wireframes.pdf](assets/wireframes/wireframes.pdf)
+*[Wireframes.pdf](assets/wireframes/wireframes.pdf)
 
 
 I changed a lot from my initial wireframes procedurally during the development, 
@@ -62,6 +54,8 @@ I used a png for navbar-brand and a converted .ico for my favicon.ico head link.
 3. I decided to not use background images because of difficulty implementing strong contrasts/opacity and a fitting color scheme, I settled for using linear-gradients with mild colors to provide a smooth change between sections.
 
 I learned so much during the development of this project, I had to put everything I learnt so far into use, plus reading up on W3C articles and youtube tutorials.
+
+
 
 ## 2. Features <a name="Features"></a>
 
@@ -89,7 +83,7 @@ I learned so much during the development of this project, I had to put everythin
 
 * Real portfolio items will be included in the future
 
-* I want to create a cool fullpage animation for the landingscreen in the future, I saw many examples of this in my research but my skills are not yet up to the task of this.
+* I want to create an amazing fullpage animation for the landingscreen in the future, I saw many examples of this in my research but my skills are not yet up to the task for this.
 
 * Setup the form section with backend functionality so it will work to send me messages
 
