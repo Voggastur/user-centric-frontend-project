@@ -18,67 +18,69 @@
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-md navbar-light">
+		<nav class="navbar navbar-expand-md navbar-light navbar-text-dark">
 			<a class="navbar-brand" href="#"><img src="assets/images/favicon.png" alt="icon" width="50" height="50"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
+            <span class="navbar-toggler-icon"></span>
+            </button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-7">
 						<li class="nav-item ml-3">
-							<a class="nav-link hvr-underline-from-center"
+							<a class="nav-link text-primary hvr-underline-from-center"
 								href="#"><i class="fas fa-home pr-1"></i>Home</a>
 						</li>
-                        <li class="nav-item ml-3">
-							<a class="nav-link hvr-underline-from-center"
-								href="#portfolio-section"><i class="fas fa-hammer pr-1"></i>Portfolio</a></li>
 						<li class="nav-item ml-3">
-							<a class="nav-link hvr-underline-from-center"
-								href="#skill-section"><i class="fas fa-magic pr-1"></i>Skills</a></li>
-						
-						<li class="nav-item ml-3">
-							<a class="nav-link hvr-underline-from-center"
-								href="#profile-section"><i class="fas fa-user pr-1"></i>About</a>
+							<a class="nav-link text-primary hvr-underline-from-center"
+								href="#portfolio-section"><i class="fas fa-hammer pr-1"></i>Portfolio</a>
 						</li>
 						<li class="nav-item ml-3">
-							<a class="nav-link hvr-underline-from-center"
+							<a class="nav-link text-primary hvr-underline-from-center"
+								href="#skill-section"><i class="fas fa-magic pr-1"></i>Skills</a>
+						</li>
+						<li class="nav-item ml-3">
+							<a class="nav-link text-primary hvr-underline-from-center"
+								href="#profile-section"><i class="fas fa-user pr-1"></i>Profile</a>
+						</li>
+                        <li class="nav-item ml-3">
+							<a class="nav-link text-primary hvr-underline-from-center"
+								href="#interests-section"><i class="fas fa-theater-masks"></i>Interests</a>
+						</li>
+						<li class="nav-item ml-3">
+							<a class="nav-link text-primary hvr-underline-from-center"
 								href="#contact-section"><i class="fas fa-comments pr-1"></i>Contact</a>
 						</li>
 					</ul>
 				</div>
 		</nav>
 	</header>
-
 	<main>
 		<section class="landing linear-gradient">
 			<div class="hero-unit p-2 row justify-content-center">
 				<div class="col-12 justify-content-center p-4">
-					<h2 class="welcome-heading font-italic text-center">Welcome!</h2>
-					<h1 class="welcome-heading2 font-italic text-center">I am
-						<span class="hvr-wobble-top">Johan Kjellin</span></h1>
+					<h1 class="welcome-heading text-center"><span class="hvr-wobble-top">Johan Kjellin</span></h1>
 					<h3 class="welcome-text font-weight-normal text-capitalize text-center py-2">Front End
-						developer and Web Designer</h3>
-					<p class="welcome-text2 font-weight-bold text-center"><a class="hvr-icon-hang"
+						developer and Web Designer
+					</h3>
+					<p class="welcome-text2 font-weight-bold text-italic text-center"><a class="hvr-icon-hang"
 							href="#skill-section"> I craft fully responsive websites from
 							scratch, check out my skillset and
-							portfolio<i class="fas fa-arrow-down hvr-icon px-2"></i></a></p>
+							portfolio<i class="fas fa-arrow-down hvr-icon px-2"></i></a>
+					</p>
 				</div>
 			</div>
 			<div class="col-md-12 justify-content-center d-flex">
 				<img src="assets/images/workman.png" alt="workman in chair" class="img-fluid workman" width="120" height="120">
-              </div>
+            </div>
 		</section>
-
-
+        <!-- End landing section -->
+        <!-- Start portfolio-section and container for three slideshows -->
 		<section id="portfolio-section" class="container-fluid linear-gradient">
-			<!-- Container Portfolio Three Slideshows -->
 			<div class="row my-50 p-3 my-50">
 				<div class="col-12">
 					<hr class="shorthr">
 					<h2 class="text-center font-weight-bold sectionheader">Portfolio</h2>
 					<hr class="shorthr">
 				</div>
-
 				<div class="col-md-7 my-2">
 					<h2 class="feature-heading pt-5">Ginza Website
 						<span class="text-muted p-10 font-italic h-span">Responsive overhaul with HTML and CSS</span>
@@ -91,90 +93,102 @@
 						fanbase of customers
 						who recognize it for a comfort-zone, nonetheless a lot of improvements could be made in relation
 						to responsiveness, a changed header
-						with more functions and some graphic re-design with the latest CSS3.</p>
-					<a class="btn btn-info checkitout hvr-push" target="_blank" href="https://www.ginza.se/">Check it
+						with more functions and some graphic re-design with the latest CSS3.
+					</p>
+					<a class="btn btn-success checkitout hvr-sweep-to-right" target="_blank"
+						href="https://www.ginza.se/">Check it
 						out</a>
 				</div>
 				<div class="col-md-5 my-2">
 					<div class="slideshow">
+						<!-- Slideshow pure CSS imported from W3C article https://w3bits.com/css-image-slider/ -->
 						<div class="turner">
 							<input type="radio" name="turner" class="trigger" id="one" checked="checked" />
 							<div class="turn">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/ginza.jpg" alt="picture" width="300" height="300" cover />
-							</figure>
+									<img class="turn-img" src="assets/images/ginza.jpg" alt="picture" width="300" height="300" />
+                           </figure>
 							</div>
 							<input type="radio" name="turner" class="trigger" id="two" />
 							<div class="turn">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/ginza2.png" alt="picture" width="300" height="300" fill />
-							</figure>
+									<img class="turn-img" src="assets/images/ginza2.png" alt="picture" width="300" height="300" />
+                           </figure>
 							</div>
 							<input type="radio" name="turner" class="trigger" id="three" />
 							<div class="turn">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/ginza3.png" alt="picture" width="300" height="300" fill />
-							</figure>
+									<img class="turn-img" src="assets/images/ginza3.png" alt="picture" width="300" height="300" />
+                           </figure>
 							</div>
 						</div>
 						<ul class="turn-nav">
 							<li class="turn-navitem hvr-push">
-								<label class="turn-navlabel btn btn-dark mx-2" for="one"></label></li>
+								<label class="turn-navlabel btn btn-dark mx-2" for="one"></label>
+							</li>
 							<li class="turn-navitem hvr-push">
-								<label class="turn-navlabel btn btn-dark mx-2" for="two"></label></li>
+								<label class="turn-navlabel btn btn-dark mx-2" for="two"></label>
+							</li>
 							<li class="turn-navitem hvr-push">
-								<label class="turn-navlabel btn btn-dark mx-2" for="three"></label></li>
+								<label class="turn-navlabel btn btn-dark mx-2" for="three"></label>
+							</li>
 						</ul>
-					</div>
+					</div><!-- End Slideshow -->
 				</div>
-			</div><!-- End Row -->
-
+			</div>
+			<!-- End Row -->
 			<div class="row feature">
 				<div class="col-md-7 order-md-2 my-2">
 					<h2 class="feature-heading pt-5">Rimworld
-						<span class="text-muted p-10 font-italic h-span">Computer Programming, Java</span></h2>
+						<span class="text-muted p-10 font-italic h-span">Computer Programming, Java</span>
+					</h2>
 					<p class="lead p-10">The PC game Rimworld is a colony simulator set in the distant future on an
 						alien planet. I entered the development team to help develop some scripting for npc
 						behaviour and autonomous pathing. I also had a hand in the look of the finished
-						HUD for the alpha version. I worked with a great team and I learned a lot from this time.</p>
-					<a class="btn btn-info checkitout hvr-push" target="_blank" href="https://rimworldgame.com/">Check
+						HUD for the alpha version. I worked with a great team and I learned a lot from this time.
+					</p>
+					<a class="btn btn-success checkitout hvr-sweep-to-right" target="_blank"
+						href="https://rimworldgame.com/">Check
 						it out</a>
 				</div>
 				<div class="col-md-5 order-md-1 my-2">
 					<div class="slideshow2">
+						<!-- Slideshow pure CSS imported from W3C article https://w3bits.com/css-image-slider/ -->
 						<div class="turner2">
 							<input type="radio" name="turner2" class="trigger2" id="four" checked="checked" />
 							<div class="turn2">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/rimworld.png" alt="picture" width="300" height="300" cover/>
-							</figure>
+									<img class="turn-img" src="assets/images/rimworld.png" alt="picture" width="300" height="300" />
+                           </figure>
 							</div>
 							<input type="radio" name="turner2" class="trigger2" id="five" />
 							<div class="turn2">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/rimworld2.jpg" alt="picture" width="300" height="300" fill/>
-							</figure>
+									<img class="turn-img" src="assets/images/rimworld2.jpg" alt="picture" width="300" height="300" />
+                           </figure>
 							</div>
 							<input type="radio" name="turner2" class="trigger2" id="six" />
 							<div class="turn2">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/rimworld3.jpg" alt="picture" width="300" height="300" fill/>
-							</figure>
+									<img class="turn-img" src="assets/images/rimworld3.jpg" alt="picture" width="300" height="300" />
+                           </figure>
 							</div>
 						</div>
 						<ul class="turn-nav">
 							<li class="turn-navitem hvr-push">
-								<label class="turn-navlabel btn btn-dark mx-2" for="four"></label></li>
+								<label class="turn-navlabel btn btn-dark mx-2" for="four"></label>
+							</li>
 							<li class="turn-navitem hvr-push">
-								<label class="turn-navlabel btn btn-dark mx-2" for="five"></label></li>
+								<label class="turn-navlabel btn btn-dark mx-2" for="five"></label>
+							</li>
 							<li class="turn-navitem hvr-push">
-								<label class="turn-navlabel btn btn-dark mx-2" for="six"></label></li>
+								<label class="turn-navlabel btn btn-dark mx-2" for="six"></label>
+							</li>
 						</ul>
-					</div>
+					</div><!-- End Slideshow -->
 				</div>
-			</div><!-- End Row -->
-
-
+			</div>
+			<!-- End Row -->
 			<div class="row feature">
 				<div class="col-md-7 my-2">
 					<h2 class="feature-heading pt-5">Crusader Kings 2
@@ -184,49 +198,54 @@
 						was already composed by other writers in Twine, I just had to put it in the game. It was fun
 						going through the material, and I got used to a new tool in the box, Twine which uses HTML. I
 						learned how to set it up within the
-						code and I learned a lot of things that made my work easier.</p>
-					<a class="btn btn-info checkitout hvr-push" target="_blank"
+						code and I learned a lot of things that made my work easier.
+					</p>
+					<a class="btn btn-success checkitout hvr-sweep-to-right" target="_blank"
 						href="https://www.crusaderkings.com/">Check it out</a>
 				</div>
 				<div class="col-md-5 my-2">
 					<div class="slideshow3">
+						<!-- Slideshow pure CSS imported from W3C article https://w3bits.com/css-image-slider/ -->
 						<div class="turner3">
 							<input type="radio" name="turner3" class="trigger3" id="seven" checked="checked" />
 							<div class="turn3">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/ck.jpeg" alt="picture" width="300" height="300" cover/>
-							</figure>
+									<img class="turn-img" src="assets/images/ck.jpeg" alt="picture" width="300" height="300" />
+                           </figure>
 							</div>
 							<input type="radio" name="turner3" class="trigger3" id="eight" />
 							<div class="turn3">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/ck2.png" alt="picture" width="300" height="300" fill/>
-							</figure>
+									<img class="turn-img" src="assets/images/ck2.png" alt="picture" width="300" height="300" />
+                           </figure>
 							</div>
 							<input type="radio" name="turner3" class="trigger3" id="nine" />
 							<div class="turn3">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/ck3.png" alt="picture" width="300" height="300" fill/>
-							</figure>
+									<img class="turn-img" src="assets/images/ck3.png" alt="picture" width="300" height="300" />
+                           </figure>
 							</div>
 						</div>
 						<ul class="turn-nav">
 							<li class="turn-navitem hvr-push">
-								<label class="turn-navlabel btn btn-dark mx-2" for="seven"></label></li>
+								<label class="turn-navlabel btn btn-dark mx-2" for="seven"></label>
+							</li>
 							<li class="turn-navitem hvr-push">
-								<label class="turn-navlabel btn btn-dark mx-2" for="eight"></label></li>
+								<label class="turn-navlabel btn btn-dark mx-2" for="eight"></label>
+							</li>
 							<li class="turn-navitem hvr-push">
-								<label class="turn-navlabel btn btn-dark mx-2" for="nine"></label></li>
+								<label class="turn-navlabel btn btn-dark mx-2" for="nine"></label>
+							</li>
 						</ul>
-					</div>
+					</div><!-- End Slideshow -->
 				</div>
-			</div><!-- End Row -->
-		</section><!-- End Portfolio Container-->
-
-
-
+			</div>
+			<!-- End Row -->
+		</section>
+		<!-- End portfolio section-->
+        <!-- Start skill-section Section-->
 		<section class="container-fluid linear-gradient2" id="skill-section">
-			<div class="row justify-content-around">
+			<div class="row justify-content-center">
 				<div class="col-12">
 					<hr class="shorthr">
 					<h2 class="text-center font-weight-bold sectionheader">Skillset & Tools</h2>
@@ -236,48 +255,54 @@
 					<img src="assets/images/layout.png" class="img-responsive logos" alt="icon" width="100" height="100">
 					<h3>UX/UI Design</h3>
 					<p>I create custom user interfaces for websites and apps alike, which when done correctly equals to
-						great UX</p>
-					<a class="btn btn-primary hvr-sweep-to-right" target="_blank"
+						great UX
+					</p>
+					<a class="btn btn-success hvr-sweep-to-right" target="_blank"
 						href="https://en.wikipedia.org/wiki/User_experience_design" role="button">View details</a>
 				</div>
 				<div class="col-lg-3 col-sm-5 p-3 card text-align-center">
 					<img src="assets/images/responsive.png" class="img-responsive logos" alt="icon" width="100" height="100">
 					<h3>Responsive</h3>
 					<p>I work on the mobile-first approach primarily, then layer the components outwards towards tablets
-						and desktops</p>
-					<a class="btn btn-primary hvr-sweep-to-right" target="_blank"
+						and desktops
+					</p>
+					<a class="btn btn-success hvr-sweep-to-right" target="_blank"
 						href="https://en.wikipedia.org/wiki/Responsive_web_design" role="button">View details</a>
 				</div>
 				<div class="col-lg-3 col-sm-5 p-3 card text-align-center">
 					<img src="assets/images/speed.png" class="img-responsive logos" alt="icon" width="100" height="100">
 					<h3>Speed</h3>
 					<p>I work swiftly with my tools at hand to craft progressive, secure and good looking websites,
-						because I know time is of the essence</p>
-					<a class="btn btn-primary hvr-sweep-to-right" target="_blank"
+						because I know time is of the essence
+					</p>
+					<a class="btn btn-success hvr-sweep-to-right" target="_blank"
 						href="https://en.wikipedia.org/wiki/Web_performance" role="button">View details</a>
 				</div>
 				<div class="col-lg-3 col-sm-5 p-3 card text-align-center">
 					<img src="assets/images/secure.png" class="img-responsive logos" alt="icon" width="100" height="100">
 					<h3>Data Protection</h3>
 					<p class="px">I craft secure websites with strong layers of security
-						to prevent data-theft and system violation</p>
-					<a class="btn btn-primary hvr-sweep-to-right" target="_blank"
+						to prevent data-theft and system violation
+					</p>
+					<a class="btn btn-success hvr-sweep-to-right" target="_blank"
 						href="https://en.wikipedia.org/wiki/Data_security" role="button">View details</a>
 				</div>
 				<div class="col-lg-3 col-sm-5 p-3 card text-align-center">
 					<img src="assets/images/gears.png" class="img-responsive logos" alt="icon" width="100" height="100">
 					<h3>Backend utility</h3>
 					<p>I can also create crucial backend coding for various utilities, related to data-storage and
-						data-protection</p>
-					<a class="btn btn-primary hvr-sweep-to-right" target="_blank"
+						data-protection
+					</p>
+					<a class="btn btn-success hvr-sweep-to-right" target="_blank"
 						href="https://en.wikipedia.org/wiki/Back-end_database" role="button">View details</a>
 				</div>
 				<div class="col-lg-3 col-sm-5 p-3 card text-align-center">
 					<img src="assets/images/github.png" class="img-responsive logos" alt="icon" width="100" height="100">
 					<h3>GitHub IDE</h3>
 					<p>Github, my choice of IDE is a strong source-code editor based on the MS Visual Studio, it
-						integrates many functions essential to every programmer</p>
-					<a class="btn btn-primary hvr-sweep-to-right" target="_blank"
+						integrates many functions essential to every programmer
+					</p>
+					<a class="btn btn-success hvr-sweep-to-right" target="_blank"
 						href="https://en.wikipedia.org/wiki/GitHub" role="button">View details</a>
 				</div>
 				<div class="col-lg-3 col-sm-5 p-3 card text-align-center">
@@ -285,7 +310,7 @@
 					<h3>Semantic Coding</h3>
 					<p>Writing semantic code is another routine of mine, it eases the stress of later bugfixing
 					</p>
-					<a class="btn btn-primary hvr-sweep-to-right" target="_blank"
+					<a class="btn btn-success hvr-sweep-to-right" target="_blank"
 						href="https://en.wikipedia.org/wiki/Semantics_encoding" role="button">View details</a>
 				</div>
 				<div class="col-lg-3 col-sm-5 p-3 card text-align-center">
@@ -293,13 +318,14 @@
 					<h3>Web Design</h3>
 					<p>Web Design, the most visually appealing part of Front End development is one of my specialties
 					</p>
-					<a class="btn btn-primary hvr-sweep-to-right" target="_blank"
+					<a class="btn btn-success hvr-sweep-to-right" target="_blank"
 						href="https://en.wikipedia.org/wiki/Web_design" role="button">View details</a>
 				</div>
-			</div><!-- End Row -->
-		</section><!-- End #skill-section -->
-
-
+			</div>
+			<!-- End Row -->
+		</section>
+		<!-- End skill-section -->
+        <!-- Start profile-section -->
 		<section class="container-fluid linear-gradient2" id="profile-section">
 			<div class="row justify-content-center p-5">
 				<div class="col-12 my-5">
@@ -310,132 +336,146 @@
 				<div class="row">
 					<div class="col-md-10 offset-md-1 presentation">
 						<div class="row">
-							<div class="col-lg-3 topleft">
+							<div class="col-lg-4 col-md-6 topleft">
 								<img class="profilepic img-fluid rounded-circle" src="assets/images/meimport.png" alt="Profile Picture"/>
-                            </div>
-								<div class="col-lg-9 topright">
+                        </div>
+								<div class="col-lg-8 col-md-6 topright">
 									<h5 class="subheading p-3 text-align-center">Languages / Tools</h5>
 									<ul class="list-inline workflow-ul">
 										<li class="list-inline-item devicon">
-											<i class="devicon-html5-plain"></i>
+											<i class="devicon-html5-plain"></i><!-- imported Devicon -->
 										</li>
 										<li class="list-inline-item devicon">
-											<i class="devicon-css3-plain"></i>
+											<i class="devicon-css3-plain"></i><!-- imported Devicon -->
 										</li>
 										<li class="list-inline-item devicon">
-											<i class="devicon-javascript-plain"></i>
+											<i class="devicon-javascript-plain"></i><!-- imported Devicon -->
 										</li>
 										<li class="list-inline-item devicon">
-											<i class="devicon-bootstrap-plain"></i>
+											<i class="devicon-bootstrap-plain"></i><!-- imported Devicon -->
 										</li>
 										<li class="list-inline-item devicon">
-											<i class="devicon-github-plain"></i>
+											<i class="devicon-github-plain"></i><!-- imported Devicon -->
 										</li>
 										<li class="list-inline-item devicon">
-											<i class="devicon-gimp-plain"></i>
+											<i class="devicon-gimp-plain"></i><!-- imported Devicon -->
 										</li>
 										<li class="list-inline-item devicon">
-											<i class="devicon-heroku-original"></i>
+											<i class="devicon-heroku-original"></i><!-- imported Devicon -->
 										</li>
 										<li class="list-inline-item devicon">
-											<i class="devicon-django-plain"></i>
+											<i class="devicon-django-plain"></i><!-- imported Devicon -->
 										</li>
 										<li class="list-inline-item devicon">
-											<i class="devicon-sass-original"></i>
+											<i class="devicon-sass-original"></i><!-- imported Devicon -->
 										</li>
 										<li class="list-inline-item devicon">
-											<i class="devicon-php-plain"></i>
+											<i class="devicon-php-plain"></i><!-- imported Devicon -->
 										</li>
 										<li class="list-inline-item devicon">
-											<i class="devicon-mongodb-plain"></i>
+											<i class="devicon-mongodb-plain"></i><!-- imported Devicon -->
 										</li>
 									</ul>
 								</div>
-
 								<div class="col-md-12 bottomprogress">
 									<div class="progress">
 										<div class="progress-bar progress-bar-striped bg-info" role="progressbar"
-											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%;">
-											<span class="progress-text">HTML / HTML5</span></div>
+											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
+                                            <span class="progress-text">HTML / HTML5</span>
+										</div>
 									</div>
 									<div class="progress">
 										<div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
-											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-											<span class="progress-text">CSS / CSS3</span></div>
+											aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
+                                            <span class="progress-text">CSS / CSS3</span>
+										</div>
 									</div>
 									<div class="progress">
 										<div class="progress-bar progress-bar-striped bg-success" role="progressbar"
-											aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-											<span class="progress-text">Frameworks/Bootstrap</span></div>
+											aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                            <span class="progress-text">Frameworks/Bootstrap</span>
+										</div>
 									</div>
 									<div class="progress">
 										<div class="progress-bar progress-bar-striped bg-primary" role="progressbar"
 											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-											<span class="progress-text">Gitpod</span></div>
+                                            <span class="progress-text">Gitpod</span>
+										</div>
 									</div>
 									<div class="progress">
 										<div class="progress-bar progress-bar-striped bg-secondary" role="progressbar"
-											aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-											<span class="progress-text">Wireframes</span></div>
+											aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="progress-text">Wireframes</span>
+										</div>
 									</div>
-								</div><!-- End Col -->
-							</div><!-- End Row -->
-							<div class="col-12 my-15 wrap-stack">
-								<h3 class="subheading2 text-center">Core skills</h3>
-								<div class="row">
-									<div class="col-md-4 stacks p-3">
-										<h6 class="stacks-header"><i class="fas fa-code"></i>Frontend Developer</h6>
-										<p class="stacks-text">
-											I am a creative frontend developer with a knack for technology.
-											I follow the estabished procedures of
-											<strong>Progressive Enhancement</strong> and
-											<strong>Responsive Design</strong> to craft websites with
-											well-written code which is easy to modify or upgrade.
-										</p>
+								</div>
+								<!-- End Col -->
+								<div class="col-12 my-15 wrap-stack">
+									<h3 class="subheading2 text-center">Core skills</h3>
+									<div class="row">
+										<div class="col-md-4 stacks p-3">
+											<h6 class="stacks-header"><i class="fas fa-code"></i>Frontend Developer</h6>
+											<p class="stacks-text">
+												I am a creative frontend developer with a knack for technology.
+												I follow the estabished procedures of
+												<strong>Progressive Enhancement</strong> and
+												<strong>Responsive Design</strong> to craft websites with
+												well-written code which is easy to modify or upgrade.
+											</p>
+										</div>
+										<div class="col-md-4 stacks p-3">
+											<h6 class="stacks-header"><i class="fas fa-laptop-code"></i>Web Designer
+											</h6>
+											<p class="stacks-text">
+												I am accomplished in UI design and strive for natural immersion, in the
+												aim
+												of a positive end-user experience.
+												This synergizes well with frontend development.
+											</p>
+										</div>
+										<div class="col-md-4 stacks p-3">
+											<h6 class="stacks-header"><i class="fab fa-connectdevelop"></i>Frameworks
+											</h6>
+											<p class="stacks-text">
+												I command an extensive knowledge of the Bootstrap framework.
+												Bootstrap is integral for boosting up projects at early stages with an
+												array
+												of classes and setting up layouts.
+											</p>
+										</div>
 									</div>
-									<div class="col-md-4 stacks p-3">
-										<h6 class="stacks-header"><i class="fas fa-laptop-code"></i>Web Designer
-										</h6>
-										<p class="stacks-text">
-											I am accomplished in UI design and strive for natural immersion, in the aim
-											of a positive end-user experience.
-											This synergizes well with frontend development.
-										</p>
-									</div>
-									<div class="col-md-4 stacks p-3">
-										<h6 class="stacks-header"><i class="fab fa-connectdevelop"></i>Frameworks
-										</h6>
-										<p class="stacks-text">
-											I command an extensive knowledge of the Bootstrap framework.
-											Bootstrap is integral for boosting up projects at early stages with an array
-											of classes and setting up layouts.
-										</p>
-									</div>
-								</div><!-- End Row-->
-							</div><!-- End Col Wrap-Stack-->
-						</div><!-- End Col Wrap Presentation-->
-					</div><!-- End Row-->
-				</div><!-- End Row Wrap-->
-		</section><!-- End Workflow Container -->
-
-
-
-		<section class="container-fluid linear-gradient2" id="about-section">
+									<!-- End Row-->
+								</div>
+								<!-- End Col Wrap-Stack-->
+							</div>
+							<!-- End Row-->
+						</div>
+						<!-- End Col Wrap Presentation-->
+					</div>
+					<!-- End Row-->
+				</div>
+				<!-- End Row Wrap-->
+		</section>
+		<!-- End profile Section -->
+        <!-- Start interests Section -->
+		<section class="container-fluid linear-gradient2" id="interests-section">
 			<div class="row justify-content-center align-items-center my-50">
 				<div class="col-12 my-5">
 					<hr class="shorthr">
 					<h2 class="text-center font-weight-bold sectionheader">Interests</h2>
 					<hr class="shorthr">
 				</div>
-
 				<div class="col-sm-5 m-3">
 					<div class="left-head my-15">
 						<h2 class="heading text-center"><i class="fas fa-book"></i> History </h2>
 						<hr class="shorthr">
 						<p class="text-center py-3">Reading history is very interesting, oftentimes I wonder how
-							different
-							everything could have been. I also appreciate traveling to see ruins of the past like the
-							aqueduct of Sevilla, the pillars of Axum and palaces of old. </p>
+							different everything could have been.
+							Humankind should humbly appreciate the hard work of our ancestors that walked the earth
+							before us.
+							I also appreciate traveling to see ruins of the past like the
+							aqueduct of Sevilla, Diocletians palace in Split, the pillars of Axum and more.
+						</p>
 					</div>
 				</div>
 				<div class="col-sm-5 m-3">
@@ -443,11 +483,12 @@
 						<h2 class="heading text-center"><i class="fas fa-theater-masks"></i> Comedy </h2>
 						<hr class="shorthr">
 						<p class="text-center py-3">
-							I love watching comedians such as Will Ferrell, Kevin Hart or anything by the
-							legendary Monthy Python, it is said that laughing prolongs life and who knows if it
-							outweighs my other burdens? </p>
+							I love watching comedians such as silly Will Ferrell, high-energy Kevin Hart or anything by
+							the
+							legendary Monthy Python, it is said that laughing prolongs life and I'm willing to bet it
+							outweighs my other burdens
+						</p>
 					</div>
-
 				</div>
 				<div class="col-sm-5 m-3">
 					<div class="left-head my-15">
@@ -456,7 +497,8 @@
 						<p class="text-center py-3">I'm an avid gamer, I enjoy most genres far and wide, and as fate
 							would have it I came
 							upon coding one day and discovered that it is very much like another resource management
-							game. </p>
+							game.
+						</p>
 					</div>
 				</div>
 				<div class="col-sm-5 m-3">
@@ -469,15 +511,16 @@
 						</p>
 					</div>
 				</div>
-			</div><!-- End Row -->
-		</section><!-- End #about-section -->
-
+			</div>
+			<!-- End Row -->
+		</section>
+		<!-- End interests-section -->
 		<section class="container-fluid linear-gradient" id="contact-section">
 			<div class="row justify-content-center">
-				<div class="col-lg-5 d-flex">
+				<div class="col-md-5 d-flex">
 					<img src="assets/images/penpaper.png" class="image-fluid penpaper" alt="pencil and paper" width="300" height="300">
-                </div>
-					<div class="col-lg-5">
+               </div>
+					<div class="col-md-5">
 						<form class="contact-form">
 							<div class="form-group contact-form-group">
 								<h3 class="contact-heading">Get in touch</h3>
@@ -485,16 +528,16 @@
 								<input type="text" class="form-control contact-input" id="name" placeholder="Name">
 								<label for="email">Email address:</label>
 								<input type="email" class="form-control contact-input" id="email" placeholder="JohnDoe@email.com">
-                                              </div>
+                     </div>
 								<div class="form-group">
 									<label for="questions">Select the Nature of the Question</label>
 									<select class="form-control" id="questions">
-                                                  <option>Front End Development</option>
-                                                  <option>Wireframes</option>
-                                                  <option>Cooperation</option>
-                                                  <option>Technical</option>
-                                                  <option>General</option>
-                                                </select>
+                           <option>Front End Development</option>
+                           <option>Wireframes</option>
+                           <option>Cooperation</option>
+                           <option>Technical</option>
+                           <option>General</option>
+                        </select>
 								</div>
 								<div class="form-group">
 									<label for="description">Write a brief on the subject</label>
@@ -503,21 +546,24 @@
 								</div>
 						</form>
 					</div>
-				</div><!-- End Row -->
+				</div>
+				<!-- End Row -->
 		</section>
-	</main><!-- End Main -->
-
+	</main>
+	<!-- End Main -->
 	<footer>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-4">
 					<div class="footer-container">
 						<h6 class="footer-h6">
-							<i class="fas fa-address-card hvr-wobble-top"></i><strong> Personal Info</strong></h6>
+							<i class="fas fa-address-card hvr-wobble-top"></i><strong> Personal Info</strong>
+						</h6>
 						<div>
 							<p class="footer-p">Johan Kjellin <br>
-                                                    Stockholm, Sweden <br>
-                                                  v3x0r_x014@hotmail.com</p>
+                           Stockholm, Sweden <br>
+                           v3x0r_x014@hotmail.com
+                        </p>
 						</div>
 					</div>
 				</div>
@@ -527,7 +573,8 @@
 							<i class="fas fa-code-branch hvr-wobble-top"></i><strong> Proficiency</strong>
 						</h6>
 						<p class="footer-p"> I use HTML5, CSS3 and Javascript to craft good looking websites with a
-							strong structural cohesion</p>
+							strong structural cohesion
+						</p>
 					</div>
 				</div>
 				<div class="col-md-4">
