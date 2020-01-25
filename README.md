@@ -1,47 +1,72 @@
-[https://voggastur.github.io/user-centric-frontend-project/](#My-Resume-Website)
+# My Resume Website
 
-[logo]: assets/images/favicon.ico "My Logotype"
+[Direct link to deployed website](https://voggastur.github.io/user-centric-frontend-project/)
+
+
 
 The aim of this website is to present myself to potential employers professionally and showcase my abilities as a front end developer.
-The website itself will be pretty basic at this stage but will include more over time as my abilities grow.
-
-UX User stories;
-
-An employer clicks my link from my application email and visits my webpage. The employer wants to see what I can do and the coding languages I can use.
-He wants to employ someone who doesn't need supervision all the time, and work independently and understand the concept of CSS layouts.
-He is looking for someone who can make webpages, someone who knows HTML, CSS and Javascript and ideally some backend language too.
-On visiting my page he will see my name and know he's come to the right place, and will scroll down to be presented by my portfolio to see similar work I have done before. 
-He will notice I have made amendments to a big corporate website, but not built it from scratch. So he will be wary, but he will see in my other portfolio items I have 
-some other skills too, which hopefully impresses him.
-After scrolling past the portfolio section he will see my profile, including my picture, and the totality of the skills and languages I know, graded by my ability in progressbars.
-Near the end he will see a short "about me" section to understand I'm a regular guy with regular interests, nothing weird here.
-And in the end he will see the contact section where he can pass me a note through the form element, or one of the social links in the footer.
-He will see that one of my social-links represents Twitter, and as that is a comfort-zone for this particular employer because he spends alot of his time there unlike the other apps,
-he will enter Twitter through the link and send me a message, asking for further information.
 
 
-[assets/wireframes/wireframes.pdf](##Wireframes)
 
-Project wireframes are in the assets/wireframes folder.
+## Table of Contents
+
+1. [UX](#UX)
+    
+    I. User stories
+    
+    II. Wireframes
+
+2. [Features](#Features)
+3. [Features for the future](#Features2)
+4. [Technologies used](#Technologies)
+5. [Testing](#Testing)
+
+    I. Testing links functioning properly, and responsiveness for different screen sizes.
+
+    II. Testing user stories
+
+6. [Deployment](#Deployment)
+7. [Credits](#Credits)
+
+
+## 1. UX <a name="UX"></a>
+
+The primary target audience are collaborators who wish to see my portfolio, it is also targeted at employers who wish to see my available skills.
+
+
+#### I. User Stories:
+
+1. As an employer who recieved a link to Johans website, I want to see the website to judge his skills.
+
+2. As an assessor who will judge the website on the totality of looks, responsiveness and functions among other things.
+
+3. As a collaborator who wants to see if Johan can be of use in a project together, I want to see his portfolio to see if he did similar work before.
+
+
+
+#### II. Wireframes:
+
+1. [Wireframes.pdf](assets/wireframes/wireframes.pdf)
+
 
 I changed a lot from my initial wireframes procedurally during the development, 
 it took a lot of time testing better layouts and I learned the importance of a well thought out initial wireframe.
 
-1. Initially I changed the heading into a regular bootstrap nav, then I worked with a very long custom hovering slidebar, later I understood it to be impractical for hovers so I made a centralised unfolding Home nav with 3 more buttons sliding right-bottom-left of a centralised Home button.
+1. Initially I changed the heading into a very long hovering slidebar, later I understood it to be impractical so I made a centralised unfolding Home nav with 3 more buttons sliding out of it in 3 directions.
 In the end I settled for a regular Bootstrap navbar anyway because my skills at the moment wasn't up to the task of making it fully responsive for mobile screens.
 At the same time the idea of the navbar-brand developed into reality by using 2 icons of J and K and putting them next to each other in GIMP image editor and create a new favicon with the size 512x512.
 I used a png for navbar-brand and a converted .ico for my favicon.ico head link.
 
 2. The boxed layout of the wireframes was deemed to be impractical for the amount of content I wanted to fill it with. So I settled for making sections of one longer page with the content designated for Portfolio, About and Contact.
 
-3. I decided to not use background images because of bad contrasts and difficulty picking a color scheme, I settled for using linear-gradients with mild colors to provide a smooth change between sections
-
-![wireframes](assets/wireframes/wireframes.pdf)
+3. I decided to not use background images because of difficulty implementing strong contrasts/opacity and a fitting color scheme, I settled for using linear-gradients with mild colors to provide a smooth change between sections.
 
 
-## Features
+## 2. Features <a name="Features"></a>
 
-* Bootstrap navbar with navbar-brand
+* Bootstrap navbar
+
+* Bootstrap grid layout
 
 * Hover effects on all navbar list items, buttons and anchors from hover.css by Ian Lunn
 
@@ -53,21 +78,66 @@ I used a png for navbar-brand and a converted .ico for my favicon.ico head link.
 
 * Bootstrap progressbars display the top 5 rudimentary skills of my programming
 
-* Devicons by konpa imported by link into head for listing languages of professionality in my profile section
+* Devicons by konpa imported by link into head for listing languages of profession in my profile section
 
 
 
-## Testing
+## 3. Features for the future <a name="Features2"></a>
 
-I have double-checked that all links are working and run all HTML and CSS through the W3C validation service with a perfect grade.
-I have gone through each Responsive screen size in Chrome dev tools to see that the column breakpoints are working as intended and content isn't clipped off.
+* A centralised hover navbar with unfolding buttons that link to shorter version pages of each section on the page.
+
+* Real portfolio items will be included in the future
+
+* I want to create a cool fullpage animation for the landingscreen in the future, I saw many examples of this in my research but my skills are not yet up to the task of this.
+
+* Setup the form section with backend functionality so it will work to send me messages
 
 
-## Deployment
 
-The project has been deployed to Github Pages - ![##My-Resume-Website](https://voggastur.github.io/user-centric-frontend-project/)
+## 4. Technologies used <a name="Technologies"></a>
 
-## Credits
+* HTML5
+
+* CSS3
+
+* Bootstrap Framework
+
+
+
+## 5. Testing <a name="Testing"></a>
+
+#### I. Testing Functionality
+
+1. I have checked that all links go where they should
+2. I have tested the webpage in Chrome Dev Tools to see responsive scaling for different screen sizes.
+3. I have run the HTMl and CSS through W3C validator to check for errors in the code, none such observed.
+
+#### II. User stories testing
+
+1. As an employer I go to Johans website and want to see his skills.
+
+* Click the profile button in the navbar or scroll to the profile section of the page.
+
+2. As an assessor I go to Johans website to test everything among which..
+
+* Click each link once to see it goes where it should.
+* Test responsiveness of the webpage and see realigned columns and that no content isn't clipped off.
+* Fill in an improper email in the form and see that it doesn't work unless you put a correct email.
+
+3. As a collaborator I go to Johans website to check out his portfolio
+
+* Click portfolio in navbar or scroll down to the portfolio and check each item, see different pictures included in the slideshows by clicking the bottom buttons.
+
+
+
+## 6. Deployment <a name="Deployment"></a>
+
+The project has been deployed to Github Pages - [Deployed Website](https://voggastur.github.io/user-centric-frontend-project/)
+
+
+
+## 7. Credits <a name="Credits"></a>
+
 
 * I used "Devicons" icons from https://konpa.github.io/devicon/ in my profile section.
 
@@ -79,16 +149,10 @@ The project has been deployed to Github Pages - ![##My-Resume-Website](https://v
 
 * I downloaded the "man sitting in chair in front of desk" for my landing screen from downloadclipart.net
 
-* Bootstrap templates "Carousel" and "Blog" was used to start up my work, however the connection is more abstract at this stage and no likeness can be observed. For startup inspiration it gave me a jumpstart though.
+* Bootstrap templates "Carousel" and "Blog" was used to start up my work, however the connection is more abstract at this stage and not much likeness can be observed. For startup inspiration it gave me a jumpstart though.
 
 * The slideshows were imported from https://w3bits.com/css-image-slider/ . Changes were made to accomodate the needs of my website, with properly scaled pictures, changed buttons, label attributes and input types.
 
 * The letters J and K for my favicon.ico were found on google picture search, upon finding them I combined them and made a new .png for the navbar-brand and later converted it for my favicon.ico.
 
-*
-
-
-
-
-
-
+* My Skills Items link to corresponding wikipedia articles

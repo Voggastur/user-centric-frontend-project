@@ -94,7 +94,7 @@ margin: 50px;
 }
 
 .landing {
-    height: 650px;
+    height: auto;
     color: #57648C;
 }
 
@@ -651,5 +651,8 @@ display: none;}
 }
 
 @media only screen {
+    .workman, .penpaper {
+        display: none;
+    }
 }
 
