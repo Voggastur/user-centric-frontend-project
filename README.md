@@ -12,18 +12,18 @@ The aim of this website is to present myself to potential employers professional
 
 1. [UX](#UX)
     
-    I. User stories
+    I. [User stories](#UX2)
     
-    II. Wireframes
+    II. [Wireframes](#UX3)
 
 2. [Features](#Features)
 3. [Features for the future](#Features2)
 4. [Technologies used](#Technologies)
 5. [Testing](#Testing)
 
-    I. Testing links functioning properly, and responsiveness for different screen sizes.
+    I. [Testing links functioning properly, and responsiveness for different screen sizes.](#Testing2)
 
-    II. Testing user stories
+    II. [Testing user stories](#Testing3)
 
 6. [Deployment](#Deployment)
 7. [Credits](#Credits)
@@ -34,7 +34,7 @@ The aim of this website is to present myself to potential employers professional
 The primary target audience are collaborators who wish to see my portfolio, it is also targeted at employers who wish to see my available skills.
 
 
-#### I. User Stories:
+#### I. User Stories: <a name="UX2"></a>
 
 1. As an employer who recieved a link to Johans website, I want to see the website to judge his skills.
 
@@ -44,7 +44,7 @@ The primary target audience are collaborators who wish to see my portfolio, it i
 
 
 
-#### II. Wireframes:
+#### II. Wireframes: <a name="UX3"></a>
 
 1. [Wireframes.pdf](assets/wireframes/wireframes.pdf)
 
@@ -61,6 +61,7 @@ I used a png for navbar-brand and a converted .ico for my favicon.ico head link.
 
 3. I decided to not use background images because of difficulty implementing strong contrasts/opacity and a fitting color scheme, I settled for using linear-gradients with mild colors to provide a smooth change between sections.
 
+I learned so much during the development of this project, I had to put everything I learnt so far into use, plus reading up on W3C articles and youtube tutorials.
 
 ## 2. Features <a name="Features"></a>
 
@@ -102,37 +103,47 @@ I used a png for navbar-brand and a converted .ico for my favicon.ico head link.
 
 * Bootstrap Framework
 
+* Github Deployment
+
+* Gitpod IDE
+
+* W3C Validator
 
 
 ## 5. Testing <a name="Testing"></a>
 
-#### I. Testing Functionality
+#### I. Testing Functionality <a name="Testing2"></a>
 
 1. I have checked that all links go where they should
 2. I have tested the webpage in Chrome Dev Tools to see responsive scaling for different screen sizes.
-3. I have run the HTMl and CSS through W3C validator to check for errors in the code, none such observed.
+3. I have run the HTML through [W3C HTML Validator](https://validator.w3.org) to check for errors in the code, none such observed.
+4. I have run the CSS code through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to check for errors in the code, none such observed.
+5. 
+Free Formatter (www.freeformatter.com/html-formatter.html) was used to make sure my HTML was formatted in the proper way.
 
-#### II. User stories testing
+#### II. User stories testing <a name="Testing3"></a>
 
 1. As an employer I go to Johans website and want to see his skills.
 
-* Click the profile button in the navbar or scroll to the profile section of the page.
+    * Click the profile button in the navbar or scroll to the profile section of the page.
 
 2. As an assessor I go to Johans website to test everything among which..
 
-* Click each link once to see it goes where it should.
-* Test responsiveness of the webpage and see realigned columns and that no content isn't clipped off.
-* Fill in an improper email in the form and see that it doesn't work unless you put a correct email.
+    * Click each link once to see it goes where it should.
+    * Test responsiveness of the webpage and see realigned columns and that no content isn't clipped off.
+    * Fill in an improper email in the form and see that it doesn't work unless you put a correct email.
 
-3. As a collaborator I go to Johans website to check out his portfolio
+3. As a collaborator I want to go to Johans website to check out his portfolio.
 
-* Click portfolio in navbar or scroll down to the portfolio and check each item, see different pictures included in the slideshows by clicking the bottom buttons.
+    * Click portfolio in navbar or scroll down to the portfolio and check each item, see different pictures included in the slideshows by clicking the bottom buttons.
 
 
 
 ## 6. Deployment <a name="Deployment"></a>
 
+This project was developed in Gitpod.
 The project has been deployed to Github Pages - [Deployed Website](https://voggastur.github.io/user-centric-frontend-project/)
+The repository for this website can be found at this GitHub link: [User Centric Frontend Repository](https://github.com/Voggastur/user-centric-frontend-project)
 
 
 
@@ -156,3 +167,4 @@ The project has been deployed to Github Pages - [Deployed Website](https://vogga
 * The letters J and K for my favicon.ico were found on google picture search, upon finding them I combined them and made a new .png for the navbar-brand and later converted it for my favicon.ico.
 
 * My Skills Items link to corresponding wikipedia articles
+
