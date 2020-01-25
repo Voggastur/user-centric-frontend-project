@@ -94,7 +94,7 @@ margin: 50px;
 }
 
 .landing {
-    height: auto;
+    height: 650px;
     color: #57648C;
 }
 
@@ -531,7 +531,7 @@ border-left: none;
 }
 
 .shorthr {
-width:30%;
+width:20%;
 margin: 0 auto;
 border-top: 2px solid #934A5F;
 border-right: none;
