@@ -1,9 +1,9 @@
 # My Resume Website
 
-[Direct link to deployed website](https://voggastur.github.io/user-centric-frontend-project/)
+[Deployed website](https://voggastur.github.io/user-centric-frontend-project/)
+[Project Repository](https://github.com/Voggastur/user-centric-frontend-project)
 
-
-The aim of this website is to present myself to potential employers professionally and showcase my abilities as a front end developer.
+The aim of this website is to present myself to potential employers and showcase my abilities as a front end developer.
 
 
 ## Table of Contents
