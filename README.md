@@ -13,6 +13,8 @@ The aim of this website is to present myself to potential employers professional
     I. [User stories](#UX2)
     
     II. [Wireframes](#UX3)
+
+    II. [Development Progress](#UX4)
     
 2. [Features](#Features)
 3. [Features for the future](#Features2)
@@ -34,32 +36,61 @@ The primary target audience are collaborators who wish to see my portfolio, it i
 
 #### I. User Stories: <a name="UX2"></a>
 
-1. As an employer who recieved a link to Johans website, I want to see the website to judge his skills.
+1. As an employer who recieved a link to Johans website, I want to see the website to judge his skills, so that I can assess if he's eligible for a position.
 
-2. As an assessor who will judge the website on the totality of looks, responsiveness and functions among other things.
+2. As an assessor I will judge the website on the totality of looks, responsiveness, documentation and functions among other things, so that I can assess his score
 
-3. As a collaborator who wants to see if Johan can be of use in a project together, I want to see his portfolio to see if he did similar work before.
+3. As a collaborator I want to see if Johan can be of use in a project together, I want to see his portfolio to see if he did similar work before, and if so I will send him a question or two and hopefully include him in my development team who desperately needs more coders.
 
 
 
 #### II. Wireframes: <a name="UX3"></a>
 
-*[Wireframes.pdf](assets/wireframes/wireframes.pdf)
-
+* [Wireframes.pdf](assets/wireframes/wireframes.pdf)
 
 I changed a lot from my initial wireframes procedurally during the development, 
 it took a lot of time testing better layouts and I learned the importance of a well thought out initial wireframe.
 
 1. Initially I changed the heading into a very long hovering slidebar, later I understood it to be impractical so I made a centralised unfolding Home nav with 3 more buttons sliding out of it in 3 directions.
 In the end I settled for a regular Bootstrap navbar anyway because my skills at the moment wasn't up to the task of making it fully responsive for mobile screens.
-At the same time the idea of the navbar-brand developed into reality by using 2 icons of J and K and putting them next to each other in GIMP image editor and create a new favicon with the size 512x512.
-I used a png for navbar-brand and a converted .ico for my favicon.ico head link.
 
-2. The boxed layout of the wireframes was deemed to be impractical for the amount of content I wanted to fill it with. So I settled for making sections of one longer page with the content designated for Portfolio, About and Contact.
+2. The idea of the navbar-brand came to be when I saw styled singular letters online, so I searched google pictures for 2 icons of J and K and put them next to each other in GIMP image editor and made a new favicon with the size 512x512. I used a .png for navbar-brand and converted it to .ico for my favicon.ico head link.
 
-3. I decided to not use background images because of difficulty implementing strong contrasts/opacity and a fitting color scheme, I settled for using linear-gradients with mild colors to provide a smooth change between sections.
+3. The boxed layout of the wireframes was deemed to be impractical for the amount of content. So I settled for making sections of one longer page with the content designated for Portfolio, About and Contact.
 
-I learned so much during the development of this project, I had to put everything I learnt so far into use, plus reading up on W3C articles and youtube tutorials.
+4. The About Section grew in scope into a different Skills, Profile and Interests sections, which made the information relevant to my User Stories since it only showcased my interests originally.
+
+5. I decided to not use background images because of difficulty implementing strong contrasts/opacity and a fitting color scheme, I settled for using linear-gradients with mild colors to provide a smooth change between sections.
+
+
+
+#### III. Development Process: <a name="UX4"></a>
+
+* I struggled initially to overcome the treshold to reach a skeleton mainframe of my page to put in content. I settled for Bootstrap templates from the Bootstrap Documentation, specifically the Carousel and Blog.
+I changed it sufficiently for there to be no similarities at this stage. 
+
+* I used many Bootstrap .card classes that I learned about earlier in a Code institute mini-project.
+
+* Late in the process I realized my 4 page Setup didnt look all that good since some pages seemed more relevant than others, specifically Contact and About.
+With a one page frame I could sort in less crucial content with crucial content that made it seem better in my eyes.
+
+* At the date of Thursday 16 Jan I reached the max account time limit on my free Github account, so I called in Code Institute to ask for updates on the problem. 
+I was told to send in my username by email to get an upgraded Student Github Account with more hours but by then it was friday eve, and I couldn't get it updated until monday morning.
+It was my last weekend to put in some more work so I downloaded Sublime text and worked in it, 
+it was hard to get used to since it lacked Emmett, preview window and other tools I was used to in Github, but I learned that you can modify it to your taste with Install Packages.
+As monday morning came I got my upgraded account, and on monday eve 20th of Jan as I came home from work I commited my changes from Sublime that I worked with over the weekend. 
+This was a larger commit than my usual commits for this reason.
+
+* I learned so much during the development of this project, I had to put everything I learnt so far into use, and I read up on a ton of W3C articles and youtube tutorials on countless topics.
+
+* I used iframes initially for my showcases, and while it looked nice for youtube videos I didn't like the result when iframing another webpage, specifically an e-commerce webpages with many small buy buttons in the frame.
+I didn't want one iframe and two images either, I wanted consistency so I was prepared to settle for images at this stage.
+I didn't know if you must have javascript for a carousel to work, but I found out that you don't through the instruction page https://w3bits.com/css-image-slider/ . So I imported it and try to attribute it correctly here and in the HTML through comments.
+I had to do some minor changes to the buttons and sizes for it to work properly.
+
+* I included Javascript initially only for the use of the collapsable navbar, but later I thought, why don't I just import a Bootstrap Component Javascript Carousel?
+But by then my CSS slideshow worked as intended, even if the Javascript ones looked nicer so I let it out.
+Also I wasn't sure its good to include Javascript components that I have no way of understanding yet.
 
 
 
@@ -114,6 +145,7 @@ I learned so much during the development of this project, I had to put everythin
 * Free Formatter
 
 
+
 ## 5. Testing <a name="Testing"></a>
 
 #### I. Testing Functionality <a name="Testing2"></a>
@@ -125,21 +157,23 @@ I learned so much during the development of this project, I had to put everythin
 5. I formatted the HTML through the use of [Free Formatter](www.freeformatter.com/html-formatter.html)
 6. I added vendor prefixes to my css through the help of https://autoprefixer.github.io/
 
+
+
 #### II. User stories testing <a name="Testing3"></a>
 
-1. As an employer I go to Johans website and want to see his skills.
+1. As an employer I go to Johans website determined to see his skills and portfolio items, if he's really as good as he postulated in his CV.
 
     * Click the profile button in the navbar or scroll to the profile section of the page.
 
-2. As an assessor I go to Johans website to test everything among which..
+2. As a collaborator I want to go to Johans website to check out his portfolio, to see his eligibility for inclusion in my development team.
+
+    * Click portfolio in navbar or scroll down to the portfolio and check each item, see different pictures included in the slideshows by clicking the bottom buttons.
+
+3. As an assessor I go to Johans website determined to check every nook and cranny among which..
 
     * Click each link once to see it goes where it should.
     * Test responsiveness of the webpage and see realigned columns and that no content isn't clipped off.
-    * Fill in an improper email in the form and see that it doesn't work unless you put a correct email.
-
-3. As a collaborator I want to go to Johans website to check out his portfolio.
-
-    * Click portfolio in navbar or scroll down to the portfolio and check each item, see different pictures included in the slideshows by clicking the bottom buttons.
+    * Fill in an improper email in the form and click send to see that an error message pops up.
 
 
 
@@ -156,6 +190,7 @@ The following process was used to deploy the project:
 4. Scroll down to Github Pages
 5. Select Source: master branch
 6. Retrieve the link to the deployed website
+
 
 
 ## 7. Credits <a name="Credits"></a>
