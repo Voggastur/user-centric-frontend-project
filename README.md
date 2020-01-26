@@ -52,9 +52,9 @@ I changed a lot from my initial wireframes procedurally during the development,
 it took a lot of time testing better layouts and I learned the importance of a well thought out initial wireframe.
 
 1. Initially I changed the heading into a very long hovering slidebar, later I understood it to be impractical so I made a centralised unfolding Home nav with 3 more buttons sliding out of it in 3 directions.
-In the end I settled for a regular Bootstrap navbar anyway because my skills at the moment wasn't up to the task of making it fully responsive for mobile screens.
+In the end I settled for a regular Bootstrap navbar anyway because my skills at the moment wasn't up to the task of making it fully responsive for mobile screens. At least not with the looming deadline.
 
-2. The idea of the navbar-brand came to be when I saw styled singular letters online, so I searched google pictures for 2 icons of J and K and put them next to each other in GIMP image editor and made a new favicon with the size 512x512. I used a .png for navbar-brand and converted it to .ico for my favicon.ico head link.
+2. The idea of the navbar-brand came to be when I saw styled singular letters online, so I searched google pictures for 2 icons of J and K, my initials, and put them next to each other in an online paint editor editor and made a new favicon with the size 512x512. I used a .png for navbar-brand and converted it to .ico for my favicon.ico head link.
 
 3. The boxed layout of the wireframes was deemed to be impractical for the amount of content. So I settled for making sections of one longer page with the content designated for Portfolio, About and Contact.
 
@@ -84,9 +84,7 @@ This was a larger commit than my usual commits for this reason.
 * I learned so much during the development of this project, I had to put everything I learnt so far into use, and I read up on a ton of W3C articles and youtube tutorials on countless topics.
 
 * I used iframes initially for my showcases, and while it looked nice for youtube videos I didn't like the result when iframing another webpage, specifically an e-commerce webpages with many small buy buttons in the frame.
-I didn't want one iframe and two images either, I wanted consistency so I was prepared to settle for images at this stage.
-
-I didn't know if you must have javascript for a carousel to work, but I found out that you don't through the instruction page https://w3bits.com/css-image-slider/ . So I imported it and try to attribute it correctly here and in the HTML through comments.
+I didn't want one iframe and two images either, I wanted consistency so I was prepared to settle for images at this stage. I didn't know if you must have javascript for a carousel to work, but I found out that you don't through the instruction page https://w3bits.com/css-image-slider/ . So I imported it and try to attribute it correctly here and in the HTML through comments.
 I had to do some minor changes to the buttons and sizes for it to work properly.
 
 * I included Javascript initially only for the use of the collapsable navbar, but later I thought, why don't I just import a Bootstrap Component Javascript Carousel?
@@ -165,7 +163,7 @@ Linked buttons are put in place under the text for each of these 3 portfolio-ite
 
 #### II. User stories testing <a name="Testing3"></a>
 
-1. As an employer I go to Johans website determined to see his skills and portfolio items, if he's really as good as he postulated in his CV.
+1. As an employer I go to Johans website determined to see his skills, if he's really as good as he postulated in his CV.
 
     * Click the profile button in the navbar or scroll to the profile section of the page.
 
