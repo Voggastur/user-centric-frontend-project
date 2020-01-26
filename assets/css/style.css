@@ -592,7 +592,7 @@ background-image: linear-gradient(10deg, #e5e5e5 10%, #bff9fd 85%);
 
 /* ------------------------------------Media Queries */
 
-@media only screen and (min-width: 375px) and  (max-width: 768px){
+@media (max-width: 768px){
 .workman, .penpaper {
 display: none;
 }
