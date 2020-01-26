@@ -85,12 +85,13 @@ This was a larger commit than my usual commits for this reason.
 
 * I used iframes initially for my showcases, and while it looked nice for youtube videos I didn't like the result when iframing another webpage, specifically an e-commerce webpages with many small buy buttons in the frame.
 I didn't want one iframe and two images either, I wanted consistency so I was prepared to settle for images at this stage.
+
 I didn't know if you must have javascript for a carousel to work, but I found out that you don't through the instruction page https://w3bits.com/css-image-slider/ . So I imported it and try to attribute it correctly here and in the HTML through comments.
 I had to do some minor changes to the buttons and sizes for it to work properly.
 
 * I included Javascript initially only for the use of the collapsable navbar, but later I thought, why don't I just import a Bootstrap Component Javascript Carousel?
 But by then my CSS slideshow worked as intended, even if the Javascript ones looked nicer so I let it out.
-Also I wasn't sure its good to include Javascript components that I have no way of understanding yet.
+Also I am reluctant about using Javascript components since I don't understand it yet. As a puritanic afterthought it feels good to use pure css though, even though I still have the javascript navbar.
 
 
 
@@ -112,7 +113,10 @@ Also I wasn't sure its good to include Javascript components that I have no way 
 
 * Devicons by konpa imported by link into head for listing languages of profession in my profile section
 
+* I put general information about 2 games in the portfolio section and I made up information about my involvement in these games development, as well as for the swedish e-commerce website Ginza.
+Linked buttons are put in place under the text for each of these 3 portfolio-items official webpages.
 
+* Progressbars were taken from Bootstrap for a graphical showcase of my abilities
 
 ## 3. Features for the future <a name="Features2"></a>
 
