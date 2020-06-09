@@ -19,7 +19,9 @@
 <body>
 	<header>
 		<nav class="navbar navbar-expand-md navbar-light">
-			<a class="navbar-brand" href="#"><img src="assets/images/favicon2.png" alt="icon" width="50" height="50"></a>
+			<a class="navbar-brand"
+				href="#"><img src="assets/images/favicon2.png" alt="icon" width="50" height="50"></a>
+				<!-- Hamburger Button For Mobile -->
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,7 +43,7 @@
 							<a class="nav-link text-info hvr-underline-from-center"
 								href="#profile-section"><i class="fas fa-user pr-1"></i>Profile</a>
 						</li>
-                        <li class="nav-item ml-3">
+						<li class="nav-item ml-3">
 							<a class="nav-link text-info hvr-underline-from-center"
 								href="#interests-section"><i class="fas fa-theater-masks"></i>Interests</a>
 						</li>
@@ -54,6 +56,7 @@
 		</nav>
 	</header>
 	<main>
+		<!-- Start Landing Section -->
 		<section class="landing container-fluid linear-gradient">
 			<div class="hero-unit p-2 row justify-content-center">
 				<div class="col-12 justify-content-center p-4">
@@ -72,8 +75,8 @@
 				<img src="assets/images/workman.png" alt="workman in chair" class="img-fluid workman" width="120" height="120">
             </div>
 		</section>
-        <!-- End landing section -->
-        <!-- Start portfolio-section and container for three slideshows -->
+		<!-- End Landing Section -->
+		<!-- Start Portfolio Section = Container for three slideshows -->
 		<section id="portfolio-section" class="container-fluid linear-gradient">
 			<div class="row p-3 my-50">
 				<div class="col-12">
@@ -82,21 +85,19 @@
 					<hr class="shorthr">
 				</div>
 				<div class="col-md-7 my-2">
-					<h2 class="feature-heading pt-5">Ginza Website
-						<span class="text-muted p-10 font-italic h-span">Responsive overhaul with HTML and CSS</span>
+					<h2 class="feature-heading pt-5">Alien Invaders
+						<span class="text-muted p-10 font-italic h-span">HTML, CSS, Javascript with keyboard controls</span>
 					</h2>
-					<p class="lead p-10">I helped Ginza do some improvements for their website. Ginza is an old
-						swedish e-commerce company that used to sell movies and books through paper catalogs in the past
-						and has survived the transition to the internet era and into a modern e-commerce company for all
-						kinds of merchandise.
-						We decided to stick with the old-school functional styling to not budge on the relatively loyal
-						fanbase of customers
-						who recognize it for a comfort-zone, nonetheless a lot of improvements could be made in relation
-						to responsiveness, a changed header
-						with more functions and some graphic re-design with the latest CSS3.
+					<p class="lead p-10">I developed this game as part of my studies in Code Institute, it contains
+						custom javascript with event listeners for keyboard input. The game is intended to emulate the
+						Space Invaders arcade classic of the 80s.
+						HTML/CSS provides every entity with shape and form, and javascript loops provides
+						movement for every object, as well as functional collision detection.
+						The undertaking of this project was a huge experience that took me
+						from a bare-bones programmer to a functional programmer.
 					</p>
 					<a class="btn btn-success checkitout hvr-sweep-to-right" target="_blank"
-						href="https://www.ginza.se/">Check it
+						href="https://voggastur.github.io/interactive-frontend-project/">Check it
 						out</a>
 				</div>
 				<div class="col-md-5 my-2">
@@ -106,19 +107,19 @@
 							<input type="radio" name="turner" class="trigger" id="one" checked="checked" />
 							<div class="turn">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/ginza.jpg" alt="picture" width="300" height="300" />
+									<img class="turn-img" src="assets/images/alien1.jpg" alt="picture" width="300" height="300" />
                            </figure>
 							</div>
 							<input type="radio" name="turner" class="trigger" id="two" />
 							<div class="turn">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/ginza2.png" alt="picture" width="300" height="300" />
+									<img class="turn-img" src="assets/images/alien2.jpg" alt="picture" width="300" height="300" />
                            </figure>
 							</div>
 							<input type="radio" name="turner" class="trigger" id="three" />
 							<div class="turn">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/ginza3.png" alt="picture" width="300" height="300" />
+									<img class="turn-img" src="assets/images/alien3.jpg" alt="picture" width="300" height="300" />
                            </figure>
 							</div>
 						</div>
@@ -242,8 +243,8 @@
 			</div>
 			<!-- End Row -->
 		</section>
-		<!-- End portfolio section-->
-        <!-- Start skill-section Section-->
+		<!-- End Portfolio Section -->
+		<!-- Start Skill Section -->
 		<section class="container-fluid linear-gradient2" id="skill-section">
 			<div class="row justify-content-center">
 				<div class="col-12">
@@ -324,8 +325,8 @@
 			</div>
 			<!-- End Row -->
 		</section>
-		<!-- End skill-section -->
-        <!-- Start profile-section -->
+		<!-- End Skill Section -->
+		<!-- Start Profile Section -->
 		<section class="container-fluid linear-gradient2" id="profile-section">
 			<div class="row justify-content-center p-5">
 				<div class="col-12 my-5">
@@ -381,31 +382,31 @@
 									<div class="progress">
 										<div class="progress-bar progress-bar-striped bg-info" role="progressbar"
 											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
-                                            <span class="progress-text">HTML / HTML5</span>
+											<span class="progress-text">HTML / HTML5</span>
 										</div>
 									</div>
 									<div class="progress">
 										<div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
 											aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
-                                            <span class="progress-text">CSS / CSS3</span>
+											<span class="progress-text">CSS / CSS3</span>
 										</div>
 									</div>
 									<div class="progress">
 										<div class="progress-bar progress-bar-striped bg-success" role="progressbar"
 											aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                            <span class="progress-text">Frameworks/Bootstrap</span>
+											<span class="progress-text">Frameworks/Bootstrap</span>
 										</div>
 									</div>
 									<div class="progress">
 										<div class="progress-bar progress-bar-striped bg-primary" role="progressbar"
 											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                            <span class="progress-text">Gitpod</span>
+											<span class="progress-text">Gitpod</span>
 										</div>
 									</div>
 									<div class="progress">
 										<div class="progress-bar progress-bar-striped bg-secondary" role="progressbar"
 											aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                            <span class="progress-text">Wireframes</span>
+											<span class="progress-text">Wireframes</span>
 										</div>
 									</div>
 								</div>
@@ -456,8 +457,8 @@
 				</div>
 				<!-- End Row Wrap-->
 		</section>
-		<!-- End profile Section -->
-        <!-- Start interests Section -->
+		<!-- End Profile Section -->
+		<!-- Start interests Section -->
 		<section class="container-fluid linear-gradient2" id="interests-section">
 			<div class="row justify-content-center align-items-center my-50">
 				<div class="col-12 my-5">
@@ -514,9 +515,15 @@
 			</div>
 			<!-- End Row -->
 		</section>
-		<!-- End interests-section -->
+		<!-- End interests Section -->
+		<!-- Start Contact Section -->
 		<section class="container-fluid linear-gradient" id="contact-section">
 			<div class="row justify-content-center">
+				<div class="col-12 my-5">
+					<hr class="shorthr">
+					<h2 class="text-center font-weight-bold sectionheader">Contact</h2>
+					<hr class="shorthr">
+				</div>
 				<div class="col-md-5 d-flex">
 					<img src="assets/images/penpaper.png" class="image-fluid penpaper" alt="pencil and paper" width="300" height="300">
                </div>
@@ -549,6 +556,7 @@
 				</div>
 				<!-- End Row -->
 		</section>
+		<!-- End Contact Section -->
 	</main>
 	<!-- End Main -->
 	<footer>
