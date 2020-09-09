@@ -153,16 +153,19 @@
 			<!-- End Row -->
 			<div class="row feature">
 				<div class="col-md-7 order-md-2 my-2">
-					<h2 class="feature-heading pt-5">Rimworld
-						<span class="text-muted p-10 font-italic h-span">Computer Programming, Java</span>
+					<h2 class="feature-heading pt-5">HeroesDB
+						<span class="text-muted p-10 font-italic h-span">HTML, CSS, Javascript, Python Flask with MongoDB backend</span>
 					</h2>
-					<p class="lead p-10">The PC game Rimworld is a colony simulator set in the distant future on an
-						alien planet. I entered the development team to help develop some scripting for npc
-						behaviour and autonomous pathing. I also had a hand in the look of the finished
-						HUD for the alpha version. I worked with a great team and I learned a lot from this time.
+					<p class="lead p-10">I developed this website to practice my arts in Python and database management,
+						with a little fantasy flair.
+						It contains custom Python with Flask decorators to link between views as well as pull user
+						content from an external database using the pymongo framework.
+						The website provides basic CRUD management to its users to edit content on their own.
+						Learning Python is fun and has good sources of documentation on the internet to learn more, its
+						syntax makes it easier to follow than javascript as well.
 					</p>
 					<a class="btn btn-success checkitout hvr-sweep-to-right" target="_blank"
-						href="https://rimworldgame.com/">Check
+						href="https://heroes84.herokuapp.com/">Check
 						it out</a>
 				</div>
 				<div class="col-md-5 order-md-1 my-2">
@@ -172,19 +175,19 @@
 							<input type="radio" name="turner2" class="trigger2" id="four" checked="checked" />
 							<div class="turn2">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/rimworld.png" alt="picture" width="300" height="300" />
+									<img class="turn-img" src="assets/images/data1.jpeg" alt="picture" width="300" height="300" />
                            </figure>
 							</div>
 							<input type="radio" name="turner2" class="trigger2" id="five" />
 							<div class="turn2">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/rimworld2.jpg" alt="picture" width="300" height="300" />
+									<img class="turn-img" src="assets/images/data2.jpeg" alt="picture" width="300" height="300" />
                            </figure>
 							</div>
 							<input type="radio" name="turner2" class="trigger2" id="six" />
 							<div class="turn2">
 								<figure class="turn-figure">
-									<img class="turn-img" src="assets/images/rimworld3.jpg" alt="picture" width="300" height="300" />
+									<img class="turn-img" src="assets/images/data3.jpeg" alt="picture" width="300" height="300" />
                            </figure>
 							</div>
 						</div>
@@ -206,7 +209,7 @@
 			<div class="row feature">
 				<div class="col-md-7 my-2">
 					<h2 class="feature-heading pt-5">Crusader Kings 2
-						<span class="text-muted p-10 font-italic h-span">Event Triggers, Twine, HTML, C++</span>
+						<span class="text-muted p-10 font-italic h-span">Event Triggers, Twine, JS, C</span>
 					</h2>
 					<p class="lead p-10">I was a part of a team scripting events for Crusader Kings 2, the material
 						was already composed by other writers in Twine, I just had to put it in the game. It was fun
@@ -540,19 +543,19 @@
 				<div class="col-md-5 d-flex">
 					<img src="assets/images/penpaper.png" class="image-fluid penpaper" alt="pencil and paper" width="300" height="300"/>
 				</div>
-				<div class="col-md-5">
-					<!-- Contact Form with EmailJS backend -->
-					<form id="contact-form" class="contact-form" onsubmit="return sendMail(this);">
-						<div class="form-group">
-							<h3 class="contact-heading">Get in touch</h3>
-							<input type="hidden" name="contact_number">
-							<label for="name">Name</label>
-							<input type="text" name="name" class="form-control contact-input" id="name" placeholder="Name" required>
-							<label for="email">Email address:</label>
-							<input type="email" name="email" class="form-control contact-input" id="email" placeholder="JohnDoe@email.com" required>
-                            </div>
+					<div class="col-md-5">
+						<!-- Contact Form with EmailJS backend -->
+						<form id="contact-form" class="contact-form" onsubmit="return sendMail(this);">
 							<div class="form-group">
-								<select class="form-control" name="questions" id="questions">
+								<h3 class="contact-heading">Get in touch</h3>
+								<input type="hidden" name="contact_number">
+								<label for="name">Name</label>
+								<input type="text" name="name" class="form-control contact-input" id="name" placeholder="Name" required>
+								<label for="email">Email address:</label>
+								<input type="email" name="email" class="form-control contact-input" id="email" placeholder="JohnDoe@email.com" required>
+                            </div>
+								<div class="form-group">
+									<select class="form-control" name="questions" id="questions">
 								    <label for="questions">Select the Nature of the Question</label>
                                     <option>Front End Development</option>
                                     <option>Wireframes</option>
@@ -560,16 +563,16 @@
                                     <option>Technical</option>
                                     <option>General</option>
                                 </select>
-							</div>
-							<div class="form-group">
-								<label for="description">Brief on the subject</label>
-								<textarea class="form-control" name="description" id="description" rows="4"  max-length="240" min-length="10" required></textarea>
-								<button type="submit" value="Send" class="btn btn-info mb-2 hvr-sweep-to-right"> Send</button>
-							</div>
-					</form>
+								</div>
+								<div class="form-group">
+									<label for="description">Brief on the subject</label>
+									<textarea class="form-control" name="description" id="description" rows="4"  max-length="240" min-length="10" required></textarea>
+									<button type="submit" value="Send" class="btn btn-info mb-2 hvr-sweep-to-right"> Send</button>
+								</div>
+						</form>
+					</div>
 				</div>
-			</div>
-			<!-- End Row -->
+				<!-- End Row -->
 		</section>
 		<!-- End Contact Section -->
 	</main>
