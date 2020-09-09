@@ -5,14 +5,27 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.ico" />
+	<!-- Devicons -->
 	<link rel="stylesheet"
 		href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Hover.css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+	<!-- Fontawesome -->
 	<script src="https://kit.fontawesome.com/00644b551d.js" crossorigin="anonymous"></script>
+	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<!-- EmailJS -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function(){
+      emailjs.init("user_SNJGyOEpTaT5O7pC1cJUM");
+   })();
+	</script>
 	<title>My Resume Website</title>
 </head>
 
@@ -525,36 +538,38 @@
 					<hr class="shorthr">
 				</div>
 				<div class="col-md-5 d-flex">
-					<img src="assets/images/penpaper.png" class="image-fluid penpaper" alt="pencil and paper" width="300" height="300">
-               </div>
-					<div class="col-md-5">
-						<form class="contact-form">
-							<div class="form-group contact-form-group">
-								<h3 class="contact-heading">Get in touch</h3>
-								<label for="name">Name</label>
-								<input type="text" class="form-control contact-input" id="name" placeholder="Name">
-								<label for="email">Email address:</label>
-								<input type="email" class="form-control contact-input" id="email" placeholder="JohnDoe@email.com">
-                     </div>
-								<div class="form-group">
-									<label for="questions">Select the Nature of the Question</label>
-									<select class="form-control" id="questions">
-                           <option>Front End Development</option>
-                           <option>Wireframes</option>
-                           <option>Cooperation</option>
-                           <option>Technical</option>
-                           <option>General</option>
-                        </select>
-								</div>
-								<div class="form-group">
-									<label for="description">Write a brief on the subject</label>
-									<textarea class="form-control" id="description" rows="4"></textarea>
-									<button type="submit" class="btn btn-info mb-2 hvr-sweep-to-right"> Send</button>
-								</div>
-						</form>
-					</div>
+					<img src="assets/images/penpaper.png" class="image-fluid penpaper" alt="pencil and paper" width="300" height="300"/>
 				</div>
-				<!-- End Row -->
+				<div class="col-md-5">
+					<!-- Contact Form with EmailJS backend -->
+					<form id="contact-form" class="contact-form" onsubmit="return sendMail(this);">
+						<div class="form-group">
+							<h3 class="contact-heading">Get in touch</h3>
+							<input type="hidden" name="contact_number">
+							<label for="name">Name</label>
+							<input type="text" name="name" class="form-control contact-input" id="name" placeholder="Name" required>
+							<label for="email">Email address:</label>
+							<input type="email" name="email" class="form-control contact-input" id="email" placeholder="JohnDoe@email.com" required>
+                            </div>
+							<div class="form-group">
+								<select class="form-control" name="questions" id="questions">
+								    <label for="questions">Select the Nature of the Question</label>
+                                    <option>Front End Development</option>
+                                    <option>Wireframes</option>
+                                    <option>Cooperation</option>
+                                    <option>Technical</option>
+                                    <option>General</option>
+                                </select>
+							</div>
+							<div class="form-group">
+								<label for="description">Brief on the subject</label>
+								<textarea class="form-control" name="description" id="description" rows="4"  max-length="240" min-length="10" required></textarea>
+								<button type="submit" value="Send" class="btn btn-info mb-2 hvr-sweep-to-right"> Send</button>
+							</div>
+					</form>
+				</div>
+			</div>
+			<!-- End Row -->
 		</section>
 		<!-- End Contact Section -->
 	</main>
@@ -625,6 +640,9 @@
 	</script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
+	<!-- Javascript for Backend EmailJS -->
+	<script src="assets/js/script.js">
 	</script>
 </body>
 
