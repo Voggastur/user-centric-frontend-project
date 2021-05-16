@@ -1,5 +1,5 @@
-function clearInput() {
-    location.reload(false);
+function clearInput(speed) {
+    setTimeout(() => {  location.reload(); }, speed);
 }
 
 function sendMail(contactForm) {
@@ -20,6 +20,6 @@ function sendMail(contactForm) {
             },
         );
     alert("Email has been sent!");
-    clearInput();
+    clearInput(1000);
     return false;
 }

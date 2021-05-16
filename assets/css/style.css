@@ -40,6 +40,10 @@ position: relative;
 animation: 2.7s ease-in popin;
 }
 
+.welcome-heading a:hover {
+cursor: pointer;
+}
+
 .welcome-text {
 font-family: "Roboto", sans-serif;
 font-size: 20px;
@@ -82,7 +86,6 @@ background-color: #C2B4D6;
 }
 
 /* ------------------------------------Main Sections */
-
 
 /* ------------------------------------Skillcards */
 
